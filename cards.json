@@ -1,16 +1,16 @@
 [
   {
     "date": "2026-04-17",
+    "track": "KEE",
+    "track_name": "Keeneland",
+    "filename": "cards/2026-04-17-KEE.html"
+  },
+  {
+    "date": "2026-04-17",
     "track": "SA",
     "track_name": "Santa Anita",
     "filename": "2026-04-17-SA.html",
     "plays": 2,
     "total_cost": 32.0
-  },
-  {
-    "date": "2026-04-17",
-    "track": "KEE",
-    "track_name": "Keeneland",
-    "filename": "2026-04-17-KEE.html"
   }
 ]
