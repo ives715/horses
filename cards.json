@@ -1,19 +1,19 @@
 [
   {
     "date": "2026-04-18",
-    "track": "GPX",
-    "track_name": "GPX",
-    "filename": "cards/2026-04-18-GPX.html",
-    "plays": 2,
-    "total_cost": 36
-  },
-  {
-    "date": "2026-04-18",
     "track": "KEE",
     "track_name": "Keeneland",
     "filename": "cards/2026-04-18-KEE.html",
     "plays": 4,
     "total_cost": 63
+  },
+  {
+    "date": "2026-04-18",
+    "track": "GPX",
+    "track_name": "GPX",
+    "filename": "cards/2026-04-18-GPX.html",
+    "plays": 2,
+    "total_cost": 36
   },
   {
     "date": "2026-04-17",
