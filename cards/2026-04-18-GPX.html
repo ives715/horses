@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>GPX · 2026-04-18</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --fg: #1a1a1a;
+  --fg-soft: #555;
+  --accent: #1f6feb;
+  --rule: #e5e5ea;
+  --code-bg: #f0f0f2;
+  --tier-a: #0a7d3e;
+  --tier-b: #b36b00;
+  --tier-c: #888;
+  --warn: #b42020;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --fg: #e6edf3;
+    --fg-soft: #9ca3af;
+    --accent: #79c0ff;
+    --rule: #30363d;
+    --code-bg: #1f2937;
+    --tier-a: #3fb950;
+    --tier-b: #d29922;
+    --tier-c: #8b949e;
+    --warn: #ff7b72;
+    --card: #161b22;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+header.page {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+header.page .eyebrow {
+  font-size: 13px;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+header.page h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+h1, h2, h3, h4, h5 {
+  color: var(--fg);
+  line-height: 1.25;
+  margin: 1.6em 0 0.5em;
+}
+h1 { font-size: 24px; }
+h2 {
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 17px; }
+h4 { font-size: 15px; color: var(--fg-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+p, ul, ol, blockquote { margin: 0 0 1em; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: var(--fg); }
+em { color: var(--fg-soft); }
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--code-bg);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 4px 16px;
+  color: var(--fg-soft);
+  background: var(--bg-soft);
+  border-radius: 0 6px 6px 0;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2em 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1em -4px;
+  border-radius: 6px;
+}
+table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+tbody tr:hover { background: var(--bg-soft); }
+footer.page {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--fg-soft);
+}
+/* Tier coloring — applied when header text contains the marker */
+h3:has(strong) { color: var(--fg); }
+/* mobile */
+@media (max-width: 520px) {
+  .wrap { padding: 16px 14px 48px; }
+  header.page h1 { font-size: 22px; }
+  h1 { font-size: 21px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  table { font-size: 13px; }
+  th, td { padding: 6px 8px; }
+}
+/* print */
+@media print {
+  body { background: #fff; color: #000; }
+  .wrap { max-width: 100%; padding: 0; }
+  h2 { break-after: avoid; }
+  table, pre, blockquote { break-inside: avoid; }
+  footer.page { display: none; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="page">
+
+<h1>GPX · 2026-04-18</h1>
+</header>
+<h2>Quick Picks</h2>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Race</th><th style='text-align:left'>Status</th><th style='text-align:left'>Best Bet</th><th style='text-align:left'>Est. Cost</th></tr></thead><tbody><tr><td style='text-align:left'>R1</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'>R2</td><td style='text-align:left'>PASS (scratch: #3)</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'>R3</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'>R4</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>WIN #1 + KEY BOX 1/6,7 + TRI</td><td style='text-align:left'>~$15</td></tr><tr><td style='text-align:left'>R5</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'>R6</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'>R7</td><td style='text-align:left'>PASS (scratch: #4)</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'>R8</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'>R9</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>STRAIGHT 9/12 + KEY BOX 12/9,1,10 + TRI</td><td style='text-align:left'>~$22</td></tr><tr><td style='text-align:left'>R10</td><td style='text-align:left'>PASS (scratches: #2, #8)</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'>R11</td><td style='text-align:left'>PASS (scratches: #2, #4, #5)</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><strong>Total</strong></td><td style='text-align:left'></td><td style='text-align:left'></td><td style='text-align:left'><strong>~$37</strong></td></tr></tbody></table></div>
+<blockquote><p>⚠️ Verify all TRI combo counts against the TwinSpires bet-pad before placing tickets.</p></blockquote>
+<hr>
+<h2>Race 1 — 1⅛ Mile Turf · Clm $17,500 · 9 horses</h2>
+<h3>Pace scenario</h3>
+<p>Ready to Battle or Reading Time sets or stalks early pace; Americandreammaker applies pressure mid-pack; Magnetic Beach attempts late rally from closers' perch.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Overlay threshold not met — top horse (#2 Ready to Battle at 3/1, estimated true win% 32–35%) yields only 1.28–1.4× multiple vs 1.5× required.</p>
+<hr>
+<h2>Race 2 — 1m70yds All-Weather · Maiden Clm $12,500 · 7 horses (scratch: #3)</h2>
+<h3>Pace scenario</h3>
+<p>Early-speed horses lead (Globecrest, My Foolish Notion); Swamp Fox stalks from presser role; pace sets moderately with typical late separation favoring a mid-track or outside move in final furlong.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>No core-factor A-tier horse with 2+ STRONG signals. Globecrest (SR 79) is 1 pt below par (80); no horse reaches 1.5× overlay threshold. Swamp Fox shows declining recency figures.</p>
+<hr>
+<h2>Race 3 — 1m70yds All-Weather · OClm $17,500 · 6 horses</h2>
+<h3>Pace scenario</h3>
+<p>Slewty Princess stalks early; Brat Girl and Imperia Blue compete for lead pace; Slewty Princess wins with sustained late rally.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Core-factor A-tier fails. Slewty Princess (82 SPD, best in field) at 6/5 ML (45% implied) needs 67.5% true win% for 1.5× overlay — not supported. No second A-tier candidate with 2+ STRONG signals.</p>
+<hr>
+<h2>Race 4 — 5½ Furlongs All-Weather · MC 35000 · 7 horses</h2>
+<h3>Pace scenario</h3>
+<p>Redhotnotbothered and Fighting the Wars press early; Evil Empire and Rafa Junior stalk; winner likely emerges from E-pace group or stalker in final furlong.</p>
+<h3>PLAY/PASS: PLAY</h3>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: YES — #1 Redhotnotbothered: STRONG early-speed setup (E1/E2 93/94 = par), STRONG form cycle (81→81 at-class, 3rd in tighter spot last out)</li><li>Overlay: YES — #1 at 4/1 = 20% implied, estimated true win% 28–32% = 1.4–1.6×</li><li>Pace readable: YES</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #1 Redhotnotbothered (A1 — STRONG E-pace E1/E2 93/94 at par, at-class 81 SPD, recent 3rd vs tighter spot, VALUE at 4/1)</li><li>🎯 B-tier: #6 Fighting the Wars (B1 — Prime Power 116.6 #1, class drop to MC35k intent signal, trainer 20% 1st-time MdnClm, jockey 20% sprints)</li><li>Soft-toss: #7 Evil Empire (class drop, presser, 72 SPD below par), #3 Ambassador Blue (E0 early speed, 63 SPD 12 pts below par), #4 Eminent Power (67 SPD 15 pts below par, no fitness signal)</li><li>Hard-toss: #5 Raskolnikov (debut, 5% trainer at GP), #2 Valen Time (56 SPD 26 pts below par, 0-for-4 at MC35k+, extended layoff)</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Redhotnotbothered</td><td style='text-align:left'>81 = par; E1/E2 93/94 = par</td><td style='text-align:left'>MC35k repeat</td><td style='text-align:left'>81→81, 3rd last; 6 starts</td><td style='text-align:left'>13%; +30% Dirt→AW</td><td style='text-align:left'>A1</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Fighting the Wars</td><td style='text-align:left'>75 last; 75 at-class</td><td style='text-align:left'>MC25k→35k drop</td><td style='text-align:left'>2nd vs Moc40k; 9mo layoff</td><td style='text-align:left'>Casse 16%; 21% 1st-MdnClm; jockey 20% sprints</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Evil Empire</td><td style='text-align:left'>72 last; 78 at-class</td><td style='text-align:left'>MC35k repeat</td><td style='text-align:left'>2 places in 6; 2mo layoff</td><td style='text-align:left'>Lerman 12% AW; jockey 20% w/ trainer</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Ambassador Blue</td><td style='text-align:left'>63 last; 70 at-class (12 below par)</td><td style='text-align:left'>Mdn70k→MC35k drop</td><td style='text-align:left'>0-4 in 4; 3+ mo layoff</td><td style='text-align:left'>Gargan 15%; +23% lasix</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Eminent Power</td><td style='text-align:left'>67 last; 67 at-class (15 below par)</td><td style='text-align:left'>MC25k→35k up</td><td style='text-align:left'>0-3 in 3; off pace</td><td style='text-align:left'>0% Jehaludi at GP</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Valen Time</td><td style='text-align:left'>56 last; 56 at-class (26 below par)</td><td style='text-align:left'>Moc50k→MC35k</td><td style='text-align:left'>0-4; extended layoff</td><td style='text-align:left'>Catanese 2%; jockey 0% recent</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Raskolnikov</td><td style='text-align:left'>no figure; debut</td><td style='text-align:left'>Mdn/Clm debut</td><td style='text-align:left'>0 starts</td><td style='text-align:left'>Gutierrez 5% at GP</td><td style='text-align:left'>Hard-toss</td></tr></tbody></table></div>
+<h3>Bet tickets</h3>
+<ul><li>WIN: $2 #1 Redhotnotbothered</li><li>KEY BOX 1/6,7: $4 ($1 × 4 combos)</li><li>STRAIGHT 6/1,7: $2 ($1 × 2 combos) [RULE 3 — B1 on top]</li><li>TRI 1,6/1,6,7/1,3,4,6,7: ~$6 ($0.50 base, 12 combos — verify on bet-pad) <strong>Total: ~$14</strong></li></ul>
+<h3>Contingencies</h3>
+<p><strong>If scratches:</strong> If #1 scratches → no A-tier, downgrade: WIN $2 #6, KEY BOX 6/7,3 $3. If #6 scratches → STRAIGHT 1/7 $2 + TRI 1/7/3,4,7 $3.50. <strong>If off-track:</strong> N/A — all-weather surface. <strong>Odds drift:</strong> #1 at 6/1+ confirms overlay (6/1 = 14%, true ~30% = 2×). #6 steams below 5/2 → reduce KEY BOX to $2 per RULE 10. <strong>Bias shift:</strong> No bias file. E-pace track history at 5.5f favors early speed, confirming #1. If early-card bias shows late closers winning → soft-toss WIN bet, keep exotics.</p>
+<hr>
+<h2>Race 5 — 6½ Furlongs Dirt · Clm $8,000n2L · 8 horses</h2>
+<h3>Pace scenario</h3>
+<p>G Speedy and Kazooza battle for early control; Jimbo Bailey and Lobo Go stalk; Araucano and Migratory settle mid-pack; winner emerges from E/P types pressing into stretch.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Highest at-class SR (Jimbo Bailey 78) is 7 pts below par (85). No A-tier core signal with 2+ STRONG factors. Jimbo Bailey at 8/5 (44% implied) would need 66% true win% for 1.5× overlay — unsupported.</p>
+<hr>
+<h2>Race 6 — 1¼ Mile Turf · Clm $25,000n2L · 6 horses</h2>
+<h3>Pace scenario</h3>
+<p>Hillbilly Bob and Peppermint Man duel for lead; Cognoscenti and Human Desire stalk; Rafaroo makes ground late.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>No A-tier with 2+ STRONG signals. Cognoscenti (top PP, 79 SPD) failed as favorite 3 starts. Human Desire (2/1 ML) has 0 turf wins in 5 starts. No horse clears the overlay gate at their respective ML odds.</p>
+<hr>
+<h2>Race 7 — 1 Mile Dirt · Maiden $68,000 · 11 horses (scratch: #4)</h2>
+<h3>Pace scenario</h3>
+<p>The Pulse (#5) leads with early speed; Lost Money (#12) and Azam (#11) stalk; winning move comes in stretch when speed holds or late closer enters.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>No horse clears 2+ STRONG CORE factors. Lost Money (88 SR, best in field) is 0-for-5 career with form fatigue (88/90 → 74 last). The Pulse at 6/1 (14% implied) estimates ~17% true = only 1.21×.</p>
+<hr>
+<h2>Race 8 — 1 Mile Turf · OC $25,000n1x · 9 horses</h2>
+<h3>Pace scenario</h3>
+<p>La Cantera or Turino leads early; North End Lady or Starship Melody stalks; Pretty Lavish closes from far back on the turf.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>No A-tier with 2+ STRONG core signals. Best turf SR (Pretty Lavish, 93) at 9/2 (18% implied) estimates ~1.2× overlay — below 1.5× gate. North End Lady's strong turf form (89 SR) offset by 56-day layoff; 10/1 overlay tight at best.</p>
+<hr>
+<h2>Race 9 — 1m70yds All-Weather · Clm $10,000 · 9 horses (scratches: #3, #4, #5, #8)</h2>
+<h3>Pace scenario</h3>
+<p>Backonthechaingang or Bless America breaks on early speed, Winooski (presser) stalks 2-3 wide tracking the pace, Honesto follows presser line, and Rock the Stars/Corta Fuego close late.</p>
+<h3>PLAY/PASS: PLAY</h3>
+<p>Pattern G fires: field reduced 31% (13→9), top cluster at par figures.</p>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: YES — #12 Winooski: STRONG presser style in early-speed-dominated pace (E1 91), STRONG at-class SR 85 = par</li><li>Overlay: YES — #12 at 6/1 = 14.3% implied, estimated true win% 22% = 1.54×</li><li>Pace readable: YES</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #12 Winooski (A1 — presser at par speed in early-dominated pace setup)</li><li>🎯 B-tier: #9 Backonthechaingang (B1 — 85 SR, top Prime Power, early-speed setup, but trainer 0% + jockey switch RED FLAGS), #1 Bless America (B2 — trainer hot 4-1-1/14d, at-par E/P speed), #10 Corta Fuego (B3 — par speed 85, closer in E-speed pace, class jump noted)</li><li>Soft-toss: #2 Honesto (par E1, stalking, no recent wins at class), #7 Rock the Stars (84 SR, form decline), #6 Light Fury (layoff + 58 recent SPD, best at-class 86 within 5 of par — audit-promoted, goes in 2nd AND 3rd per RULE 9)</li><li>Hard-toss: #11 Roscoe Pine (70 SPD = 15 pts below par, 0-for-3 at class), #13 Hottakejake (79 SPD, no wins at class in 5+ tries)</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>12</td><td style='text-align:left'>Winooski</td><td style='text-align:left'>85 = par</td><td style='text-align:left'>Clm10k repeat</td><td style='text-align:left'>3-3-5 at GP</td><td style='text-align:left'>Wilensky 14%; Husbands 16% routes</td><td style='text-align:left'>A1</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Backonthechaingang</td><td style='text-align:left'>85 = par</td><td style='text-align:left'>Clm jump from Clm12.5k</td><td style='text-align:left'>0-1-6 AW; jockey switch</td><td style='text-align:left'>Gonzalez 0%; Reyes low%</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Bless America</td><td style='text-align:left'>83 soft E1</td><td style='text-align:left'>Clm10k repeat</td><td style='text-align:left'>3-4-2 at GP</td><td style='text-align:left'>David Carlos hot (4-1-1/14d)</td><td style='text-align:left'>B2</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>Corta Fuego</td><td style='text-align:left'>85 = par</td><td style='text-align:left'>+2-class jump</td><td style='text-align:left'>3-1-4 lifetime</td><td style='text-align:left'>Delgado 22%; Camacho 20%</td><td style='text-align:left'>B3</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Honesto</td><td style='text-align:left'>85 E1 = par</td><td style='text-align:left'>Clm10k repeat</td><td style='text-align:left'>0-0 recent</td><td style='text-align:left'>Budhoo 17%; Vasquez 15%</td><td style='text-align:left'>Soft</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Rock the Stars</td><td style='text-align:left'>84 soft</td><td style='text-align:left'>Clm10k repeat</td><td style='text-align:left'>Form decline</td><td style='text-align:left'>Dobles 15%</td><td style='text-align:left'>Soft</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Light Fury</td><td style='text-align:left'>58 recent (86 best at-class)</td><td style='text-align:left'>Clm10k, layoff</td><td style='text-align:left'>No factor</td><td style='text-align:left'>Fawkes 25% — audit-promoted</td><td style='text-align:left'>Soft (audit)</td></tr><tr><td style='text-align:left'>11</td><td style='text-align:left'>Roscoe Pine</td><td style='text-align:left'>70 (–15 par)</td><td style='text-align:left'>Clm8k→Clm10k</td><td style='text-align:left'>0-for-3 at class</td><td style='text-align:left'>Real 0%</td><td style='text-align:left'>Hard</td></tr><tr><td style='text-align:left'>13</td><td style='text-align:left'>Hottakejake</td><td style='text-align:left'>79 soft</td><td style='text-align:left'>Clm jump</td><td style='text-align:left'>No wins at class in 5+</td><td style='text-align:left'>Moubarak 10%</td><td style='text-align:left'>Hard</td></tr></tbody></table></div>
+<h3>Bet tickets</h3>
+<ul><li>STRAIGHT 9/12: $1 ($1 × 1 combo) [RULE 3 — B1 on top]</li><li>KEY BOX 12/9,1,10: $6 ($1 × 6 combos)</li><li>TRI 12/9,1,10,2,7,6/9,1,10,2,7,6: $15 ($0.50 base, 30 combos) <strong>Total: ~$22</strong></li></ul>
+<h3>Contingencies</h3>
+<p><strong>If scratches:</strong> Field already reduced; no further action unless #12 Winooski scratches — rebuild around #9 (B1) with KEY BOX 9/1,10 $4 + TRI 9/1,10,2,7/1,10,2,7,6. <strong>If off-track:</strong> N/A — all-weather surface. <strong>Odds drift:</strong> #12 at 8/1+ confirms overlay — hold all tickets. #12 firms to 4/1 or less → reduce TRI to $10 (trim 3rd slot to {9,1,10,2,7}). <strong>Bias shift:</strong> No track bias file; neutral assumption. Pace setup is mechanically driven by early-speed heavy reduced field.</p>
+<hr>
+<h2>Race 10 — 1 Mile Dirt · Handicap $75,000 · 6 horses (scratches: #2, #8)</h2>
+<h3>Pace scenario</h3>
+<p>Indy Bay or Runaway Diva lead early; Public Defender or Fantastic Flame stalk; St. Olaf Rose or Riding Pretty rally late.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>No core-factor A-tier after scratches. Indy Bay (top speed 96 SR, 2/1 ML) has 3 consecutive Hcp/G-level outs as RED FLAG on form cycle and no dirt starts. No horse reaches 1.5× overlay. Pace readable but no A-tier candidate.</p>
+<hr>
+<h2>Race 11 — 7½ Furlongs Turf · Maiden $68,000 · 6 horses (scratches: #2, #4, #5)</h2>
+<h3>Pace scenario</h3>
+<p>Achieve and How About Abby compete for early lead; Cairo Girl (weak early) stalks; closers Home Wrecker and Fruitful chase; Rookie Move debutant unknown.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>No horse in reduced field (33% reduction) has 2+ STRONG CORE signals. All remaining runners are winless maidens. Achieve tops field at 85 SPD (RULE 12 default) but has only LEAN signals — no class drop, no pace-setup advantage, no 25%+ trainer angle. Gate fails at core-factor A-tier condition.</p>
+<footer class="page">Generated by the horses analyzer · read on any device · share freely</footer>
+</main>
+</body>
+</html>
