@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-04-17",
+    "track": "MNG",
+    "track_name": "MNG",
+    "filename": "cards/2026-04-17-MNG.html",
+    "plays": 6,
+    "total_cost": 115.5
+  },
+  {
+    "date": "2026-04-17",
     "track": "SA",
     "track_name": "Santa Anita",
     "filename": "cards/2026-04-17-SA.html",
