@@ -132,6 +132,8 @@ th, td {
   border-bottom: 1px solid var(--rule);
   vertical-align: top;
 }
+/* Keep post time and cost columns from wrapping */
+td:nth-child(2), td:nth-child(5) { white-space: nowrap; }
 th {
   background: var(--bg-soft);
   font-weight: 600;
