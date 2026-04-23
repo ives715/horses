@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>CD · 2026-04-26</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --fg: #1a1a1a;
+  --fg-soft: #555;
+  --accent: #1f6feb;
+  --rule: #e5e5ea;
+  --code-bg: #f0f0f2;
+  --tier-a: #0a7d3e;
+  --tier-b: #b36b00;
+  --tier-c: #888;
+  --warn: #b42020;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --fg: #e6edf3;
+    --fg-soft: #9ca3af;
+    --accent: #79c0ff;
+    --rule: #30363d;
+    --code-bg: #1f2937;
+    --tier-a: #3fb950;
+    --tier-b: #d29922;
+    --tier-c: #8b949e;
+    --warn: #ff7b72;
+    --card: #161b22;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+header.page {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+header.page .eyebrow {
+  font-size: 13px;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+header.page h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+h1, h2, h3, h4, h5 {
+  color: var(--fg);
+  line-height: 1.25;
+  margin: 1.6em 0 0.5em;
+}
+h1 { font-size: 24px; }
+h2 {
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 17px; }
+h4 { font-size: 15px; color: var(--fg-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+p, ul, ol, blockquote { margin: 0 0 1em; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: var(--fg); }
+em { color: var(--fg-soft); }
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--code-bg);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 4px 16px;
+  color: var(--fg-soft);
+  background: var(--bg-soft);
+  border-radius: 0 6px 6px 0;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2em 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1em -4px;
+  border-radius: 6px;
+}
+table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+/* Keep post time and cost columns from wrapping */
+td:nth-child(2), td:nth-child(5) { white-space: nowrap; }
+th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+tbody tr:hover { background: var(--bg-soft); }
+.strong-play {
+  color: var(--tier-a);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+footer.page {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--fg-soft);
+}
+/* Tier coloring — applied when header text contains the marker */
+h3:has(strong) { color: var(--fg); }
+/* mobile */
+@media (max-width: 520px) {
+  .wrap { padding: 16px 14px 48px; }
+  header.page h1 { font-size: 22px; }
+  h1 { font-size: 21px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  table { font-size: 13px; }
+  th, td { padding: 6px 8px; }
+}
+/* print */
+@media print {
+  body { background: #fff; color: #000; }
+  .wrap { max-width: 100%; padding: 0; }
+  h2 { break-after: avoid; }
+  table, pre, blockquote { break-inside: avoid; }
+  footer.page { display: none; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="page">
+
+<h1>CD · 2026-04-26</h1>
+</header>
+<h2>Quick Picks</h2>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Race</th><th style='text-align:left'>Post</th><th style='text-align:left'>Status</th><th style='text-align:left'>Tickets</th><th style='text-align:left'>Cost</th></tr></thead><tbody><tr onclick="location.href='#race-1'" style="cursor:pointer"><td style='text-align:left'><a href="#race-1">R1</a></td><td style='text-align:left'>11:45a</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-2'" style="cursor:pointer"><td style='text-align:left'><a href="#race-2">R2</a></td><td style='text-align:left'>12:14p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-3'" style="cursor:pointer"><td style='text-align:left'><a href="#race-3">R3</a></td><td style='text-align:left'>12:43p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-4'" style="cursor:pointer"><td style='text-align:left'><a href="#race-4">R4</a></td><td style='text-align:left'>1:14p</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>WIN #5 $2 · KEY BOX 5/7,8 $4 · STRAIGHT 7/5,8 $2 · TRI 5,8/5,7,8/1,2,4,6,7,8 $10</td><td style='text-align:left'>$18</td></tr><tr onclick="location.href='#race-5'" style="cursor:pointer"><td style='text-align:left'><a href="#race-5">R5</a></td><td style='text-align:left'>1:47p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-6'" style="cursor:pointer"><td style='text-align:left'><a href="#race-6">R6</a></td><td style='text-align:left'>2:20p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-7'" style="cursor:pointer"><td style='text-align:left'><a href="#race-7">R7</a></td><td style='text-align:left'>2:51p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-8'" style="cursor:pointer"><td style='text-align:left'><a href="#race-8">R8</a></td><td style='text-align:left'>3:24p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-9'" style="cursor:pointer"><td style='text-align:left'><a href="#race-9">R9</a></td><td style='text-align:left'>3:56p</td><td style='text-align:left'><span class="strong-play">STRONG PLAY</span></td><td style='text-align:left'>WIN #10 $20 · KEY BOX 10/4,9 $8</td><td style='text-align:left'>$28</td></tr><tr><td style='text-align:left'><strong>Total</strong></td><td style='text-align:left'></td><td style='text-align:left'></td><td style='text-align:left'></td><td style='text-align:left'><strong>$46</strong></td></tr></tbody></table></div>
+<hr>
+<h2 id="race-1">Race 1 — 1 1/16 Miles Dirt · Starter Allowance $83,000 · 7 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>#4 Nogradi is A-tier but priced at 9/5 (36% implied, est ~38–40% true) = ~1.05–1.1× — no overlay clears 1.5× threshold. No clean B-tier VALUE with at-class figure.</p>
+<hr>
+<h2 id="race-2">Race 2 — 4.5f Dirt · Maiden Special Weight $92,000 · 11 horses (2yo Fillies)</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>9-of-11 field of first-time starters, unknowable profiles. Only two horses with figures run well below par 81. No overlay possible.</p>
+<hr>
+<h2 id="race-3">Race 3 — 6.5f Dirt · MdnClm $20,000 · F&amp;M 3&amp;Up · 10 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>Every contender has only one strong angle. Top figures on dirt (#1 68, #10 66) run 9–14 below par 77. Market has priced efficiently; no overlay gate met.</p>
+<hr>
+<h2 id="race-4">Race 4 — 7f Dirt · Clm $40,000 · 3yo · 8 horses</h2>
+<h3>Pace scenario</h3>
+<p>#5 Mischief Mania (E/P) and #8 Epic Summer (E) battle for the early lead with #3 Coal Fired (E) also pressing; hot pace sets up a stalk-and-pounce from #7 Kid Twist and #2 Versed into the stretch.</p>
+<h3>PLAY/PASS: PLAY</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #8 Epic Summer (86 at Mdn85k — above today's class, = par 86)</li><li>Tier assignment: A-tier (RULE 12 default; no form-based demotion criterion fully met)</li></ul>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: YES — #5 Mischief Mania: STRONG top figure at distance (87 vs par 86, highest in field at 7f dirt), STRONG sharp form cycle (62→83→87, won last), STRONG hot trainer claim (Moger Jr. 22% Up-2+-classes) + Irad Ortiz Jr.</li><li>Overlay: YES — #5 at 7/2 = 22% implied, est ~35% true (top fig at dist + sharp form + elite jockey) = 1.6×. B-tier VALUE per RULE 19.</li><li>Pace readable: YES</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #5 Mischief Mania (A1 VALUE — top at-dist figure, form-cycle win, Irad/Moger), #8 Epic Summer (A2 — RULE 12 top at-class SR, top PP, but no overlay at 8/5)</li><li>🎯 B-tier: #7 Kid Twist (B1 — 83 at Alw50000s, class relief, P-style fits pace duel), #1 Nuck Chorris (B2 — 78 debut win, Maker 22%)</li><li>Soft-toss: #2 Versed (at-class 82 AW, inconsistent), #4 Perfect Audible (declining 81→69→66, Asmussen/Jose Ortiz angle), #6 Sonic Surge (76 best, flat form)</li><li>Hard-toss: #3 Coal Fired (74 best = 12 below par, 70/63/45 declining 3-in-a-row)</li></ul>
+<h3>Bet tickets (PLAY)</h3>
+<ul><li>WIN: $2 #5 Mischief Mania</li><li>KEY BOX 5/7,8: $1 (4 combos = $4)</li><li>STRAIGHT 7/5,8: $1 (2 combos = $2) [RULE 3 — B1 Kid Twist on top]</li><li>TRI 5,8/5,7,8/1,2,4,6,7,8: $0.50 (20 combos = $10)</li></ul>
+<p><strong>Total: $18</strong></p>
+<h3>Contingencies</h3>
+<p><strong>Scratches:</strong> If #8 scratches, #5 becomes sole A-tier; restructure. If #5 scratches → PASS. <strong>Odds drift:</strong> If #5 drops below 2/1 (35%+), reduce WIN to $1; below 6/5, drop WIN, keep exotics.</p>
+<hr>
+<h2 id="race-5">Race 5 — 6f Dirt · Maiden Claiming $12,500 · 10 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>#3 Calling On Heaven is A-tier (87 vs par 78, +9; 2-level class drop) but at 7/5 (42% implied) and true ~50–55% = 1.19–1.31×, below 1.5× threshold. No B-tier VALUE at ≥1.5× with at-class figure within 5 of par.</p>
+<hr>
+<h2 id="race-6">Race 6 — 5.5f Turf · OC 100000n3x · 8 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>Three-way tie at top figure (#1, #3, #8 all 97 turf BSF). Best overlay candidate #3 Run Curtis Run at 3/1 = est 35% true = 1.40× — near-miss per RULE 19. #8 Step Forward at 7/2 = ~1.45× — also near-miss. Two near-misses don't compound into a PLAY.</p>
+<hr>
+<h2 id="race-7">Race 7 — 6f Dirt · Clm $16,000n2L · 10 horses (F&amp;M 3&amp;up)</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>#4 Sweet Bebsi is A-tier (top figure at distance 81, class drop with intent, blinkers/Irad) but at 8/5 = 38% implied, est ~45–50% true = 1.18× — no overlay. No B-tier VALUE clears gate. Market priced efficiently.</p>
+<hr>
+<h2 id="race-8">Race 8 — 1 1/4 Mile Dirt · Maiden Special Weight $120,000 · 9 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>#2 Stompin Grapes is dominant A-tier (95 vs par 90, top PP 127.7, top LP 96) but at 9/5 = 36% implied, est ~40–42% true = 1.1–1.2× — no overlay. #8 Direct Strike best angle (Cox/Irad combo) but at-class 81 = 9 below par, outside RULE 19 window.</p>
+<hr>
+<h2 id="race-9">Race 9 — 1 1/16 Miles Turf · Alw $127,000 n1x (F&amp;M) · 11 horses</h2>
+<h3>Pace scenario</h3>
+<p>#3 Brilliantly (E, dirt specialist) takes the lead on unproven surface; #10 Totally Justified and #5 Snipsnippitysnip press from outside; stalkers #9 Faithful Departed and #4 Olivia Valentina track in position. Brilliantly's LP avg 79.3 likely gives way late, setting up for LP-strong pressers.</p>
+<h3>PLAY/PASS: STRONG PLAY</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #10 Totally Justified (96 turf SR at Sar Oaks Inv G2 — above today's class; last 3 stable 87/86/86, par 86)</li><li>Tier assignment: A-tier (A1 VALUE). No demotion: stable recent figures, Meah 20% 90+ days, Lasix added, sharp works.</li></ul>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: YES — #10 Totally Justified: STRONG figure dominance (96 vs par 86, +10), STRONG multi-class relief (G1/G2 → Alw n1x)</li><li>Overlay: YES — #10 at 6/1 = 14% implied, est ~30% true = 2.14×. Figure alignment confirmed (overlay horse = top at-class SR in field).</li><li>Pace readable: YES</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #10 Totally Justified (A1 VALUE — top at-class turf SR 96, G1/G2→Alw class relief; 2.14× overlay + figure alignment), #9 Faithful Departed (A2 — 88 best turf +2 par, G2→Alw class drop, LP 91.3, hot J.Ortiz)</li><li>🎯 B-tier: #4 Olivia Valentina (B1 — best dist turf 87 +1 par, LP-strong closer, class relief, 10/1 VALUE), #1 Midway Memories (B2 — Brown 2nd-off-layoff 25%, Irad, top LP in field among closers)</li><li>Soft-toss: #3 Brilliantly (at-par, 2nd+3rd — 82 within 4 of par but dirt-to-turf Baffert 11%), #5 Snipsnippitysnip, #7 Plaza Athenee (unknowable RULE 13), #6 Red Beretta (declining 3-in-row), #2 Humbled</li><li>Hard-toss: #8 Salty Senorita (74 = 12 below par, first route), #11 French Mistress (AE — 72 = 14 below par)</li></ul>
+<h3>Bet tickets (STRONG PLAY)</h3>
+<ul><li>WIN: $20 #10 Totally Justified</li><li>KEY BOX 10/4,9: $2 (4 combos = $8)</li></ul>
+<p><strong>Total: $28</strong></p>
+<h3>Contingencies</h3>
+<p><strong>If scratches:</strong> If #10 scratches → PASS. If #9 scratches → KEY BOX becomes BOX 10/4, reduce to $4. <strong>If off-track (race moves to dirt):</strong> #3 Brilliantly upgrades sharply (best dirt 95) — pivot to KEY BOX 3/9,10 + WIN #3. Drop #10 from A-tier (no comparable dirt figure). <strong>Odds drift:</strong> If #10 bet to 5/2 or lower (50%+ drop), drop WIN, keep KEY BOX (RULE 10). If #9 drifts to 8/1+, add $1 STRAIGHT 9/10,4. <strong>Bias shift:</strong> Week turf 8.5f sample too small (1 race) — informational only per RULE 5.</p>
+<footer class="page">Generated by the horses analyzer · read on any device · share freely</footer>
+</main>
+</body>
+</html>
