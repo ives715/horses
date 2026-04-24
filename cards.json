@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-04-24",
+    "track": "AQU",
+    "track_name": "Aqueduct",
+    "filename": "cards/2026-04-24-AQU.html",
+    "plays": 2,
+    "total_cost": 49
+  },
+  {
+    "date": "2026-04-24",
     "track": "KEE",
     "track_name": "Keeneland",
     "filename": "cards/2026-04-24-KEE.html",
