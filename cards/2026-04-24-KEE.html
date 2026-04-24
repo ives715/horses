@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>KEE · 2026-04-24</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --fg: #1a1a1a;
+  --fg-soft: #555;
+  --accent: #1f6feb;
+  --rule: #e5e5ea;
+  --code-bg: #f0f0f2;
+  --tier-a: #0a7d3e;
+  --tier-b: #b36b00;
+  --tier-c: #888;
+  --warn: #b42020;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --fg: #e6edf3;
+    --fg-soft: #9ca3af;
+    --accent: #79c0ff;
+    --rule: #30363d;
+    --code-bg: #1f2937;
+    --tier-a: #3fb950;
+    --tier-b: #d29922;
+    --tier-c: #8b949e;
+    --warn: #ff7b72;
+    --card: #161b22;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+header.page {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+header.page .eyebrow {
+  font-size: 13px;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+header.page h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+h1, h2, h3, h4, h5 {
+  color: var(--fg);
+  line-height: 1.25;
+  margin: 1.6em 0 0.5em;
+}
+h1 { font-size: 24px; }
+h2 {
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 17px; }
+h4 { font-size: 15px; color: var(--fg-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+p, ul, ol, blockquote { margin: 0 0 1em; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: var(--fg); }
+em { color: var(--fg-soft); }
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--code-bg);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 4px 16px;
+  color: var(--fg-soft);
+  background: var(--bg-soft);
+  border-radius: 0 6px 6px 0;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2em 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1em -4px;
+  border-radius: 6px;
+}
+table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+/* Keep post time and cost columns from wrapping */
+td:nth-child(2), td:nth-child(5) { white-space: nowrap; }
+th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+tbody tr:hover { background: var(--bg-soft); }
+.strong-play {
+  color: var(--tier-a);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+footer.page {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--fg-soft);
+}
+/* Tier coloring — applied when header text contains the marker */
+h3:has(strong) { color: var(--fg); }
+/* mobile */
+@media (max-width: 520px) {
+  .wrap { padding: 16px 14px 48px; }
+  header.page h1 { font-size: 22px; }
+  h1 { font-size: 21px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  table { font-size: 13px; }
+  th, td { padding: 6px 8px; }
+}
+/* print */
+@media print {
+  body { background: #fff; color: #000; }
+  .wrap { max-width: 100%; padding: 0; }
+  h2 { break-after: avoid; }
+  table, pre, blockquote { break-inside: avoid; }
+  footer.page { display: none; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="page">
+
+<h1>KEE · 2026-04-24</h1>
+</header>
+<h2>Quick Picks</h2>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Race</th><th style='text-align:left'>Post</th><th style='text-align:left'>Status</th><th style='text-align:left'>Tickets</th><th style='text-align:left'>Cost</th></tr></thead><tbody><tr onclick="location.href='#race-1'" style="cursor:pointer"><td style='text-align:left'><a href="#race-1">R1</a></td><td style='text-align:left'>12:00p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-2'" style="cursor:pointer"><td style='text-align:left'><a href="#race-2">R2</a></td><td style='text-align:left'>12:32p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-3'" style="cursor:pointer"><td style='text-align:left'><a href="#race-3">R3</a></td><td style='text-align:left'>1:04p</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>WIN #7 $2 · KEY BOX 7/1,2 $4 · STRAIGHT 1/2,7 $2 · TRI 2,7/1,2,7/1,2,3,5 $4</td><td style='text-align:left'>$12</td></tr><tr onclick="location.href='#race-4'" style="cursor:pointer"><td style='text-align:left'><a href="#race-4">R4</a></td><td style='text-align:left'>1:36p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-5'" style="cursor:pointer"><td style='text-align:left'><a href="#race-5">R5</a></td><td style='text-align:left'>2:08p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-6'" style="cursor:pointer"><td style='text-align:left'><a href="#race-6">R6</a></td><td style='text-align:left'>2:40p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-7'" style="cursor:pointer"><td style='text-align:left'><a href="#race-7">R7</a></td><td style='text-align:left'>3:12p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-8'" style="cursor:pointer"><td style='text-align:left'><a href="#race-8">R8</a></td><td style='text-align:left'>3:44p</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>WIN #7 $2 · BOX 7,9 $2 · STRAIGHT 1/7,9 $2 · STRAIGHT 6/7,9 $2 · TRI 7,9/1,6,8/1,2,3,6,8 $12</td><td style='text-align:left'>$20</td></tr><tr onclick="location.href='#race-9'" style="cursor:pointer"><td style='text-align:left'><a href="#race-9">R9</a></td><td style='text-align:left'>4:16p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-10'" style="cursor:pointer"><td style='text-align:left'><a href="#race-10">R10</a></td><td style='text-align:left'>4:48p</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>WIN #11 $2 · KEY BOX 6,11 $2 · STRAIGHT 1/6,11 $2 · TRI 6,11/1,6,8,10,11/1,5,6,8,9,10,11 $20</td><td style='text-align:left'>$26</td></tr><tr><td style='text-align:left'><strong>Total</strong></td><td style='text-align:left'></td><td style='text-align:left'></td><td style='text-align:left'></td><td style='text-align:left'><strong>$58</strong></td></tr></tbody></table></div>
+<hr>
+<h2 id="race-1">Race 1 — 1 1/16 Miles Dirt · Maiden Claiming $20k · 7 horses</h2>
+<h3>Pace scenario</h3>
+<p>Backside and Quality Spirits press early; Highlighter stalks; closers Punkin Boy and Otzelberger make late runs.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Top at-class SR #4 Quality Spirits (78 vs par 81) has 50-day layoff + recent turf losses; #3 Backside has Cox angle but declining figures. No 2+ STRONG CORE A-tier. Favorite #4 at 7/5 priced at fair value.</p>
+<hr>
+<h2 id="race-2">Race 2 — 5 1/2 Furlongs Turf · MSW (2yo) · 9 horses</h2>
+<h3>Pace scenario</h3>
+<p>Joker's Chic or Shining Moment duels early; Frontline Fury stalks off the rail; grass route favors early pace into late-closing opportunity.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>8-of-9 first-time starters with zero at-class figures. #5 Shining Moment (7/5 fav) is Ward FTS + Irad combo but 7/5 is priced at or above true odds. No clean overlay at 1.5×.</p>
+<hr>
+<h2 id="race-3">Race 3 — 1 1/16 Miles Dirt · Maiden Claiming $20k · 10 horses</h2>
+<h3>Pace scenario</h3>
+<p>Speed Skater and Stay Beautiful press early; Senora d'Oro/Unionville stalk; winning move in the final quarter.</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #7 Senora d'Oro (81 SR vs par 75, +6)</li><li>Tier assignment: A-tier</li><li>Form: 3rd LR vs tougher $30k at TP (69 SPD); class drop 2 levels + blinkers on + Saez. No form-based demotion.</li></ul>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: YES — #2 Speed Skater (Prime Power #1, Cox 41% MCL, recent 79 SPD at par-class) + #7 Senora d'Oro (top at-class SR 81, 2-level class drop + blinkers)</li><li>Overlay: YES — #7 Senora d'Oro at 6/1 = 14% implied, est ~22% = 1.57×</li><li>Pace readable: YES</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #2 Speed Skater (A1 — Prime Power #1, Cox 41% MCL, Prat routes 17%), #7 Senora d'Oro (A2 VALUE — top at-class 81, 2-level drop + blinkers, 1.57× overlay at 6/1)</li><li>🎯 B-tier: #1 Imprudent (turf-to-dirt, FTS profile, 71 SPD at par)</li><li>Soft-toss: #5 Stay Beautiful (at-par 71, 69d layoff), #3 Unionville (first route, only 1 start), #6 Lexi's Melody (2 starts, first route, 20/1)</li><li>Hard-toss: #4 Rather Late (60 SPD, declining 3-in-row), #8 Shidoni (57 SPD, 0-for-12), #9 Dreamwifedreamlife (62 SPD, 13 below par), #10 Golexgo (67 SPD, 0-for-8)</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>2</td><td style='text-align:left'>Speed Skater</td><td style='text-align:left'>79 (+4)</td><td style='text-align:left'>Drops $30k → $20k</td><td style='text-align:left'>3 starts, 79 LR</td><td style='text-align:left'>Cox 41% MCL, Prat 17%</td><td style='text-align:left'>A1</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Senora d'Oro</td><td style='text-align:left'>81 (+6, top)</td><td style='text-align:left'>2-level drop</td><td style='text-align:left'>3rd LR vs tougher, blinkers on</td><td style='text-align:left'>Saez 19% routes</td><td style='text-align:left'>A2 VALUE</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Imprudent</td><td style='text-align:left'>71 (-4)</td><td style='text-align:left'>Turf→dirt</td><td style='text-align:left'>FTS on dirt</td><td style='text-align:left'>Kenneally 13% MCL</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Stay Beautiful</td><td style='text-align:left'>71 (-4, at-par)</td><td style='text-align:left'>Drops</td><td style='text-align:left'>0-for-5, 69d layoff</td><td style='text-align:left'>Ramos 15%</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Unionville</td><td style='text-align:left'>65 (-10)</td><td style='text-align:left'>First route</td><td style='text-align:left'>1-for-2 sprints</td><td style='text-align:left'>Sims 10%, first route</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Lexi's Melody</td><td style='text-align:left'>37/43 (-32)</td><td style='text-align:left'>Drops</td><td style='text-align:left'>0-for-2, first route</td><td style='text-align:left'>McKeever 0% KEE</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Rather Late</td><td style='text-align:left'>60 (-15, decl 3)</td><td style='text-align:left'>Drops</td><td style='text-align:left'>0-for-5 declining</td><td style='text-align:left'>Hancock 0% KEE</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Shidoni</td><td style='text-align:left'>57 (-18)</td><td style='text-align:left'>Drops</td><td style='text-align:left'>0-for-12</td><td style='text-align:left'>Salas 0% KEE</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Dreamwifedreamlife</td><td style='text-align:left'>62 (-13)</td><td style='text-align:left'>Drops</td><td style='text-align:left'>0-for-8</td><td style='text-align:left'>Reed 0% KEE</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>Golexgo</td><td style='text-align:left'>67 (-8)</td><td style='text-align:left'>Drops</td><td style='text-align:left'>0-for-8</td><td style='text-align:left'>Grubbs 0% KEE</td><td style='text-align:left'>Hard-toss</td></tr></tbody></table></div>
+<h3>Bet tickets</h3>
+<ul><li>WIN: $2 #7 Senora d'Oro</li><li>KEY BOX 7/1,2: $1 × 4 combos = $4</li><li>STRAIGHT 1/2,7: $1 × 2 = $2 (RULE 3 — B1 on top)</li><li>TRI 2,7/1,2,7/1,2,3,5: $0.50 × 8 combos = $4</li></ul>
+<p><strong>Total: ~$12</strong></p>
+<h3>Contingencies</h3>
+<p><strong>If scratches:</strong> None declared. <strong>If off-track:</strong> N/A — dirt. <strong>Odds drift:</strong> #7 drifts to 8/1+ → overlay improves (hold). #2 below 5/2 (37% drop from 6/5 ML) → reduce WIN 50% per RULE 10. <strong>Bias shift:</strong> Dirt 8.5f-1m speed bias 73%. LEAN only.</p>
+<hr>
+<h2 id="race-4">Race 4 — 6 1/2 Furlongs Dirt · Clm $30k · 9 horses</h2>
+<h3>Pace scenario</h3>
+<p>Epic Summer leads; Sometime and Nine Ball press; winning move from closer rallying late.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>#1 Epic Summer (86 SR vs par 83, Prime Power #1, class drop) at 9/5 = 36% implied, est 40-45% = 1.1-1.25× <strong>near-miss</strong>. #4 Sometime at 6/1 has closer profile but at-par only (82 = par), not above, disqualifying as overlay anchor per RULE 19.</p>
+<hr>
+<h2 id="race-5">Race 5 — 6 Furlongs Dirt · MdnClm $100k · 9 horses</h2>
+<h3>Pace scenario</h3>
+<p>Mainstream and City of Life fight for the lead with solid early pace figures; Dixie Devil stalks as late closer.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>#5 Mainstream A-tier (91 SR, +4 par, Cox 41% MdnClm, Irad 25% sprints) priced at 6/5 = 40% implied, est ~45% = 1.125× <strong>near-miss</strong>. No clean B-tier VALUE at 1.5×.</p>
+<hr>
+<h2 id="race-6">Race 6 — 7 Furlongs Dirt · Alw $120k N1X · 6 horses</h2>
+<h3>Pace scenario</h3>
+<p>Early speed battle among Trust Fund Philly, Tesouro de Pirata, and Absolute Honor; Sassy Princess stalks; weak field LP figures limit closers.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Top at-class SR horses (#1 Sassy Princess 90, #2 Trust Fund Philly 89) both 1-2 below par with weak LP and recent form concerns. Favorite #3 Absolute Honor (87 SR, 4 below par, 78d layoff) priced at 7/5. No horse with 2+ STRONG CORE.</p>
+<hr>
+<h2 id="race-7">Race 7 — 6 Furlongs Dirt · Starter Allowance $69k · 9 horses</h2>
+<h3>Pace scenario</h3>
+<p>Freeze the Fire and Show Time battle for early control; Swill and Unworkable challenge outside; Funny Uncle (closer) waits for a lane.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>#4 Freeze the Fire at 5/2 = 28% implied, est 40% = <strong>1.42× near-miss</strong> per RULE 19. Prime Power #1 alone is LEAN per RULE 7; single STRONG (class drop from Laurel Starter win) isn't 2+ STRONG CORE. RULE 21 (dual-expert consensus) governs exotic slot coverage, not overlay gate — cannot override near-miss to PLAY. #6 Funny Uncle has top life SR 99 but 62d layoff + recent decline (81 LR) places him B-tier, not overlay.</p>
+<hr>
+<h2 id="race-8">Race 8 — 1 1/2 Miles Turf · Bewitch S. (G3) · 9 horses</h2>
+<h3>Pace scenario</h3>
+<p>Venencia presses early at 1.5mi turf; Speed Shopper tracks from midpack; deep S-style closers (Just Basking, Mrs. Astor, Way to Be Marie, Literate) rally down Keeneland stretch.</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #9 Speed Shopper (101 SPD at G3 Orchid Mar 2026, 1.5mi turf, +9 vs par)</li><li>Tier assignment: A-tier</li><li>Second-highest: #7 Just Basking (100 SPD same G3 Orchid)</li><li>Both above-par, no declining trend, no demotion criteria met.</li></ul>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: YES — #9 Speed Shopper: top at-class SR 101 (+9), 2nd-off-layoff Walden 27% STRONG angle, Velazquez. #7 Just Basking: 100 SPD last out, won Very One G3 Feb at 94, consecutive above-par at distance, Castellano.</li><li>Overlay: YES — #7 Just Basking at 9/2 = 18% implied; est ~30% (back-to-back G3 form, above-par at distance, Castellano) = 1.67×</li><li>Pace readable: YES</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #9 Speed Shopper (A1 — top SR 101, Walden 2nd-off-layoff 27% angle, Velazquez), #7 Just Basking (A2 VALUE — 100 SPD last out, G3 winner, 1.67× overlay at 9/2)</li><li>🎯 B-tier: #1 Way to Be Marie (B1 — 96 best turf +4 par, won G3 FG Mar 2026, Saez), #6 Mrs. Astor (B2 within 2 of B1 — 94 best turf, Prime Power #1 160.9, multi G3 winner, Jose Ortiz), #8 Literate (B3 via RULE 21 — Brisnet #2 + KH Sheet #1 speed/class dual-expert; Cox/Irad 37% L60 graded stakes; 88 turf within 5 of par)</li><li>Soft-toss: #3 Venencia (won Dowager G3 at this track/distance but LP avg 73.3 = 14 below par, faded 3 of last 4), #2 Virgin Colada (90 best turf, AW-focused), #4 Triumphant Spirit (83, 9 below par), #5 Golden Sunshine (89, 3 below par)</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Way to Be Marie</td><td style='text-align:left'>96 (+4)</td><td style='text-align:left'>G3 winner Mar 2026 FG</td><td style='text-align:left'>Won 2 of last 5; 96 best Sep 2025</td><td style='text-align:left'>Kenneally 18%, Saez 19%, JKY/Trn 50% L60</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Virgin Colada</td><td style='text-align:left'>90 (-2)</td><td style='text-align:left'>Stakes/listed, AW-focused</td><td style='text-align:left'>85 LR (AW DQ win), declining turf</td><td style='text-align:left'>Maker 0% KEE</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Venencia</td><td style='text-align:left'>98 (+6, at-distance)</td><td style='text-align:left'>Won Dowager G3 at KEE 1.5mi</td><td style='text-align:left'>Trainer change, fading last 3, LP 73.3</td><td style='text-align:left'>Joseph Jr 11%, Gaffalione</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Triumphant Spirit</td><td style='text-align:left'>83 (-9)</td><td style='text-align:left'>Stepping up to G3</td><td style='text-align:left'>82 LR maiden, weak vs field</td><td style='text-align:left'>Walsh 10% KEE, blinkers on</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Golden Sunshine</td><td style='text-align:left'>89 (-3, within 5)</td><td style='text-align:left'>OC/stakes level</td><td style='text-align:left'>85/84/80 declining, 72d layoff</td><td style='text-align:left'>Harty 14% 46-90d, Torres 0-for-16 meet</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Mrs. Astor</td><td style='text-align:left'>94 (+2)</td><td style='text-align:left'>Multiple G3 wins 2025</td><td style='text-align:left'>Won 2 of last 4; 89/92/94/93 stable</td><td style='text-align:left'>Thomas 21% graded, Ortiz 19%, PP #1</td><td style='text-align:left'>B2</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Just Basking</td><td style='text-align:left'>100 (+8, at-distance)</td><td style='text-align:left'>Won Very One G3 Feb 2026</td><td style='text-align:left'>100 SPD last out G3 Orchid, sharp</td><td style='text-align:left'>Wilkes 17%, Castellano, Graded +0.41 ROI</td><td style='text-align:left'>A2 VALUE</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Literate</td><td style='text-align:left'>88 (-4, within 5 + RULE 21)</td><td style='text-align:left'>G3 level but mostly AW</td><td style='text-align:left'>83 AW LR (failed fav), prior 90/93</td><td style='text-align:left'>Cox 41%, Irad 25%, L60 combo 37%/27%</td><td style='text-align:left'>B3</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Speed Shopper</td><td style='text-align:left'>101 (+9, top)</td><td style='text-align:left'>G3-placed repeatedly</td><td style='text-align:left'>101/86/88 last 3, sharp</td><td style='text-align:left'>Walden 2nd-off-layoff 27%, Velazquez 17%</td><td style='text-align:left'>A1</td></tr></tbody></table></div>
+<h3>Bet tickets</h3>
+<ul><li>WIN: $2 #7 Just Basking</li><li>BOX 7,9: $1 × 2 combos = $2 (RULE 1 — A-tier within 1 SPD)</li><li>STRAIGHT 1/7,9: $1 × 2 = $2 (RULE 3 — B1 on top)</li><li>STRAIGHT 6/7,9: $1 × 2 = $2 (RULE 20 — B2 within 2 SPD of B1: 94 vs 96)</li><li>TRI 7,9/1,6,8/1,2,3,6,8: $0.50 × 24 combos = $12</li></ul>
+<p><strong>Total: ~$20</strong></p>
+<h3>Contingencies</h3>
+<p><strong>If scratches:</strong> If #9 scratches — #7 sole A1, expand TRI to 7/1,6,8/1,2,3,6,8. If #7 scratches — WIN pivot to #9, keep exotics (#9 overlay check). <strong>If off-track:</strong> Turf → dirt flip: #8 Literate (93 AW BSF) upgrades sharply; #6 Mrs. Astor still competitive; #7/#9 lose edge. Rebuild required. <strong>Odds drift:</strong> #7 drifts to 6/1+ → hold. #7 shortens below 5/2 (44% drop) → reduce WIN 50%. #9 below 2/1 → drop WIN if added. <strong>Bias shift:</strong> Turf route P/S split 50/50, LEAN only per RULE 5.</p>
+<hr>
+<h2 id="race-9">Race 9 — 6 Furlongs Dirt · MSW $110k · 11 horses</h2>
+<h3>Pace scenario</h3>
+<p>Mumdoggie or Island Town leads; Hovland stalks; Impractical and National Charter fight for position; late closer Mr. All In tries if pace hot.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>#5 Mumdoggie A-tier (top at-class SR 87, Maker 15% 2nd-off-layoff, Gaffalione 26% E/P sprints) at 3/1 = 25% implied, est 28-32% = 1.1-1.3× <strong>near-miss</strong>. 6 FTS in field inflate variance; no clean B-tier VALUE at 1.5×.</p>
+<hr>
+<h2 id="race-10">Race 10 — 1 1/8 Miles Turf · Alw $130k N2X · 12 horses</h2>
+<h3>Pace scenario</h3>
+<p>Befriended and Strong Destiny press up front; Equitas and Necessity track; contested pace over 1⅛mi turf sets up strong closers Pretty Picture and Massarat to sweep past late.</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #11 Massarat (92 SR, A190000n1x KD Sep 2025) <strong>tied</strong> with #6 Pretty Picture (92 SR, G2 Mrs. Revere Nov 2025)</li><li>Tier assignment: #11 A-tier (A1 VALUE), #6 A-tier (A2)</li><li>#11 has 232-day layoff but fitness signal (Apr 20 Pmm 3f :39 B4/8 work) + Walsh 17% 90-day return angle. RULE 12 A-tier default maintained.</li></ul>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: YES — #11 Massarat: STRONG top at-class turf figure 92 (won A190000 by 3 lengths from far back) + STRONG form cycle (two-race win streak before layoff; fitness confirmed).</li><li>Overlay: YES — #11 Massarat at 5/1 = 17% implied, est ~27% (top figure, dominant last win, Ortiz Jr. 25%) = 1.59×</li><li>Pace readable: YES</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #11 Massarat (A1 VALUE — top turf fig 92, dominant KD allowance win, Walsh 17% 90-day, Ortiz Jr. 25%; 1.59× overlay at 5/1), #6 Pretty Picture (A2 — tied top fig 92, G2 beaten-head 2nd, Brown 24% 90-day return, Prat; priced at fair value 2/1)</li><li>🎯 B-tier: #1 Strong Destiny (B1 — 87/87 win streak on AW, Brisnet #2 + KH Sheet #3 dual-expert, E/P pace)</li><li>Soft-toss (at-par, 2nd+3rd): #8 Unmerited Favor (86 turf within 5 of par), #10 Random Harvest (86 at A110000 KEE, at-par)</li><li>Soft-toss (3rd only): #9 Befriended (first turf, Cox 1st-on-grass 19%), #5 Necessity (first turf, KH speed pick), #4 Awesomesauce (85 turf, class rise, Sharp/Ortiz Jr hot), #2 Classy'n Connected (82 turf, declining), #3 Equitas (80 turf, DQ win, 30/1), #7 Night of Rose (Brazilian G1 winner, no BRIS figs, unknowable), #12 Sarawak Rim (first turf, Arnold/Saez 63% L14)</li><li>Hard-toss: none</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Strong Destiny</td><td style='text-align:left'>87/87 AW best turf 77</td><td style='text-align:left'>OC25k → Alw130k class rise</td><td style='text-align:left'>Two-race win streak, E/P</td><td style='text-align:left'>Sims 10% meet, De La Cruz 11%</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Classy'n Connected</td><td style='text-align:left'>82 turf (-6)</td><td style='text-align:left'>AW-focused, stakes level</td><td style='text-align:left'>74 LR failed fav, declining</td><td style='text-align:left'>Drury Jr 0% L9, Leparoux 0% L9</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Equitas</td><td style='text-align:left'>80 turf (-8)</td><td style='text-align:left'>OC25k → Alw130k</td><td style='text-align:left'>DQ win GP, 83/80/82 stable</td><td style='text-align:left'>Reed 0% L KEE</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Awesomesauce</td><td style='text-align:left'>85 turf (-3)</td><td style='text-align:left'>FG Alw55k → Alw130k</td><td style='text-align:left'>Won last 2 FG, softening 81/81</td><td style='text-align:left'>Sharp/Ortiz Jr L14 29% hot</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Necessity</td><td style='text-align:left'>76 turf (-12)</td><td style='text-align:left'>Alw127k dirt, first turf</td><td style='text-align:left'>93 best dirt, first turf debut</td><td style='text-align:left'>Mott 0% L5 KEE, Torres 0% L16</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Pretty Picture</td><td style='text-align:left'>92 (+4, tied top)</td><td style='text-align:left'>G2 → Alw130k drop</td><td style='text-align:left'>G2 2nd beaten head Nov, 147d layoff</td><td style='text-align:left'>Brown 24% 90+ days, Prat 17%</td><td style='text-align:left'>A2</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Night of Rose</td><td style='text-align:left'>0 BRIS figs</td><td style='text-align:left'>Brazilian G1 winner, first US</td><td style='text-align:left'>265d layoff, unknowable</td><td style='text-align:left'>Lobo 0% KEE, Rosario 11%</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Unmerited Favor</td><td style='text-align:left'>86 (-2 to -4, at-par)</td><td style='text-align:left'>L100k stakes → Alw130k</td><td style='text-align:left'>118d layoff, 4th LR acceptable</td><td style='text-align:left'>McPeek 5% KEE, work Apr 3 sharp</td><td style='text-align:left'>Soft-toss (at-par)</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Befriended</td><td style='text-align:left'>89 AW, 0 turf</td><td style='text-align:left'>OC40k → Alw130k class rise</td><td style='text-align:left'>DQ'd from win, form good AW</td><td style='text-align:left'>Cox 41% KEE hot, 1st-grass 19% LEAN</td><td style='text-align:left'>Soft-toss (first turf)</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>Random Harvest</td><td style='text-align:left'>86 (at-par KEE Oct24)</td><td style='text-align:left'>OC32k → Alw130k</td><td style='text-align:left'>2nd last two, consistent</td><td style='text-align:left'>Velazquez 17%, Toner 2nd-off 15%</td><td style='text-align:left'>Soft-toss (at-par)</td></tr><tr><td style='text-align:left'>11</td><td style='text-align:left'>Massarat</td><td style='text-align:left'>92 (+4, tied top)</td><td style='text-align:left'>A190000 → Alw130k</td><td style='text-align:left'>Dominant win LR (232d ago), fit works</td><td style='text-align:left'>Walsh 17% 90-day, Ortiz Jr 25%</td><td style='text-align:left'>A1 VALUE</td></tr><tr><td style='text-align:left'>12</td><td style='text-align:left'>Sarawak Rim</td><td style='text-align:left'>0 turf figs, 93 dirt</td><td style='text-align:left'>BC Distaff G1 → Alw130k turf</td><td style='text-align:left'>69 LR failed, first turf</td><td style='text-align:left'>Arnold 33% KEE, Arnold/Saez L14 63%</td><td style='text-align:left'>Soft-toss (first turf)</td></tr></tbody></table></div>
+<h3>Bet tickets</h3>
+<ul><li>WIN: $2 #11 Massarat</li><li>KEY BOX 6,11: $1 × 2 combos = $2 (A-tier box)</li><li>STRAIGHT 1/6,11: $1 × 2 = $2 (RULE 3 — B1 on top)</li><li>TRI 6,11/1,6,8,10,11/1,5,6,8,9,10,11: $0.50 × 40 combos = $20</li></ul>
+<p><strong>Total: ~$26</strong></p>
+<h3>Contingencies</h3>
+<p><strong>If scratches:</strong> If #6 scratches → #11 sole A-tier, rebuild with STRAIGHT 11/1,8,10; upgrade #9 Befriended to 2nd slot; total shrinks ~$14. If #11 scratches → overlay gone, re-evaluate as PASS. <strong>If off-track (dirt):</strong> #1 Strong Destiny and #5 Necessity upgrade; #6 Pretty Picture (0 dirt) hard-toss; full rebuild required. <strong>Odds drift:</strong> #11 bet below 3/1 (40% drop) → drop WIN, keep exotics. #6 drifts to 4/1+ → add STRAIGHT 6/1,11 overlay coverage. <strong>Bias shift:</strong> Turf route meet favors E/P (IV 3.96) and posts 4-7 (IV 2.73). #6 post 6 well-placed. LEAN only.</p>
+<footer class="page">Generated by the horses analyzer · read on any device · share freely</footer>
+</main>
+</body>
+</html>
