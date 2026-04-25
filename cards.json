@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-04-25",
+    "track": "CD",
+    "track_name": "Churchill Downs",
+    "filename": "cards/2026-04-25-CD.html",
+    "plays": 6,
+    "total_cost": 142.5
+  },
+  {
     "date": "2026-04-24",
     "track": "AQU",
     "track_name": "Aqueduct",
@@ -22,14 +30,6 @@
     "filename": "cards/2026-04-26-CD.html",
     "plays": 2,
     "total_cost": 46
-  },
-  {
-    "date": "2026-04-25",
-    "track": "CD",
-    "track_name": "Churchill Downs",
-    "filename": "cards/2026-04-25-CD.html",
-    "plays": 4,
-    "total_cost": 109.5
   },
   {
     "date": "2026-04-23",
