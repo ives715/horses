@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-04-26",
+    "track": "CD",
+    "track_name": "Churchill Downs",
+    "filename": "cards/2026-04-26-CD.html",
+    "plays": 2,
+    "total_cost": 28
+  },
+  {
     "date": "2026-04-25",
     "track": "CD",
     "track_name": "Churchill Downs",
@@ -22,14 +30,6 @@
     "filename": "cards/2026-04-24-KEE.html",
     "plays": 3,
     "total_cost": 58
-  },
-  {
-    "date": "2026-04-26",
-    "track": "CD",
-    "track_name": "Churchill Downs",
-    "filename": "cards/2026-04-26-CD.html",
-    "plays": 2,
-    "total_cost": 46
   },
   {
     "date": "2026-04-23",
