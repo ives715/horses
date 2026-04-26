@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AQU · 2026-04-26</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --fg: #1a1a1a;
+  --fg-soft: #555;
+  --accent: #1f6feb;
+  --rule: #e5e5ea;
+  --code-bg: #f0f0f2;
+  --tier-a: #0a7d3e;
+  --tier-b: #b36b00;
+  --tier-c: #888;
+  --warn: #b42020;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --fg: #e6edf3;
+    --fg-soft: #9ca3af;
+    --accent: #79c0ff;
+    --rule: #30363d;
+    --code-bg: #1f2937;
+    --tier-a: #3fb950;
+    --tier-b: #d29922;
+    --tier-c: #8b949e;
+    --warn: #ff7b72;
+    --card: #161b22;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+header.page {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+header.page .eyebrow {
+  font-size: 13px;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+header.page h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+h1, h2, h3, h4, h5 {
+  color: var(--fg);
+  line-height: 1.25;
+  margin: 1.6em 0 0.5em;
+}
+h1 { font-size: 24px; }
+h2 {
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 17px; }
+h4 { font-size: 15px; color: var(--fg-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+p, ul, ol, blockquote { margin: 0 0 1em; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: var(--fg); }
+em { color: var(--fg-soft); }
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--code-bg);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 4px 16px;
+  color: var(--fg-soft);
+  background: var(--bg-soft);
+  border-radius: 0 6px 6px 0;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2em 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1em -4px;
+  border-radius: 6px;
+}
+table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+/* Keep post time and cost columns from wrapping */
+td:nth-child(2), td:nth-child(5) { white-space: nowrap; }
+th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+tbody tr:hover { background: var(--bg-soft); }
+.strong-play {
+  color: var(--tier-a);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+footer.page {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--fg-soft);
+}
+/* Tier coloring — applied when header text contains the marker */
+h3:has(strong) { color: var(--fg); }
+/* mobile */
+@media (max-width: 520px) {
+  .wrap { padding: 16px 14px 48px; }
+  header.page h1 { font-size: 22px; }
+  h1 { font-size: 21px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  table { font-size: 13px; }
+  th, td { padding: 6px 8px; }
+}
+/* print */
+@media print {
+  body { background: #fff; color: #000; }
+  .wrap { max-width: 100%; padding: 0; }
+  h2 { break-after: avoid; }
+  table, pre, blockquote { break-inside: avoid; }
+  footer.page { display: none; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="page">
+
+<h1>AQU · 2026-04-26</h1>
+</header>
+<h2>Quick Picks</h2>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Race</th><th style='text-align:left'>Post</th><th style='text-align:left'>Status</th><th style='text-align:left'>Tickets</th><th style='text-align:left'>Cost</th></tr></thead><tbody><tr onclick="location.href='#race-1'" style="cursor:pointer"><td style='text-align:left'><a href="#race-1">R1</a></td><td style='text-align:left'>12:10p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-2'" style="cursor:pointer"><td style='text-align:left'><a href="#race-2">R2</a></td><td style='text-align:left'>12:38p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-3'" style="cursor:pointer"><td style='text-align:left'><a href="#race-3">R3</a></td><td style='text-align:left'>1:11p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-4'" style="cursor:pointer"><td style='text-align:left'><a href="#race-4">R4</a></td><td style='text-align:left'>1:44p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-5'" style="cursor:pointer"><td style='text-align:left'><a href="#race-5">R5</a></td><td style='text-align:left'>2:16p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-6'" style="cursor:pointer"><td style='text-align:left'><a href="#race-6">R6</a></td><td style='text-align:left'>2:48p</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>WIN #10 $2 · KEY BOX 10/1,7,9 $6 · KEY BOX 1/7,9 $4 · STRAIGHT 9/1,10 $2 · STRAIGHT 7/1,10 $2 · TRI 1,10/1,2,7,9,10,13/1,2,7,9,10,13 $20 (40×$0.50)</td><td style='text-align:left'>$36</td></tr><tr onclick="location.href='#race-7'" style="cursor:pointer"><td style='text-align:left'><a href="#race-7">R7</a></td><td style='text-align:left'>3:21p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-8'" style="cursor:pointer"><td style='text-align:left'><a href="#race-8">R8</a></td><td style='text-align:left'>3:53p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr onclick="location.href='#race-9'" style="cursor:pointer"><td style='text-align:left'><a href="#race-9">R9</a></td><td style='text-align:left'>4:25p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><strong>Total</strong></td><td style='text-align:left'></td><td style='text-align:left'></td><td style='text-align:left'></td><td style='text-align:left'><strong>$36</strong></td></tr></tbody></table></div>
+<hr>
+<h2 id="race-1">Race 1 — 6f dirt · Starter Allowance $50K · 7 horses</h2>
+<h3>Pace scenario</h3>
+<p>#2 Majestic Return or #3 Sheer Will sets/stalks; early-biased dirt favors E-types pressing for the wire; closing margin limited at 6f.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Top SR #2 Majestic Return (92 vs late-pace par 87, +5) demoted to B-tier per RULE 12 criterion #2 (0-for-N at par-class with 26% ITM — under 30% habitual-placer threshold). At 3/1 = 25% implied, est ~27–30% = ~1.1× — below 1.5× gate. No A-tier with 2+ STRONG core signals.</p>
+<h3>Quick summary</h3>
+<p>Post (CT): 12:10p Tickets: — (PASS) Total: —</p>
+<hr>
+<h2 id="race-2">Race 2 — 1m dirt · Clm $45K · 7 horses</h2>
+<h3>Pace scenario</h3>
+<p>Emirates Road, Unlimitedpotential, Mr. Papagiorgio battle for early speed; Peek and Frizzante stalk; winning move when speed duels.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Emirates Road 8/5 chalk (Prime Power #1, top at-class SPD 105) priced at fair value — no overlay. Unlimitedpotential 7/2 with class drop is near-miss 1.3-1.4×. No clean B-tier VALUE at 1.5×.</p>
+<h3>Quick summary</h3>
+<p>Post (CT): 12:38p Tickets: — (PASS) Total: —</p>
+<hr>
+<h2 id="race-3">Race 3 — 6½f dirt · Clm $30K · 7 horses</h2>
+<h3>Pace scenario</h3>
+<p>Will Not Be Swayed and Always Angels battle early; Khali Magic presses; Geez Eloise/Rachel's Rock stalk; winner emerges from speed/stalker pack.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Top SR #3 Khali Magic (95 vs par 93) demoted to B-tier per RULE 12 criterion #2 (0-for-12 at par-class, all recent 4th/5th/6th, late-pace 65 = dead last in field forcing wide rally). At 6/1 = 14% implied, est ~18% = 1.3× near-miss. No A-tier with 2+ STRONG signals; Rachel's Rock 1 STRONG + 1 LEAN = soft-toss not B-tier.</p>
+<h3>Quick summary</h3>
+<p>Post (CT): 1:11p Tickets: — (PASS) Total: —</p>
+<hr>
+<h2 id="race-4">Race 4 — 1m dirt · Clm $10K · 8 horses</h2>
+<h3>Pace scenario</h3>
+<p>Floge or Santagata leads inside; Curlin's Magic stalks from post 4; closes over tiring front-runners.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p><strong>Curlin's Magic 1/1 ML — A-tier (class drop Clm30k→Clm10k STRONG + best at-class figure 84 STRONG, +7 par)</strong> but at 1/1 = 50% implied, overlay requires 75% true win%. Recent form (5th, 6th, 6th, 5th at higher levels) does NOT support 75%. Realistic ~50-55% = 1.0-1.1× near-miss. No B-tier VALUE clearing 1.5×.</p>
+<h3>Quick summary</h3>
+<p>Post (CT): 1:44p Tickets: — (PASS) Total: —</p>
+<hr>
+<h2 id="race-5">Race 5 — 1-1/16m turf · Clm $55K NW2L · 16 horses</h2>
+<h3>Pace scenario</h3>
+<p>Multiple E/EP types (Shellac, Moment's Notice, Solomini's World, McDiesel) contest fast pace; pressers/stalkers (Sandborn, Kulapat) capitalize in upper stretch.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Top SR #1 Sandborn (89 turf, +4 par) at 5/2 = 29% implied; est ~30-32% in 16-horse field = ~1.05-1.10× — below 1.5×. Multiple first-time-turf entrants (Shellac 2/1 ML, Moment's Notice 7/2, Joe West, McDiesel, Solomini's World) inflate chaos without exploitable price on any contender. No clean overlay.</p>
+<h3>Quick summary</h3>
+<p>Post (CT): 2:16p Tickets: — (PASS) Total: —</p>
+<hr>
+<h2 id="race-6">Race 6 — 6f outer turf · F&amp;M Clm $55K NW2L · 15 horses</h2>
+<h3>Pace scenario</h3>
+<p>Multiple E/EP types (#1 Artistic Success, #9 Heads in Beds, #14 Dat Dares Right, #6 Combatant's Song, #8 Oklahoma Smoke) contest the early lead; weekly outer-turf P-impact 2.68 sets up #10 Brokealltherules and #4 Blame the Banker to sweep off a fast pace in the stretch.</p>
+<h3>PLAY/PASS: PLAY</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo, today's surface): #10 Brokealltherules (87T at MC50000 6f turf AQU, Nov 2025 win — at-class turf vs par 79)</li><li>Tier assignment: A-tier (A1)</li><li>No demotion — figure +8 above par, trainer active, workouts present (4/21, 4/06, 4f :49 range), 1-1-0 turf record. No RULE 12 criterion fires.</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>Brisnet picks top 3: not available in PP-only run (no DRF/ETD ingest)</li><li>KH Sheet picks top 3: not available</li><li>Per RULE 21: not applicable — only one expert source from prompt context (#1 Artistic Success was instant-program Brisnet pick)</li></ul>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: YES — #10 Brokealltherules: (1) top at-class turf SR 87 vs par 79 (+8); (2) Dutrow Jr 20% trainer; (3) P-style with weekly P-bias 2.68 on AQU outer turf</li><li>Overlay: YES — #10 at 7/2 = 22% implied, est ~32-33% (top figure + Dutrow + bias-aligned pace setup) = ~1.5× — minimal but clears gate</li><li>Pace readable: YES</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #10 Brokealltherules (A1 VALUE — top at-class turf SR, Dutrow 20%, P-style hot pace), #1 Artistic Success (A2 — 84T at OC50k above par, class drop to NW2L claiming, sharp works)</li><li>🎯 B-tier: #9 Heads in Beds (B1 — 87T maiden win, Saffie/Franco 27%/22% hot combo), #7 Boston's Phinest (B2 — 85T stakes, 8-mo layoff, Castellano/Brown), #4 Blame the Banker (B3 — 82T best, P-style, 2nd-off-layoff angle)</li><li>Soft-toss (at-par 2nd+3rd): #13 Spirit of Esther (81T = +2 par), #2 Saucy Six (75T = -4 par, within 5)</li><li>Soft-toss (3rd only): #11 Big Air (72T, -7 par; Rice/Prat connection LEAN), #3 Midnite Ginny (first turf), #8 Oklahoma Smoke (first turf, unknowable profile), #12 Circuit Court (only turf 55, surface switch), #15 Itwillbefun (first turf), #6 Combatant's Song (first turf), #5 Furry Fox (first turf)</li><li>Hard-toss: #14 Dat Dares Right (61T = -18 par on today's surface; declining figures; RULE 13 criterion #1 satisfied)</li></ul>
+<h3>At-par soft-toss audit</h3>
+<ul><li>#13 Spirit of Esther: 81T vs par 79 = +2 → at-par, included in 2nd slot ✓</li><li>#2 Saucy Six: 75T vs par 79 = -4 (within 5) → at-par, included in 2nd slot ✓</li><li>#11 Big Air: 72T vs par 79 = -7 → situational only, 3rd slot</li><li>All other soft-tosses are first-turf or surface-switch → situational, 3rd slot only</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par (turf)</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Artistic Success</td><td style='text-align:left'>84T (+5 par); last 82T</td><td style='text-align:left'>Class drop to NW2L claiming</td><td style='text-align:left'>1-3-0 turf, layoff with sharp works</td><td style='text-align:left'>Sharp 26% claiming</td><td style='text-align:left'>A2</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Saucy Six</td><td style='text-align:left'>75T best (-4 par)</td><td style='text-align:left'>At-level NW2L</td><td style='text-align:left'>1-4-3 life, consistent ITM</td><td style='text-align:left'>Keithan 0% trainer</td><td style='text-align:left'>Soft-toss (at-par)</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Midnite Ginny</td><td style='text-align:left'>No turf starts; 73 dirt</td><td style='text-align:left'>Class rise from Mdn</td><td style='text-align:left'>3yo, 1-0-0; first Lasix+blinkers</td><td style='text-align:left'>Sanchez 0% on grass</td><td style='text-align:left'>Soft-toss (situational)</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Blame the Banker</td><td style='text-align:left'>82T (+3 par)</td><td style='text-align:left'>Class drop to NW2L claiming</td><td style='text-align:left'>2nd-off-layoff angle; P-style</td><td style='text-align:left'>Synnefias 2% base; +19% 2nd-off-layoff</td><td style='text-align:left'>B3</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Furry Fox</td><td style='text-align:left'>No turf; 72 dirt best</td><td style='text-align:left'>Dirt-to-turf</td><td style='text-align:left'>12 starts, 1-1-2; declining</td><td style='text-align:left'>Samsundar 0% D→T</td><td style='text-align:left'>Soft-toss (first turf)</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Combatant's Song</td><td style='text-align:left'>No turf; 66 dirt best</td><td style='text-align:left'>Class rise from MC20k</td><td style='text-align:left'>4 starts; 1st turf</td><td style='text-align:left'>Sacco 0% 1st on grass</td><td style='text-align:left'>Soft-toss (first turf)</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Boston's Phinest</td><td style='text-align:left'>85T (+6 par); 82T last</td><td style='text-align:left'>Stakes-to-claiming class drop</td><td style='text-align:left'>8-mo layoff; works adequate</td><td style='text-align:left'>Brown 17%; Castellano 14% turf</td><td style='text-align:left'>B2</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Oklahoma Smoke</td><td style='text-align:left'>No turf; 77 dirt maiden win</td><td style='text-align:left'>Mdn dirt → NW2L turf</td><td style='text-align:left'>2 starts; first turf, unknowable</td><td style='text-align:left'>Abreu 17%; 1st-grass 20% +5.12 ROI</td><td style='text-align:left'>Soft-toss (situational)</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Heads in Beds</td><td style='text-align:left'>87T (+8 par at maiden level); 83T last</td><td style='text-align:left'>Maiden → NW2L class rise</td><td style='text-align:left'>5 starts, 1-0-3; consistent ITM</td><td style='text-align:left'>Saffie Jr 27%; Franco 22%; 1st-w/-trainer 29%</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>Brokealltherules</td><td style='text-align:left'>87T (+8 par) WIN at MC50k 6f turf AQU</td><td style='text-align:left'>At-class turf returning</td><td style='text-align:left'>Nov 2025 turf win; 4-mo layoff; consistent works</td><td style='text-align:left'>Dutrow Jr 20%; P-style; weekly P-bias 2.68</td><td style='text-align:left'>A1 VALUE</td></tr><tr><td style='text-align:left'>11</td><td style='text-align:left'>Big Air</td><td style='text-align:left'>72T best (-7 par)</td><td style='text-align:left'>Primarily dirt; first AQU turf sprint</td><td style='text-align:left'>Dirt 83-87; turf poor</td><td style='text-align:left'>Rice 25%; Prat 33%; D→T Rice 6%</td><td style='text-align:left'>Soft-toss (situational)</td></tr><tr><td style='text-align:left'>12</td><td style='text-align:left'>Circuit Court</td><td style='text-align:left'>55T only (-24 par); 82 dirt</td><td style='text-align:left'>Class drop; 2nd off layoff</td><td style='text-align:left'>Dirt 82, only turf 55</td><td style='text-align:left'>Bartkowski 14%; 2nd-off-layoff 25%</td><td style='text-align:left'>Soft-toss (situational)</td></tr><tr><td style='text-align:left'>13</td><td style='text-align:left'>Spirit of Esther</td><td style='text-align:left'>81T best (+2 par)</td><td style='text-align:left'>At-level NW2L; consistent ITM turf</td><td style='text-align:left'>25 starts, 1-8-3; turf 0-2-1</td><td style='text-align:left'>Kantarmaci 12%</td><td style='text-align:left'>Soft-toss (at-par)</td></tr><tr><td style='text-align:left'>14</td><td style='text-align:left'>Dat Dares Right</td><td style='text-align:left'>61T only (-18 par)</td><td style='text-align:left'>Class rise from Clm20k</td><td style='text-align:left'>Last 50 SPD, 6yo declining</td><td style='text-align:left'>Keithan 0%; rider TBA</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>15</td><td style='text-align:left'>Itwillbefun</td><td style='text-align:left'>No turf; 84 dirt</td><td style='text-align:left'>Class rise to NW2L turf</td><td style='text-align:left'>19 starts; recent dirt 53-69; first turf</td><td style='text-align:left'>Kantarmaci 0% D→T</td><td style='text-align:left'>Soft-toss (first turf)</td></tr></tbody></table></div>
+<p><strong>Field-completeness:</strong> 15 horses, 15 rows. ✓</p>
+<h3>Bet tickets</h3>
+<ul><li>WIN: $2 #10 Brokealltherules</li><li>KEY BOX 10/1,7,9: $1 × 6 combos = $6</li><li>KEY BOX 1/7,9: $1 × 4 combos = $4</li><li>STRAIGHT 9/1,10: $1 × 2 combos = $2 (RULE 3 — B1 on top)</li><li>STRAIGHT 7/1,10: $1 × 2 combos = $2 (RULE 20 — B1/B2 within 2 SPD)</li><li>TRI 1,10/1,2,7,9,10,13/1,2,7,9,10,13: $0.50 × 40 combos = $20<ul><li>(1,2): 3rd={7,9,10,13}=4 · (1,7): 3rd={2,9,10,13}=4 · (1,9): 3rd={2,7,10,13}=4</li><li>(1,10): 3rd={2,7,9,13}=4 · (1,13): 3rd={2,7,9,10}=4</li><li>(10,1): 3rd={2,7,9,13}=4 · (10,2): 3rd={1,7,9,13}=4 · (10,7): 3rd={1,2,9,13}=4</li><li>(10,9): 3rd={1,2,7,13}=4 · (10,13): 3rd={1,2,7,9}=4</li><li>10 pairs × 4 = 40 combos</li></ul></li></ul>
+<p><strong>Total: $36</strong></p>
+<p>(Per RULE 9: at-par soft-tosses #2 Saucy Six and #13 Spirit of Esther included in 2nd slot, not just 3rd. Increases TRI cost from $12 to $20.)</p>
+<h3>Contingencies</h3>
+<p><strong>If #10 scratches:</strong> race becomes PASS — cancel all tickets. <strong>If #9 scratches:</strong> drop STRAIGHT 9/1,10 + KEY BOX 10/1,7,9 → rebuild as KEY BOX 10/1,7 + STRAIGHT 7/1,10. <strong>If off-turf to dirt:</strong> PASS (Brokealltherules' dirt figure 67 is below par; restructure not viable). <strong>Odds drift:</strong> #10 to 5/1+ at post → maintain all tickets, overlay strengthens. #10 below 5/2 (35%+ drop from 7/2) → drop WIN, keep exotics per RULE 10. #11 Big Air steam ≥35% → potential RULE 22 trigger in figure-sparse environment, but #11 already in 3rd slot. <strong>Bias:</strong> weekly P-bias 2.68 favors #10's running style; LEAN per RULE 6.</p>
+<hr>
+<h2 id="race-7">Race 7 — 7f dirt · Allowance OClm $100K · 7 horses</h2>
+<h3>Pace scenario</h3>
+<p>#6 Ignite the Light and #3 Raise the Bar battle early via elite E2 (107 each); #2 Toxic Gray and #1 Donegal Surges press; late-pace types #7 Bourbon Day and #5 Bernie's Mitts make closing runs.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Top at-class SR #6 Ignite the Light (105 vs par 97, +8) qualifies as A-tier at 3/1 ML = 25% implied, est ~30-32% true win% = <strong>1.20-1.28× near-miss</strong> — below 1.5× gate. No other horse clears overlay either; Raise the Bar's E2 107 is offset by LP 84 (-11 par) = front-end fader.</p>
+<h3>Quick summary</h3>
+<p>Post (CT): 3:21p Tickets: — (PASS) Total: —</p>
+<hr>
+<h2 id="race-8">Race 8 — 1m turf · Memories of Silver Stakes $150K · 11 horses (3yo F)</h2>
+<h3>Pace scenario</h3>
+<p>Multiple first-turf early types (#8 Imperatrice, #11 Point of Reference, #9 Oscar Bound) contest a hot pace; presser #3 Ultimate Love (P2) tracks 2nd flight and uncoils late; closer #7 Quiet Street (S3) faces hostile S-bias (week S impact 0.00, 0 wins in 6).</p>
+<h3>PLAY/PASS: PASS</h3>
+<p><strong>A-tier #3 Ultimate Love</strong> (89T vs par 87, +2; class drop from BC G1; sharp B2/17 work signal) at 2/1 = 33% implied; est ~40% true win% = <strong>1.21× near-miss</strong> — below 1.5× gate. Market efficiently priced the headline horse. No B-tier VALUE clears 1.5× either (Quiet Street 4/1 ~1.0-1.25× hostile to S-bias; Smexy 5/1 first route attempt; Brown's two entries Fitz Right 9/2 and Point of Reference 3/1 both have figure-deficit concerns).</p>
+<h3>Quick summary</h3>
+<p>Post (CT): 3:53p Tickets: — (PASS) Total: —</p>
+<hr>
+<h2 id="race-9">Race 9 — 6f outer turf · NY-bred MCL $50K · 15 horses</h2>
+<h3>Pace scenario</h3>
+<p>Multiple early types (#1 Out of the Fog, #9 Mykonos, #15 Chris's Song, #11 Pretrial Statement) contest the front in a 15-horse outer-turf sprint with first-time turfers filling slots; pace collapse, winner emerges from stalker-presser group.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Chalk #10 Twenty One Red (5/2, best turf 87 at Mdn 90k but only 74 at MC50k 6f turf = -6 par) is 0-for-8 with two beaten-favorite efforts; at 5/2 = 29% implied with figures below par at exact conditions, no overlay shape. #11 Pretrial Statement (83T at-class but route-only, declining 83→67→67) and chaos longshots (#13 Golden Joker FTS, #15 Chris's Song first turf w/ 7-mo layoff) lack figure evidence for clean B-tier VALUE at 1.5×. 15-horse first-turf-dominated MCL = chaos territory.</p>
+<h3>Quick summary</h3>
+<p>Post (CT): 4:25p Tickets: — (PASS) Total: —</p>
+<footer class="page">Generated by the horses analyzer · read on any device · share freely</footer>
+</main>
+</body>
+</html>

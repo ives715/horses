@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-04-26",
+    "track": "AQU",
+    "track_name": "Aqueduct",
+    "filename": "cards/2026-04-26-AQU.html",
+    "plays": 1,
+    "total_cost": 36
+  },
+  {
+    "date": "2026-04-26",
     "track": "CD",
     "track_name": "Churchill Downs",
     "filename": "cards/2026-04-26-CD.html",
