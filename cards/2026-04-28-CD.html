@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Churchill Downs — Tuesday 2026-04-28 (Pre-Thurby calibration card)</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --fg: #1a1a1a;
+  --fg-soft: #555;
+  --accent: #1f6feb;
+  --rule: #e5e5ea;
+  --code-bg: #f0f0f2;
+  --tier-a: #0a7d3e;
+  --tier-b: #b36b00;
+  --tier-c: #888;
+  --warn: #b42020;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --fg: #e6edf3;
+    --fg-soft: #9ca3af;
+    --accent: #79c0ff;
+    --rule: #30363d;
+    --code-bg: #1f2937;
+    --tier-a: #3fb950;
+    --tier-b: #d29922;
+    --tier-c: #8b949e;
+    --warn: #ff7b72;
+    --card: #161b22;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+header.page {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+header.page .eyebrow {
+  font-size: 13px;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+header.page h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+h1, h2, h3, h4, h5 {
+  color: var(--fg);
+  line-height: 1.25;
+  margin: 1.6em 0 0.5em;
+}
+h1 { font-size: 24px; }
+h2 {
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 17px; }
+h4 { font-size: 15px; color: var(--fg-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+p, ul, ol, blockquote { margin: 0 0 1em; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: var(--fg); }
+em { color: var(--fg-soft); }
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--code-bg);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 4px 16px;
+  color: var(--fg-soft);
+  background: var(--bg-soft);
+  border-radius: 0 6px 6px 0;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2em 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1em -4px;
+  border-radius: 6px;
+}
+table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+/* Keep post time and cost columns from wrapping */
+td:nth-child(2), td:nth-child(5) { white-space: nowrap; }
+th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+tbody tr:hover { background: var(--bg-soft); }
+.strong-play {
+  color: var(--tier-a);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+footer.page {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--fg-soft);
+}
+/* Tier coloring — applied when header text contains the marker */
+h3:has(strong) { color: var(--fg); }
+/* mobile */
+@media (max-width: 520px) {
+  .wrap { padding: 16px 14px 48px; }
+  header.page h1 { font-size: 22px; }
+  h1 { font-size: 21px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  table { font-size: 13px; }
+  th, td { padding: 6px 8px; }
+}
+/* print */
+@media print {
+  body { background: #fff; color: #000; }
+  .wrap { max-width: 100%; padding: 0; }
+  h2 { break-after: avoid; }
+  table, pre, blockquote { break-inside: avoid; }
+  footer.page { display: none; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="page">
+
+<h1>Churchill Downs — Tuesday 2026-04-28 (Pre-Thurby calibration card)</h1>
+</header>
+<p><strong>Stem:</strong> cdx0428y · <strong>Card type:</strong> Calibration (no bankroll cap applied — see what the framework produces)</p>
+<p><strong>Card-wide note:</strong> First live card running the full post-CD-Saturday rule stack: RULE 22 (live steam in figure-sparse), RULE 23 (Expert Consensus Floor), RULE 24 (Expert Dissent Override on RULE 12), RULE 20 TRI extension, T1-E (B-tier overlay multiplier surfacing), T2-A (single-bad-figure trip-excuse carve-out).</p>
+<p><strong>PLAY/PASS summary:</strong> 3 PLAY · 6 PASS · <strong>$66 total</strong> recommended (post audit-correction; agents under-counted R7/R9 TRI combos)</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>R</th><th style='text-align:left'>Call</th><th style='text-align:left'>Top pick</th><th style='text-align:left'>Tier</th><th style='text-align:left'>ML</th><th style='text-align:right'>Overlay</th><th style='text-align:right'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>#2 Sing a Little Song</td><td style='text-align:left'>A1 VALUE</td><td style='text-align:left'>8/5</td><td style='text-align:right'>1.56×</td><td style='text-align:right'>$17</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>All-FTS maiden, no figures</td><td style='text-align:left'></td><td style='text-align:right'></td><td style='text-align:right'>—</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>Top SR (Spying) layoff-demoted</td><td style='text-align:left'></td><td style='text-align:right'></td><td style='text-align:right'>—</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>Wisconsin Gal A near-miss 1.1×</td><td style='text-align:left'></td><td style='text-align:right'></td><td style='text-align:right'>—</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>Joe's Candy A near-miss 1.27–1.45×</td><td style='text-align:left'></td><td style='text-align:right'></td><td style='text-align:right'>—</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>16h turf, no clean A or B≥1.5×</td><td style='text-align:left'></td><td style='text-align:right'></td><td style='text-align:right'>—</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>#6 Comes a Time + #3 McIlroy</td><td style='text-align:left'>A1 + A2 dual</td><td style='text-align:left'>3/1 / 9/2</td><td style='text-align:right'>1.4–1.7× / 1.7–1.9×</td><td style='text-align:right'>$12</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>Multi-expert chalk no overlay</td><td style='text-align:left'></td><td style='text-align:right'></td><td style='text-align:right'>—</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>#4 Bacio + #1 Heart Headed</td><td style='text-align:left'>A1 + B1 VALUE</td><td style='text-align:left'>8/5 / 8/1</td><td style='text-align:right'>1.15× / 2.3–2.7×</td><td style='text-align:right'>$37</td></tr></tbody></table></div>
+<p><strong>Calibration takeaways before tickets are even posted:</strong></p>
+<ul><li>6 PASS / 9 races (67%) — much higher pass rate than the 0-PASS pre-compaction run. Rules biting harder.</li><li>R9 Heart Headed is the headline test — textbook T1-E surface (B-tier with 2+ STRONG CORE at 2.3× overlay). The rule was shipped specifically to catch this profile.</li><li>R1 RULE 3 firing: A1 is #2, but B1 #3 (top SR by figure) carries the WIN-slot STRAIGHT.</li><li>R7 dual A-tier (Comes a Time + McIlroy) — both dual-expert backed, both with 1.5×+ overlay. Cleanest PLAY of the day on paper.</li></ul>
+<hr>
+<h2 id="race-1">Race 1 — 6f dirt · Clm $50,000 · 6 horses</h2>
+<h3>Pace scenario</h3>
+<p>Front-runner #6 Danzig's Dora (early speed, hot jockey) leads or pressures early; presser-stalker #2 Sing a Little Song angles in from 2nd call under honest pace, wins in stretch.</p>
+<h3>PLAY/PASS: PLAY</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #3 C'Est Cheese (92 SR vs par 85 = +7)</li><li>Tier assignment: B-tier (figure-strong but 254-day layoff — B1 not A-tier)</li><li>RULE 12 surface-qualifier note: pre-layoff 79→72→84 sequence has the 72 on turf, so the "decline 3-in-a-row at par-class on dirt" condition is not met. No valid demotion — but layoff weight prevents A-tier.</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>Brisnet Handicapper picks top 3: #2, #6, #3</li><li>KH Sheet picks top 3: #2, #6, #3</li><li>TwinSpires Expert: not retrieved (KH + Brisnet sufficient for RULE 23 floor: 2+ confirmed)</li><li>Horses on BOTH lists: #2, #3, #6 — all already in A/B tier</li></ul>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: YES — #2 Sing a Little Song: at-par +1, form up 79→81→85, hot jockey Ortiz Jr, presser fits honest pace, dual-expert</li><li>A-tier overlay: #2 at 8/5 = 16.7% implied, est ~26% true = <strong>1.56×</strong> ✓</li><li>B-tier overlay scan:<ul><li>#3 C'Est Cheese: 3/1 = 25%, est ~29% = 1.16× — fails RULE 19</li><li>#6 Danzig's Dora: 2/1 = 33%, est ~20% = 0.6× — no</li></ul></li><li>Pace readable: YES</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #2 Sing a Little Song (A1 VALUE)</li><li>🎯 B-tier: #3 C'Est Cheese (B1 — figure merit, layoff)</li><li>Soft-toss (at-par, 2nd+3rd): #6 Danzig's Dora (80 = par), #5 Letmenowhenurready (85 dirt at-class = par)</li><li>Soft-toss (3rd only): #4 Mascara (-6 declining), #1 Special Sauce (-9)</li></ul>
+<h3>At-par soft-toss audit</h3>
+<ul><li>#6 Danzig's Dora: 80 vs par 85 = -5 (at-par) → 2nd + 3rd slot</li><li>#5 Letmenowhenurready: 85 dirt vs par 85 = par → 2nd + 3rd slot</li><li>#4 Mascara: 79 vs par 85 = -6 (outside) → 3rd only</li><li>#1 Special Sauce: 76 dirt at-class = -9 → 3rd only</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Special Sauce</td><td style='text-align:left'>76 (-9)</td><td style='text-align:left'>Clm $50k drop</td><td style='text-align:left'>70 off-track</td><td style='text-align:left'>Garcia 9%</td><td style='text-align:left'>Soft-toss (3rd)</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Sing a Little Song</td><td style='text-align:left'>86 (+1)</td><td style='text-align:left'>OC62.5k→Clm drop</td><td style='text-align:left'>79→81→85 up</td><td style='text-align:left'>Wilkes 19%, Ortiz hot</td><td style='text-align:left'>A1 VALUE</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>C'Est Cheese</td><td style='text-align:left'>92 at-class (+7), 84 dist</td><td style='text-align:left'>OC75k→Clm drop</td><td style='text-align:left'>254d layoff</td><td style='text-align:left'>Beckman 20% on 90+d</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Mascara</td><td style='text-align:left'>79 (-6), declining</td><td style='text-align:left'>Turf→Dirt</td><td style='text-align:left'>76→74→68</td><td style='text-align:left'>Troiani 9%</td><td style='text-align:left'>Soft-toss (3rd)</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Letmenowhenurready</td><td style='text-align:left'>85 (par)</td><td style='text-align:left'>Mdn→Clm</td><td style='text-align:left'>27 turf last (mixed)</td><td style='text-align:left'>Reed 14%</td><td style='text-align:left'>Soft-toss (at-par)</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Danzig's Dora</td><td style='text-align:left'>80 (par)</td><td style='text-align:left'>Str Allow→Clm</td><td style='text-align:left'>80→78→76 fresh</td><td style='text-align:left'>Kenneally 67% CD</td><td style='text-align:left'>Soft-toss (at-par)</td></tr></tbody></table></div>
+<h3>Bet tickets</h3>
+<ul><li>WIN: $2 #2</li><li>STRAIGHT 2/3,6: $1 (2 combos = $2)</li><li>STRAIGHT 3/2,6: $1 (RULE 3 — B1 in WIN slot, 2 combos = $2)</li><li>TRI 2,3/2,3,5,6/1,3,4,5,6: $0.50 base × 22 combos = $11</li></ul>
+<p><strong>Total: $17</strong></p>
+<hr>
+<h2 id="race-2">Race 2 — 4½f dirt · Mdn $120,000 · 6 horses (all FTS)</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>All-FTS maiden, zero career figures. Cannot satisfy gate condition 1 (no STRONG CORE signals possible). Brisnet 1,6,5,3 / KH Fanshell Beach, Booked, War Ready — but no figure substrate.</p>
+<p>Post (CT): 12:14p · Tickets: — · Total: —</p>
+<hr>
+<h2 id="race-3">Race 3 — 1m turf · Alw $50,000s · 10 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR: #6 Spying (89 SR vs par 82 = +7)</li><li>Tier: Soft-toss (RULE 12 — 166-day layoff, no fitness signal in workouts)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>Brisnet: #6, #3, #2</li><li>KH Sheet: #2, #6, #3</li><li>Both lists: #2 Queen Wilhelmina, #3 Sheila's Lion, #6 Spying — gate already failed</li></ul>
+<h3>Gate verification</h3>
+<p>No A-tier (Spying layoff-demoted). #2 Queen Wilhelmina 77 SR = -5 par, at-par soft-toss max. No B-tier overlay ≥1.5× anywhere. Gate fails.</p>
+<p>Post (CT): 12:43p · Tickets: — · Total: —</p>
+<hr>
+<h2 id="race-4">Race 4 — 6f dirt · Clm $50,000 · 7 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR: #2 Spun Candy (92 SR vs par 83 = +9)</li><li>Tier: B-tier (RULE 12 criterion #2 — 1-for-10 lifetime, 10% ITM, life-best aged)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>Brisnet: #7, #2, #6</li><li>KH Sheet: #6, #2, #7</li><li>Both: #2, #6, #7</li></ul>
+<h3>Gate verification</h3>
+<ul><li>#6 Wisconsin Gal: 1 STRONG (figure at par on drop) + 1 LEAN (Prime Power) — fails 2-STRONG threshold</li><li>A-tier overlay: #6 at 7/2 = 22% est ~25% = 1.1× — fail</li><li>B-tier overlay: #2 Spun Candy 3/1 = 0.6–0.7×, #4 No Time Left 4/1 = 0.7–0.8× — fail</li></ul>
+<p>Post (CT): 1:14p · Tickets: — · Total: —</p>
+<hr>
+<h2 id="race-5">Race 5 — 6½f dirt · MdnClm $20,000 · 12 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR: #3 Joe's Candy (83 SR vs par 81 = +2)</li><li>Tier: A-tier candidate (top figure + dual-expert)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>Brisnet: #3, #12, #9</li><li>KH Sheet: #9, #3, #6</li><li>Both: #3, #9</li></ul>
+<h3>Gate verification</h3>
+<ul><li>A-tier (#3) qualifies on 2+ STRONG signals (figure + dual-expert + presser fit)</li><li>A-tier overlay: 7/2 = 22% est 28–32% = <strong>1.27–1.45×</strong> — near-miss, fails 1.5× threshold</li><li>B-tier overlay scan: #9 Harbe 5/1 = 1.18–1.41× (fail), #12 Vino Dominus 9/2 = 1.0–1.22× (fail)</li></ul>
+<p>Post (CT): 1:47p · Tickets: — · Total: —</p>
+<hr>
+<h2 id="race-6">Race 6 — 1⅛m turf · Clm $30,000 · 16 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR: #15 Mount Horeb (92 SR vs par 82 = +10)</li><li>Tier: B-tier (last 3 80-82-81 at par, no STRONG form edge)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>Brisnet: #15, #7, #10</li><li>KH Sheet: #7, #10, #6</li><li>Both: #7 Gene and Jude, #10 Footprint</li></ul>
+<h3>Gate verification</h3>
+<ul><li>No A-tier with 2+ STRONG signals</li><li>B-tier overlay scan:<ul><li>#15 Mount Horeb 2.5/1 = 1.3–1.5× (below threshold)</li><li>#7 Gene and Jude 3/1 = 0.96–1.3× (131-day layoff, no fitness signal — fails)</li><li>#10 Footprint 4/1 = 1.6–1.8× overlay BUT no STRONG CORE (77 SR = -5 par, just at-par audit) — fails RULE 19's 1+ STRONG requirement</li></ul></li></ul>
+<p>Post (CT): 2:20p · Tickets: — · Total: —</p>
+<hr>
+<h2 id="race-7">Race 7 — 7f dirt · Clm $20,000 · 13 horses</h2>
+<h3>Pace scenario</h3>
+<p>Comes a Time (E/P from post 6) + McIlroy (P from post 3) duel early; Il Cavallino stalks; closers (Nassau Circle, Hardtoblame) rally late.</p>
+<h3>PLAY/PASS: PLAY</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR: #6 Comes a Time (89 SR vs par 86 = +3)</li><li>Tier: A1 (no demotion — top figure on today's surface, dual-expert, $50k→$20k drop)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>Brisnet: #6, #3, #4, #7</li><li>KH Sheet: #3, #6, #7</li><li>Both: #6, #3, #7 — all already A1/A2/B1</li></ul>
+<h3>Gate verification</h3>
+<ul><li>Core A-tier: YES — #6 (figure +3, drop, dual-expert) AND #3 McIlroy (figure +2, 22% trainer angle drop 2+ levels, 17% synth-to-dirt)</li><li>A-tier overlay: #6 at 3/1 = 25% est 35–42% = <strong>1.4–1.7×</strong> ✓; #3 at 9/2 = 18% est 30–35% = <strong>1.7–1.9×</strong> ✓</li><li>B-tier overlay: #7 Il Cavallino 8/1 = 11% est 15–18% = ~1.5× borderline VALUE</li><li>Pace readable: YES</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #6 Comes a Time (A1), #3 McIlroy (A2)</li><li>🎯 B-tier: #7 Il Cavallino (B1)</li><li>Soft-toss (at-par, 2nd+3rd): #7 (84 = -2 par)</li><li>Soft-toss (3rd only): #2, #4, #5, #8, #9, #11, #12</li><li>Hard-toss: #1 (-10), #10 (-10), #13 (3-race decline at par-class)</li></ul>
+<h3>At-par soft-toss audit</h3>
+<ul><li>#7 Il Cavallino: 84 vs par 86 = -2 → 2nd + 3rd slot (B1 already covered)</li><li>#2, #4, #5, #8, #9, #11, #12: situational soft-toss, 3rd slot only</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Southern Bullet</td><td style='text-align:left'>76 (-10)</td><td style='text-align:left'>Drop</td><td style='text-align:left'>Declining</td><td style='text-align:left'>Begley 4%</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Another Monarch</td><td style='text-align:left'>80 (-6)</td><td style='text-align:left'>Claim</td><td style='text-align:left'>107d layoff</td><td style='text-align:left'>—</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>McIlroy</td><td style='text-align:left'>88 (+2)</td><td style='text-align:left'>Drop 2+</td><td style='text-align:left'>80 last</td><td style='text-align:left'>22% down 2+, 17% synth-dirt</td><td style='text-align:left'>A2</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Vino Subito</td><td style='text-align:left'>78 (-8)</td><td style='text-align:left'>Rise</td><td style='text-align:left'>Dull</td><td style='text-align:left'>—</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Hardtoblame</td><td style='text-align:left'>79 (-7)</td><td style='text-align:left'>Claim</td><td style='text-align:left'>Recent 46</td><td style='text-align:left'>—</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Comes a Time</td><td style='text-align:left'>89 (+3)</td><td style='text-align:left'>Drop large</td><td style='text-align:left'>71 acceptable</td><td style='text-align:left'>Maker 17% layoff 90+</td><td style='text-align:left'>A1</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Il Cavallino</td><td style='text-align:left'>84 (-2)</td><td style='text-align:left'>Claim</td><td style='text-align:left'>84 recent</td><td style='text-align:left'>Londono 12%</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Fayette Spirit</td><td style='text-align:left'>86 (par) recent 74</td><td style='text-align:left'>Claim</td><td style='text-align:left'>Mid-trip 35 (excuse)</td><td style='text-align:left'>Medina 9%</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Nassau Circle</td><td style='text-align:left'>84 (-2)</td><td style='text-align:left'>Claim</td><td style='text-align:left'>Recent 69 weak</td><td style='text-align:left'>Stall 13%</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>Up to No Good</td><td style='text-align:left'>76 (-10)</td><td style='text-align:left'>Claim</td><td style='text-align:left'>Weak</td><td style='text-align:left'>Kinmon 5%</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>11</td><td style='text-align:left'>Phila Street</td><td style='text-align:left'>81 (-5)</td><td style='text-align:left'>Claim</td><td style='text-align:left'>Declining 69</td><td style='text-align:left'>Foster 14%</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>12</td><td style='text-align:left'>Mo Hair Sam</td><td style='text-align:left'>77 (-9)</td><td style='text-align:left'>Claim</td><td style='text-align:left'>Weak</td><td style='text-align:left'>Hancock 6%</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>13</td><td style='text-align:left'>Favoritism</td><td style='text-align:left'>84 (-2)</td><td style='text-align:left'>Claim</td><td style='text-align:left'>3-race decline</td><td style='text-align:left'>Ward 10%</td><td style='text-align:left'>Hard-toss</td></tr></tbody></table></div>
+<h3>Bet tickets</h3>
+<ul><li>WIN: $2 #6</li><li>KEY BOX 6/3,7: $1 base (2 horses on right → 2N=4 combos = $4)</li><li>STRAIGHT 3/6,7: $1 (RULE 3 — A2 honors top SR + B1 dual-expert, 2 combos = $2)</li><li>TRI 6,3/6,3,7/3,6,7,9: $0.50 base × 8 combos = $4<ul><li>Pairs: (6,3)→{7,9}=2; (6,7)→{3,9}=2; (3,6)→{7,9}=2; (3,7)→{6,9}=2 → 8 total</li></ul></li></ul>
+<p><strong>Total: $2 + $4 + $2 + $4 = $12</strong></p>
+<hr>
+<h2 id="race-8">Race 8 — 1⅛m dirt · AlwOClm $141,000 · 9 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR: #2 Hold My Bourbon (101 SR vs par 95 = +6) — demoted (122d layoff + 30-pt decline + no fitness signal); #9 Flood Zone tied life best 101</li><li>Tier: B-tier (Flood Zone at-par soft-toss minimum, no overlay)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>Brisnet: #7, #9, #6, #5</li><li>(KH not parsed for this race — flag for retry if PLAY)</li></ul>
+<h3>Gate verification</h3>
+<ul><li>No clean A-tier (multi-E pace, no separation)</li><li>A-tier overlay: N/A</li><li>B-tier overlay scan: #9 Flood Zone 4/1 = 0.85–1.0× (fail), #7 U Devil You 3.5/1 = 0.9–1.1× (fail)</li><li>Pace readable: marginal (multi-E chaos)</li></ul>
+<p>Post (CT): 3:24p · Tickets: — · Total: —</p>
+<hr>
+<h2 id="race-9">Race 9 — 5f turf · OC $80,000 · 12 horses</h2>
+<h3>Pace scenario</h3>
+<p>Early speed (Bacio, Our Starry Night, Smash It) contest sharp pace; presser/stalker (Camp Hale, Heart Headed) angles in stretch as sprinters tire.</p>
+<h3>PLAY/PASS: PLAY (gate carried by B-tier VALUE)</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR: #9 Smash It (99 SR life vs par 91 = +8; at-distance 90 = par -1)</li><li>Tier: B-tier (at-distance figure puts him at par, recent decline 83/86/85 turf)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>Brisnet: #4 Bacio, #10 Camp Hale, #5 Our Starry Night</li><li>KH Sheet: #4 Bacio, #10 Camp Hale, #3 Monsieur Candy</li><li>Both: #4 Bacio, #10 Camp Hale</li></ul>
+<h3>Gate verification</h3>
+<ul><li>Core A-tier: YES — #4 Bacio (Prime Power 146.9, E1 avg 97 = +2 par, class drop G2→OC80k)</li><li>A-tier overlay: #4 at 8/5 = 37% est 42–48% = <strong>1.15–1.30×</strong> — near-miss, fails 1.5×</li><li><strong>B-tier overlay scan:</strong> #1 Heart Headed at 8/1 = 11% implied, est 25–30% true (best at-distance 97 vs par 91 = +6, Lynch turf 27%, Ortiz JL turf 27%, sharp 3/21 work, class drop from G2) = <strong>2.3–2.7×</strong> — clean B-tier VALUE, gate satisfied via T1-E surface</li><li>Pace readable: YES</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #4 Bacio (A1)</li><li>🎯 B-tier: #1 Heart Headed (B1 VALUE), #10 Camp Hale (B2 — dual-expert), #9 Smash It (B3)</li><li>Soft-toss (at-par, 2nd+3rd): #3 Monsieur Candy (92 = +1), #5 Our Starry Night (93 = +2), #2 Mischievous Rogue (95 = +4)</li><li>Soft-toss (3rd only): #6, #7, #8, #11, #12</li><li>Hard-toss: none qualifying for full hard-toss after RULE 13 audit</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Heart Headed</td><td style='text-align:left'>97 dist (+6)</td><td style='text-align:left'>G2→OClm drop</td><td style='text-align:left'>8-3-1 sharp turf</td><td style='text-align:left'>Lynch 27% turf, Ortiz JL 27%</td><td style='text-align:left'>B1 VALUE</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Mischievous Rogue</td><td style='text-align:left'>95 (+4)</td><td style='text-align:left'>Allow→OClm</td><td style='text-align:left'>69d layoff, 0 CD turf</td><td style='text-align:left'>Vanden Berg 0% CD</td><td style='text-align:left'>Soft-toss (at-par)</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Monsieur Candy</td><td style='text-align:left'>92 (+1)</td><td style='text-align:left'>Allow shipper</td><td style='text-align:left'>3rd recent stalker</td><td style='text-align:left'>Rivelli 28% 3rd-off-LO</td><td style='text-align:left'>Soft-toss (at-par)</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Bacio</td><td style='text-align:left'>92 last, 95 dist</td><td style='text-align:left'>G2→OClm drop</td><td style='text-align:left'>92 recent</td><td style='text-align:left'>Lasix on, 1st turf</td><td style='text-align:left'>A1</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Our Starry Night</td><td style='text-align:left'>93 (+2)</td><td style='text-align:left'>Allow→OClm</td><td style='text-align:left'>2-1 turf recent</td><td style='text-align:left'>Bauer turf 19%, Saez 19%</td><td style='text-align:left'>Soft-toss (at-par)</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Beeline</td><td style='text-align:left'>95 life, 1st turf</td><td style='text-align:left'>OClm</td><td style='text-align:left'>66d layoff, 1st-grass</td><td style='text-align:left'>Mott 2% 1st-turf</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Simulate</td><td style='text-align:left'>77 last, 95 best</td><td style='text-align:left'>Routes→sprints</td><td style='text-align:left'>Inconsistent turf</td><td style='text-align:left'>Mott —</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Jet Sweep Joe</td><td style='text-align:left'>52 last (-39)</td><td style='text-align:left'>Allow→OClm</td><td style='text-align:left'>201d layoff</td><td style='text-align:left'>McEntee 0% turf</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Smash It</td><td style='text-align:left'>90 dist (par-1), 99 life</td><td style='text-align:left'>Stakes→OClm</td><td style='text-align:left'>83/86/85 decline</td><td style='text-align:left'>Walsh —</td><td style='text-align:left'>B3</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>Camp Hale</td><td style='text-align:left'>83 dist last, 94 best</td><td style='text-align:left'>Allow→OClm</td><td style='text-align:left'>2nd grass debut</td><td style='text-align:left'>Wilkes 23% claiming</td><td style='text-align:left'>B2</td></tr><tr><td style='text-align:left'>11</td><td style='text-align:left'>B D Valeski</td><td style='text-align:left'>80 (-11), 91 best</td><td style='text-align:left'>Allow→OClm</td><td style='text-align:left'>Volatile</td><td style='text-align:left'>Foley —</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>12</td><td style='text-align:left'>Sweet Dani Boy</td><td style='text-align:left'>85 best, thin</td><td style='text-align:left'>Mdn→OClm</td><td style='text-align:left'>2-start career</td><td style='text-align:left'>Vaccarezza —</td><td style='text-align:left'>Soft-toss (unknown)</td></tr></tbody></table></div>
+<h3>Bet tickets</h3>
+<ul><li>WIN: $2 #4 Bacio</li><li>KEY BOX 1/4,10: $1 base (2 horses on right → 2N=4? actually KEY BOX X/A,B = 2N = 4 combos when N=2) = $4</li><li>STRAIGHT 1/4: $1 × 1 combo = $1 (RULE 3 — B1 VALUE in WIN slot)</li><li>TRI 1,4,10/1,4,10,3,5,9/1,3,4,5,9,10: $0.50 × 60 combos = $30<ul><li>1st {1,4,10} × 2nd {1,4,10,3,5,9} → 15 ordered pairs (3×6 minus 3 diagonals = 15)</li><li>For each pair, 3rd pool of 6 minus the 2 used = 4 → 15×4 = 60 combos</li></ul></li></ul>
+<p><strong>Total: $2 + $4 + $1 + $30 = $37</strong></p>
+<p>Note: TRI is the dominant cost. To hit your $20-30 cap, drop TRI base to $0.20 (60×$0.20 = $12 → total $19), OR narrow 2nd/3rd slots to A+B-tier only ({1,4,10}/{1,4,10}/{1,4,10,3,5,9} = ~15-20 combos × $0.50).</p>
+<hr>
+<h2>Card-wide audit blocks</h2>
+<h3>B-tier overlay scan (T1-E)</h3>
+<ul><li>R1 #3 C'Est Cheese 1.16× — fail; R1 #6 Danzig's Dora 0.6× — fail</li><li>R4 #2 Spun Candy 0.6–0.7×, #4 No Time Left 0.7–0.8× — fail</li><li>R5 #9 Harbe 1.18–1.41×, #12 Vino Dominus 1.0–1.22× — fail</li><li>R6 #15 Mount Horeb 1.3–1.5× borderline, #7 Gene and Jude 0.96–1.3×, #10 Footprint 1.6–1.8× missing STRONG CORE</li><li>R7 #7 Il Cavallino ~1.5× borderline VALUE — kept B1</li><li>R9 <strong>#1 Heart Headed 2.3–2.7×</strong> — clean PLAY trigger</li><li>R8 Flood Zone / U Devil You 0.85–1.1× — fail</li></ul>
+<h3>Cross-block tier consistency</h3>
+<p>All R1/R7/R9 PLAY tier calls consistent across audit blocks and ticket structure. No silent demotions or exclusions detected in scan.</p>
+<h3>At-par soft-toss audit (RULE 9 enforcement)</h3>
+<p>All PLAY races: at-par soft-tosses placed in 2nd+3rd slots (not 3rd-only). R1 #5/#6, R7 #7, R9 #2/#3/#5 all in 2nd-slot TRI coverage.</p>
+<h3>RULE 23 Expert Consensus Floor</h3>
+<p>All three PLAY top picks have 2+ expert backing (R1 #2 = Brisnet+KH, R7 #6 = Brisnet+KH, R9 #4 = Brisnet+KH). No RULE 24 dissent demotions triggered (no top-SR + zero-expert horses promoted into A-tier).</p>
+<hr>
+<h2>Bankroll</h2>
+<p>User stated cap for calibration: $20-30. Framework recommendation: <strong>$54</strong> (uncapped per user request to see what logic produces). User decides whether to take any/all.</p>
+<p>If taking only highest-conviction: R9 Heart Headed structure ($22) is the textbook T1-E test. R7 dual A-tier ($15) is cleanest PLAY. R1 ($17) is at-par soft-toss-heavy structure.</p>
+<footer class="page">Generated by the horses analyzer · read on any device · share freely</footer>
+</main>
+</body>
+</html>
