@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-04-30",
+    "track": "CD",
+    "track_name": "Churchill Downs",
+    "filename": "cards/2026-04-30-CD.html",
+    "plays": 4,
+    "total_cost": 111
+  },
+  {
     "date": "2026-04-29",
     "track": "CD",
     "track_name": "Churchill Downs",

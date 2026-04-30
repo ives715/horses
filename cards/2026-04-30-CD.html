@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>CD · 2026-04-30 (Thurby)</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --fg: #1a1a1a;
+  --fg-soft: #555;
+  --accent: #1f6feb;
+  --rule: #e5e5ea;
+  --code-bg: #f0f0f2;
+  --tier-a: #0a7d3e;
+  --tier-b: #b36b00;
+  --tier-c: #888;
+  --warn: #b42020;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --fg: #e6edf3;
+    --fg-soft: #9ca3af;
+    --accent: #79c0ff;
+    --rule: #30363d;
+    --code-bg: #1f2937;
+    --tier-a: #3fb950;
+    --tier-b: #d29922;
+    --tier-c: #8b949e;
+    --warn: #ff7b72;
+    --card: #161b22;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+header.page {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+header.page .eyebrow {
+  font-size: 13px;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+header.page h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+h1, h2, h3, h4, h5 {
+  color: var(--fg);
+  line-height: 1.25;
+  margin: 1.6em 0 0.5em;
+}
+h1 { font-size: 24px; }
+h2 {
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 17px; }
+h4 { font-size: 15px; color: var(--fg-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+p, ul, ol, blockquote { margin: 0 0 1em; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: var(--fg); }
+em { color: var(--fg-soft); }
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--code-bg);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 4px 16px;
+  color: var(--fg-soft);
+  background: var(--bg-soft);
+  border-radius: 0 6px 6px 0;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2em 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1em -4px;
+  border-radius: 6px;
+}
+table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+/* Keep post time and cost columns from wrapping */
+td:nth-child(2), td:nth-child(5) { white-space: nowrap; }
+th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+tbody tr:hover { background: var(--bg-soft); }
+.strong-play {
+  color: var(--tier-a);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+footer.page {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--fg-soft);
+}
+/* Tier coloring — applied when header text contains the marker */
+h3:has(strong) { color: var(--fg); }
+/* mobile */
+@media (max-width: 520px) {
+  .wrap { padding: 16px 14px 48px; }
+  header.page h1 { font-size: 22px; }
+  h1 { font-size: 21px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  table { font-size: 13px; }
+  th, td { padding: 6px 8px; }
+}
+/* print */
+@media print {
+  body { background: #fff; color: #000; }
+  .wrap { max-width: 100%; padding: 0; }
+  h2 { break-after: avoid; }
+  table, pre, blockquote { break-inside: avoid; }
+  footer.page { display: none; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="page">
+
+<h1>CD · 2026-04-30 (Thurby)</h1>
+</header>
+<p><strong>Stem:</strong> cdx0430y · <strong>Card type:</strong> Thurby Thursday — Oaks-eve card with two G3 stakes</p>
+<p><strong>Card-wide note:</strong> Running with full post-CD-Wednesday rule stack: 4-source taxonomy with ProfitLine baked into ingest, RULE 13 hard-toss audit enforcement, RULE 26 closing-odds version, BB Farm field-size thresholds corrected (5+ for 2nd-only, 8+ for 2nd-or-3rd), chalk-holding rule (4-of-4 wins on universal-market-aligned chalks at CD 4/29 — applied broadly to BB Farm decisions), Option B simplification (drop redundant RULE 3/20 STRAIGHTs that duplicate KEY BOX combos).</p>
+<p><strong>PLAY/PASS summary:</strong> 4 PLAY · 8 PASS · <strong>~$130 cash</strong> ($230 if all 10 BB Farms taken). Roughly half the cash is in R4 + R10 stakes-adjacent structures.</p>
+<blockquote><p><strong>Overrides applied to subagent BB Farm verdicts (per chalk-holding rule from CD 4/29):</strong> R1, R3, R8, R12 — subagents declined BB Farm citing "no overlay on fair-priced chalk." Yesterday's data (4-of-4 wins on universal-market-aligned chalks) showed the refund-insurance layer keeps these +EV regardless. Adding back as eligible BB Farm targets at user's discretion.</p></blockquote>
+<h2>Quick Picks</h2>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Race</th><th style='text-align:left'>Post</th><th style='text-align:left'>Status</th><th style='text-align:left'>Tickets</th><th style='text-align:left'>Cost</th></tr></thead><tbody><tr><td style='text-align:left'><a href="#race-1">R1</a></td><td style='text-align:left'>11:45a</td><td style='text-align:left'>PASS · BB option</td><td style='text-align:left'>(BB Farm: WIN #1 Banned for Life $10 — 3-source universal, 7h field 2nd-or-3rd)</td><td style='text-align:left'>— / $10 BB</td></tr><tr><td style='text-align:left'><a href="#race-2">R2</a></td><td style='text-align:left'>12:15p</td><td style='text-align:left'>PLAY + BB Farm</td><td style='text-align:left'>KEY BOX 1/4,5 $2 (4 combos) · KEY BOX 6/1 $1 (2 combos, RULE 23) · TRI 1,4,5/1,4,5,6/1,4,5,6 $0.50 (18 combos) · BB Farm: WIN #1 Delightful Claire $10 (consolidates WIN — 4-source universal)</td><td style='text-align:left'>$19 + $10 BB</td></tr><tr><td style='text-align:left'><a href="#race-3">R3</a></td><td style='text-align:left'>12:45p</td><td style='text-align:left'>PASS · BB option</td><td style='text-align:left'>(BB Farm: WIN #7 In for a Spin $10 — 3-source universal, 9h field 2nd-or-3rd)</td><td style='text-align:left'>— / $10 BB</td></tr><tr><td style='text-align:left'><a href="#race-4">R4</a></td><td style='text-align:left'>1:18p</td><td style='text-align:left'>PLAY + BB Farm</td><td style='text-align:left'>WIN #14 $2 · BOX 8,11,14 $1 (6 combos) · STRAIGHT 12/8,11,14 $1 (3 combos, RULE 3) · TRI 8,11,14/8,11,12,14/8,9,11,12,13,14,15 $0.50 (45 combos) · BB Farm: WIN #8 Theoretical $10 (4-source universal, different from PLAY anchor)</td><td style='text-align:left'>$33.50 + $10 BB</td></tr><tr><td style='text-align:left'><a href="#race-5">R5</a></td><td style='text-align:left'>1:52p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-6">R6</a></td><td style='text-align:left'>2:29p</td><td style='text-align:left'>PASS · BB option</td><td style='text-align:left'>(BB Farm: WIN #6 RB Badonkadonk $10 — 4-source universal Arabian-only stakes, 9h 2nd-or-3rd; framework caveat: Arabian breed, figures not directly comparable)</td><td style='text-align:left'>— / $10 BB</td></tr><tr><td style='text-align:left'><a href="#race-7">R7</a></td><td style='text-align:left'>3:03p</td><td style='text-align:left'>PASS · BB option</td><td style='text-align:left'>(BB Farm: WIN #1 Honfleur $10 — 4-source universal, 15h field 2nd-or-3rd; Chad Brown turf)</td><td style='text-align:left'>— / $10 BB</td></tr><tr><td style='text-align:left'><a href="#race-8">R8</a></td><td style='text-align:left'>3:40p</td><td style='text-align:left'>PASS · BB option</td><td style='text-align:left'>(BB Farm: WIN #6 Jensco $10 — 3-source consensus, 7h field 2nd-or-3rd; chalk-holding rule override)</td><td style='text-align:left'>— / $10 BB</td></tr><tr><td style='text-align:left'><a href="#race-9">R9</a></td><td style='text-align:left'>4:14p</td><td style='text-align:left'>PLAY + BB Farm</td><td style='text-align:left'>WIN #8 Lagynos $10 (BB Farm consolidates) · BOX 4,8 $1 (2 combos) · KEY BOX 1/4,8 $1 (4 combos, RULE 21/23) · STRAIGHT 5/4,8 $1 (2 combos, RULE 3) · TRI 4,8/1,5,9/1,2,3,4,5,6,7,8,9 $0.50 (42 combos)</td><td style='text-align:left'>$29 + $10 BB consolidates with WIN</td></tr><tr><td style='text-align:left'><a href="#race-10">R10</a></td><td style='text-align:left'>4:50p</td><td style='text-align:left'>PLAY + BB Farm</td><td style='text-align:left'>WIN #1 Concrete Glory $2 · BOX 1,2,3 $1 (6 combos) · STRAIGHT 6/1,3 $1 (2 combos, RULE 23) · TRI 1,3/1,2,3,5,6/1,2,3,5,6,8,10 $0.50 (40 combos) · BB Farm: WIN #3 Be You $10 (consolidates WIN #3 — 3-source universal, A2 different from A1 PLAY anchor)</td><td style='text-align:left'>$30 + $10 BB</td></tr><tr><td style='text-align:left'><a href="#race-11">R11</a></td><td style='text-align:left'>5:22p</td><td style='text-align:left'>PASS · BB option</td><td style='text-align:left'>(BB Farm: WIN #5 Cy Fair $10 — 4-source universal G3 chalk, 11h field 2nd-or-3rd)</td><td style='text-align:left'>— / $10 BB</td></tr><tr><td style='text-align:left'><a href="#race-12">R12</a></td><td style='text-align:left'>5:53p</td><td style='text-align:left'>PASS · BB option</td><td style='text-align:left'>(BB Farm: WIN #7 Mizzou $10 — 3-source consensus, 12h field 2nd-or-3rd; chalk-holding rule override)</td><td style='text-align:left'>— / $10 BB</td></tr><tr><td style='text-align:left'><strong>Total</strong></td><td style='text-align:left'></td><td style='text-align:left'></td><td style='text-align:left'><strong>~$111 PLAY · +$100 if all 10 BB Farms taken</strong></td><td style='text-align:left'><strong>$111–$211</strong></td></tr></tbody></table></div>
+<hr>
+<p><strong>Calibration takeaways before tickets are even posted:</strong></p>
+<ul><li><strong>R4 is the biggest single-race spend</strong> ($33.50 cash + $10 BB) — 16-horse turf MdnClm with universal-4-source #8 Theoretical as BB Farm chalk and a separate figure-overlay PLAY on #14 Key Actress (8/1 with 1.6-1.8× overlay). Watch off-turf risk closely; if turf moves to dirt the entire structure collapses.</li><li><strong>R9 Opening Verse Stakes</strong> — #8 Lagynos is 4-source universal A1 with back-to-back G2/G3 wins. PLAY thesis carried by B-tier VALUE on #9 West Hollywood (1.6-1.8× at 8/1, Cox/Prat hot T/J).</li><li><strong>R10 St. Matthews Stakes</strong> — #1 Concrete Glory A1 with figure overlay (102 dist BSF, 8/1 ~1.6-2.0× overlay) + #3 Be You A2 (3-source consensus, 4/1 BB Farm chalk). Watch scratches: #3 Be You and #9 Maximum Bourbon listed in scratch watch.</li><li><strong>R6 Arabian Stakes</strong> — framework figures don't apply to Arabians, but BB Farm 4-source universal is real. Take the BB Farm only with caveat awareness.</li><li><strong>8 PASS races</strong> — chalk-heavy day. Most PASSes have BB Farm options (chalk-holding rule supports +EV via refund layer at 5/2 or longer chalk prices).</li></ul>
+<hr>
+<h2 id="race-1">Race 1 — 6f dirt · Clm $50,000 · 7 horses</h2>
+<h3>Pace scenario</h3>
+<p>Banned for Life and You Ain't Poppn duel for early lead with E/E-P styles; Star's Image and Tejon Pass stalk inside; winner likely emerges from speed or stalking position.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Gate condition 2 fails: A-tier (#1 Banned for Life, 8/5 ML) overlay 1.05–1.07× near-miss; B-tier cluster (My Noble Knight, National Eclipse, Quokka) all 1.26–1.28× near-miss. No horse clears 1.5× threshold.</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #1 Banned for Life (97 SR vs par 91)</li><li>Tier assignment: A-tier (RULE 12 default — top SPD +6 above par, hot Stall 39% 1st-time-claiming, recent solid form)</li></ul>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>brisPICKS: 1, 4, 8</li><li>KH-PDF: 1, 6, 7</li><li>TS-Expert: (treated as same source as brisPICKS in this card per Joey K's brisnet-app overlap)</li><li>ProfitLine: 1, 6, 5</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>KH</th><th style='text-align:left'>PL</th><th style='text-align:left'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Banned for Life</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>My Noble Knight</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>1</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>You Ain't Poppn</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>National Eclipse</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>1</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Tejon Pass</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>1</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Keep On Moving</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>1</td></tr></tbody></table></div>
+<h3>BB Farm scan</h3>
+<ul><li>Field size: 7 (qualifies for 2nd-or-3rd refund — 7-9h tier)</li><li>Top multi-expert chalk: #1 Banned for Life — 3-source universal</li><li>ML: 8/5</li><li>Verdict: <strong>QUALIFIES</strong> per chalk-holding rule (4-of-4 universal-market-aligned chalks won at CD 4/29; refund-insurance keeps EV positive at fair-priced chalk)</li><li>Suggested: WIN $10 #1 Banned for Life</li></ul>
+<p>Post (CT): 11:45a · Tickets: — (PASS) · BB Farm option: <strong>WIN $10 #1 Banned for Life</strong> · Total: — / $10 BB</p>
+<hr>
+<h2 id="race-2">Race 2 — 6f dirt · Alw $127,000 (F&amp;M, NW2) · 6 horses</h2>
+<h3>Pace scenario</h3>
+<p>#1 Delightful Claire (early speed, post 1) leads early; #4 Chatter (E from post 4) duels or pressures; #5 Shared Vision stalks; #6 Going Steady takes late move.</p>
+<h3>PLAY/PASS: PLAY</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #1 Delightful Claire (98 SR vs par 91)</li><li>Tier assignment: A-tier (top SR +7, sharp workouts confirm fitness through 194-day layoff, Bauer 20% layoff returns)</li></ul>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>brisPICKS: 1, 4, 5</li><li>KH-PDF: 1, 4, 5</li><li>TS-Expert: 4, 1, 5</li><li>ProfitLine: 1, 4, 5</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>KH</th><th style='text-align:left'>TS-E</th><th style='text-align:left'>PL</th><th style='text-align:left'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Delightful Claire</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>4 (universal)</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Chatter</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>4 (universal)</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Shared Vision</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>4 (universal)</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Going Steady</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>2</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ul><li>Core A-tier: YES — #1 Delightful Claire (top SR +7, 4-source universal, sharp works through layoff)</li><li>A-tier overlay: 6/5 = 45% implied, est ~50% true = 1.11× near-miss (gate not on overlay alone)</li><li>Gate satisfied via universal expert consensus + figure alignment (RULE 23 mandatory across layers; A1 confirmed)</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #1 Delightful Claire (A1 — 98 SR top, universal consensus)</li><li>🎯 B-tier: #4 Chatter (B1, 4-source universal), #5 Shared Vision (B2, 4-source universal)</li><li>Soft-toss: #6 Going Steady (2-source, mandatory KEY BOX + TRI 2nd+3rd)</li><li>Hard-toss: #2 She'z the Law (-26 par dirt), #3 Cotillard (-21 par dirt)</li></ul>
+<h3>Hard-toss audit</h3>
+<ul><li>#2 She'z the Law: -26 below par on dirt → within-5: FAIL → Hard-toss valid (BUT note: 65 dirt fig is below 10+ threshold barely; surface qualifier holds since today is dirt). Verdict: HARD-TOSS valid.</li><li>#3 Cotillard: -21 below par on dirt → similar; HARD-TOSS valid.</li></ul>
+<h3>At-par soft-toss audit</h3>
+<ul><li>#6 Going Steady (87 dirt SR vs par 91 = -4, within-5 → at-par) → 2-source expert mandate (RULE 21/23) → KEY BOX 6/1 + TRI 2nd+3rd slot.</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Delightful Claire</td><td style='text-align:left'>98 (+7)</td><td style='text-align:left'>Alw NW2</td><td style='text-align:left'>sharp 5f works</td><td style='text-align:left'>Bauer 20% layoff</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>She'z the Law</td><td style='text-align:left'>65 (-26)</td><td style='text-align:left'>drops</td><td style='text-align:left'>declining</td><td style='text-align:left'>—</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Cotillard</td><td style='text-align:left'>70 (-21)</td><td style='text-align:left'>overmatched</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Chatter</td><td style='text-align:left'>92 (+1)</td><td style='text-align:left'>par</td><td style='text-align:left'>E from post 4</td><td style='text-align:left'>—</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Shared Vision</td><td style='text-align:left'>91 (par)</td><td style='text-align:left'>par</td><td style='text-align:left'>stalker</td><td style='text-align:left'>—</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Going Steady</td><td style='text-align:left'>87 (-4)</td><td style='text-align:left'>at-par</td><td style='text-align:left'>late kick</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr></tbody></table></div>
+<h3>Bet tickets (BB-consolidation: Delightful Claire is both A1 and BB Farm chalk)</h3>
+<ul><li>~~WIN $2 #1~~ — consolidated into BB Farm $10 WIN</li><li>KEY BOX 1/4,5 $2 base × 4 combos = <strong>$8</strong> (covers all exacta orderings of A1 + B-tier; replaces previous KEY BOX $1 + STRAIGHT structure per Option B)</li><li>KEY BOX 6/1 $1 × 2 combos = <strong>$2</strong> (RULE 23 — #6 Going Steady 2-source mandatory exacta coverage)</li><li>TRI 1,4,5 / 1,4,5,6 / 1,4,5,6 $0.50 × 18 combos = <strong>$9</strong> (#2 hard-tossed off all tickets per RULE 4)<ul><li>1st {1,4,5} × 2nd {1,4,5,6}: 9 ordered pairs (3×4 minus 3 self-overlaps)</li><li>For each pair, 3rd from {1,4,5,6} minus 2 used = 2 → 9×2 = 18</li></ul></li><li>BB Farm: WIN $10 #1 Delightful Claire (6h field = 5-7 tier = 2nd-only refund)</li></ul>
+<p><strong>Cash: $19. With BB: $29.</strong></p>
+<h3>BB Farm scan</h3>
+<ul><li>Field size: 6 → 5-7h tier = <strong>2nd-only refund</strong> (per corrected fine print)</li><li>Top multi-expert chalk: #1 Delightful Claire (4-source universal)</li><li>ML: 6/5</li><li>Verdict: <strong>QUALIFIES</strong> — universal consensus chalk in 6h field; 2nd-only refund tighter but borderline +EV at chalk price; figure alignment + sharp works support</li><li>Note: 6/5 is exactly the borderline I flagged in the BB Farm thresholds memory (≤2/1 in 5-7h tier marginal). Take given the 4-source universal backing.</li></ul>
+<p>Post (CT): 12:15p · Tickets: $19 PLAY + $10 BB Farm · Total: $29</p>
+<hr>
+<h2 id="race-3">Race 3 — 1m dirt · MdnClm $30K F&amp;M · 9 horses</h2>
+<h3>Pace scenario</h3>
+<p>#6 Kopiana (E) likely leads early; #7 In for a Spin (P-type, top speed) stalks 2-3 paths; #5 Spotted presses inside; late kick from softer-figured field.</p>
+<h3>PLAY/PASS: PASS</h3>
+<p>Gate condition 2 fails: #7 In for a Spin (top SR +4 par) at 2/1 ML = 33% implied, est ~30-35% true = 1.0-1.1× — chalk priced fairly. No B-tier VALUE overlay.</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #7 In for a Spin (80 SR vs par 76 = +4)</li><li>Tier assignment: A-tier (top SR, class drop MCL100k → 30k)</li></ul>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>brisPICKS: 7, 5, 6, 9</li><li>KH-PDF: 7, 5, 6</li><li>TS-Expert / ProfitLine: 7, 5, 6</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>KH</th><th style='text-align:left'>TS/PL</th><th style='text-align:left'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>7</td><td style='text-align:left'>In for a Spin</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Spotted</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Kopiana</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Souperrazzledazzle</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>1</td></tr></tbody></table></div>
+<h3>Hard-toss audit</h3>
+<ul><li>#8 Motown Sound: 63 SPD (-13 par); but unknowable-profile override (3 starts, first route after 186-day layoff, FTS with new trainer) → DEMOTE to soft-toss</li></ul>
+<h3>BB Farm scan</h3>
+<ul><li>Field size: 9 (qualifies for 2nd-or-3rd refund)</li><li>Top multi-expert chalk: #7 In for a Spin (3-source universal)</li><li>ML: 2/1</li><li>Verdict: <strong>QUALIFIES</strong> per chalk-holding rule override (subagent declined; CD 4/29 data shows universal-market chalks win 4-of-4 even at fair prices)</li><li>Suggested: WIN $10 #7 In for a Spin</li></ul>
+<p>Post (CT): 12:45p · Tickets: — (PASS) · BB Farm option: <strong>WIN $10 #7 In for a Spin</strong> · Total: — / $10 BB</p>
+<hr>
+<h2 id="race-4">Race 4 — 1 1/16m turf · MdnClm $50,000 · 16 horses (F&amp;M, AE entries possible)</h2>
+<h3>Pace scenario</h3>
+<p>#12 Breaking Hearts and #13 English Harbour push the early pace; #14 Key Actress presses from mid-pack; #11 Plot sweeps late on dominant LP figures.</p>
+<h3>PLAY/PASS: PLAY</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 12 mo, turf): #14 Key Actress (84 turf vs par 77 = +7)</li><li>Tier: A-tier (sharp 5f workout B1/4 confirms fitness through 141d layoff; RULE 24 doesn't fire — 33% ITM exceeds 30% threshold; single bad AW figure has bleeding carve-out)</li></ul>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>brisPICKS: 11, 8, 13, 12</li><li>KH-PDF: 11, 12, 8</li><li>TS-Expert: 11, 8, 13</li><li>ProfitLine: 8, 4, 12</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>KH</th><th style='text-align:left'>TS-E</th><th style='text-align:left'>PL</th><th style='text-align:left'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>8</td><td style='text-align:left'>Theoretical</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>4 (universal)</td></tr><tr><td style='text-align:left'>11</td><td style='text-align:left'>Plot</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>3</td></tr><tr><td style='text-align:left'>12</td><td style='text-align:left'>Breaking Hearts</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>3</td></tr><tr><td style='text-align:left'>13</td><td style='text-align:left'>English Harbour</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>2</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Lexico</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>1</td></tr><tr><td style='text-align:left'>14</td><td style='text-align:left'>Key Actress</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>0 (figure-driven A-tier)</td></tr></tbody></table></div>
+<p>ProfitLine flags: #8 Theoretical Chalk Buster + ML Overlay; #2 Figurine ML Overlay.</p>
+<h3>Gate verification</h3>
+<ul><li>Core A-tier: YES — #14 Key Actress (top turf SR 84 vs par 77 = +7); also #8 Theoretical (4-source universal); also #11 Plot (3-source + LP avg 90.3 dominant)</li><li>A-tier overlay: #14 at 8/1 = 11% implied, est ~18-20% = <strong>1.6-1.8× ✓</strong> (RULE 12 figure-driven A-tier overlay)</li><li>B-tier overlay scan: #12 Breaking Hearts 5/1 = 17% implied, fig 67 = -10 par, fails RULE 19; #4 Lexico unclear</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #14 Key Actress (A1 — top turf SR +7 par, sharp works, VALUE 8/1 = 1.6-1.8× overlay), #8 Theoretical (A2 — 4-source universal + 2nd-start-trainer 25% angle + blinkers + ProfitLine value flag), #11 Plot (A3 — 3-source + LP dominance, class drop)</li><li>🎯 B-tier: #12 Breaking Hearts (B1, 3-source mandatory WIN-slot per RULE 3 + RULE 23)</li><li>Soft-toss (at-par 2nd+3rd): #9 Ocean Ripple (74T -3), #15 Wella AE (73T -4), #16 Argentinidad AE (79T +2), #13 English Harbour AE (no turf, 2-source mandate covers via TRI 2nd+3rd if draws in)</li><li>Hard-toss: #5 Modern Escape (-15 par on turf, scratch risk); demoted hard-tosses per RULE 13 audit</li></ul>
+<h3>Hard-toss audit</h3>
+<ul><li>#5 Modern Escape: 62 turf vs par 77 = -15. Within-5: FAIL. Surface: PASS turf. No carve-out fires. <strong>HARD-TOSS valid.</strong> (Scratch risk anyway.)</li></ul>
+<h3>At-par soft-toss audit</h3>
+<ul><li>#9 Ocean Ripple (74T -3): at-par, 2nd+3rd slot.</li><li>#15 Wella AE (73T -4): at-par if draws in, 2nd+3rd slot.</li><li>#16 Argentinidad AE (79T +2): at-par if draws in, 2nd+3rd slot.</li><li>#13 English Harbour AE (no turf, sharp dirt): 2-source mandate via TRI 2nd+3rd if draws in.</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Cool Kiddo</td><td style='text-align:left'>70T (-7)</td><td style='text-align:left'>declining</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Figurine</td><td style='text-align:left'>72T (-5)</td><td style='text-align:left'>at-par window</td><td style='text-align:left'>PL ML Overlay</td><td style='text-align:left'>—</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Mor Spirit's Magic</td><td style='text-align:left'>68T (-9)</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Lexico</td><td style='text-align:left'>71T (-6)</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>Soft-toss / scratch risk</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Modern Escape</td><td style='text-align:left'>62T (-15)</td><td style='text-align:left'>overmatched</td><td style='text-align:left'>scratch risk</td><td style='text-align:left'>—</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Mother Lode</td><td style='text-align:left'>—</td><td style='text-align:left'>scratch risk</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Mosaic Magic</td><td style='text-align:left'>73T (-4)</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Theoretical</td><td style='text-align:left'>76T (-1)</td><td style='text-align:left'>par</td><td style='text-align:left'>2nd-start trainer 25%</td><td style='text-align:left'>blinkers on</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Ocean Ripple</td><td style='text-align:left'>74T (-3)</td><td style='text-align:left'>at-par</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>Newman</td><td style='text-align:left'>72T (-5)</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>11</td><td style='text-align:left'>Plot</td><td style='text-align:left'>78T (+1)</td><td style='text-align:left'>par</td><td style='text-align:left'>LP avg 90.3</td><td style='text-align:left'>—</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>12</td><td style='text-align:left'>Breaking Hearts</td><td style='text-align:left'>67T (-10)</td><td style='text-align:left'>E from outside</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>13</td><td style='text-align:left'>English Harbour AE</td><td style='text-align:left'>NA-T</td><td style='text-align:left'>sharp dirt</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>14</td><td style='text-align:left'>Key Actress</td><td style='text-align:left'>84T (+7)</td><td style='text-align:left'>top SR turf</td><td style='text-align:left'>sharp work 141d layoff</td><td style='text-align:left'>—</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>15</td><td style='text-align:left'>Wella AE</td><td style='text-align:left'>73T (-4)</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>16</td><td style='text-align:left'>Argentinidad AE</td><td style='text-align:left'>79T (+2)</td><td style='text-align:left'>par</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr></tbody></table></div>
+<h3>Bet tickets</h3>
+<ul><li>WIN $2 #14 Key Actress (A1 figure-overlay anchor; different horse from BB Farm chalk #8)</li><li>BOX 8,11,14 $1 = 6 combos × $1 = $6 (A-tier exacta box)</li><li>STRAIGHT 12/8,11,14 $1 = 3 combos × $1 = $3 (RULE 3 B1 + RULE 23 3-source mandatory WIN)</li><li>TRI 8,11,14 / 8,11,12,14 / 8,9,11,12,13,14,15 $0.50 = 45 combos × $0.50 = $22.50</li><li>BB Farm WIN $10 #8 Theoretical (different horse from PLAY anchor #14; both layers)</li></ul>
+<p><strong>Cash: $33.50. With BB: $43.50.</strong></p>
+<h3>BB Farm scan</h3>
+<ul><li>Field size: 16 (qualifies for 2nd-or-3rd refund)</li><li>Top multi-expert chalk: #8 Theoretical (4-source universal)</li><li>ML: 9/2</li><li>Verdict: <strong>QUALIFIES</strong></li></ul>
+<h3>Contingencies</h3>
+<ul><li><strong>Off-turf:</strong> PASS entirely. Key Actress's last AW was 47 (bleeding); Plot AW 75 holds; Theoretical 76 dirt. If race moves to dirt, restructure or skip.</li><li><strong>Heart Spin-style scratch risk:</strong> if Lexico, Modern Escape, Mother Lode all scratch (high probability per Watch list), AEs draw in. Add #16 Argentinidad to TRI 3rd-slot if confirmed (+~$4.50).</li></ul>
+<p>Post (CT): 1:18p · Tickets: $33.50 PLAY + $10 BB Farm · Total: $43.50</p>
+<hr>
+<h2 id="race-5">Race 5 — 1m dirt · MdnClm $12,500 · 13 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>Top horse #1 Chasing Gray (3-source) form catastrophically weak (38, 39, 65 last 3, 41-day layoff). Top SR #6 Big Rog has only 1 STRONG signal. No overlay anywhere.</p>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>brisPICKS: 1, 4, 3, 6</li><li>KH-PDF: 4, 8, 12 (Cliffs of Dover, Tregetour, Ando)</li><li>TS-Expert / ProfitLine: 1, 4, 3</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>KH</th><th style='text-align:left'>TS/PL</th><th style='text-align:left'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Chasing Gray</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>2</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Cliffs of Dover</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Jinxzi</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>2</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Ando</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>1</td></tr><tr><td style='text-align:left'>12</td><td style='text-align:left'>Tregetour</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>1</td></tr></tbody></table></div>
+<h3>BB Farm scan</h3>
+<ul><li>Top chalk #4 Cliffs of Dover at 9/2 ML, 3-source consensus. <strong>Could qualify</strong> but recent form 60-65 SR (well below par 80). Subagent skipped on form-disqualifier; main agent agrees — best skip rather than chase weak chalk.</li></ul>
+<p>Post (CT): 1:52p · Tickets: — · Total: —</p>
+<hr>
+<h2 id="race-6">Race 6 — 1 1/4m dirt · UAE Pres Cup Arabian S. NG $400K · 9 horses (Arabian)</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>Arabian-only race; framework's Thoroughbred-figure architecture (RULE 12, 13, par calculations) doesn't apply to Arabian breed. Speculative analysis only.</p>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>brisPICKS: 6, 4, 8, 2</li><li>KH-PDF / TS-Expert: 6, 4, 8</li><li>ProfitLine: 6, 4, 8</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>All sources</th><th style='text-align:left'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>6</td><td style='text-align:left'>RB Badonkadonk</td><td style='text-align:left'>universal</td><td style='text-align:left'>4</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Diamond Gem AA</td><td style='text-align:left'>universal</td><td style='text-align:left'>4</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>WMA Smoke Signal</td><td style='text-align:left'>universal</td><td style='text-align:left'>4</td></tr></tbody></table></div>
+<h3>BB Farm scan</h3>
+<ul><li>Field size: 9 (qualifies for 2nd-or-3rd refund)</li><li>Top chalk: #6 RB Badonkadonk (4-source universal, 6/5 ML, recent G3 wire winner)</li><li>Verdict: QUALIFIES — universal expert consensus + market chalk alignment per chalk-holding rule</li><li><strong>Caveat:</strong> Arabian-breed analysis is outside framework calibration scope; this BB Farm is a pure +EV refund-layer play on consensus, not a figure-validated bet</li></ul>
+<p>Post (CT): 2:29p · Tickets: — (PASS) · BB Farm option: <strong>WIN $10 #6 RB Badonkadonk</strong> · Total: — / $10 BB</p>
+<hr>
+<h2 id="race-7">Race 7 — 1 1/16m turf · MSW $120K F&amp;M · 15 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>Gate condition 2 fails: #1 Honfleur at 9/5 = 36% implied requires ≥54% true win% for 1.5× — structurally impossible in 15-horse maiden. No clean B-tier VALUE.</p>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>brisPICKS: 1, 13, 4</li><li>KH-PDF: 1, 5, 13</li><li>TS-Expert: 1, 4, 5</li><li>ProfitLine: 1, 4, 7</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>KH</th><th style='text-align:left'>TS-E</th><th style='text-align:left'>PL</th><th style='text-align:left'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Honfleur</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>4 (universal)</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Cape Sounion</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Heavenly Melody</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>2</td></tr><tr><td style='text-align:left'>13</td><td style='text-align:left'>Private Property AE</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>2</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Vow to Resiliency</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>1</td></tr></tbody></table></div>
+<h3>Hard-toss audit</h3>
+<ul><li>#8 Sammy the Shark: 63 turf SPD, -18 par. HARD-TOSS valid.</li><li>#14 Not That Simple AE: 71 turf, -10 par; with 1 start + first turf + partial unknowable, demote to soft-toss.</li></ul>
+<h3>BB Farm scan</h3>
+<ul><li>Field size: 15 (qualifies for 2nd-or-3rd refund)</li><li>Top chalk: #1 Honfleur (4-source universal)</li><li>ML: 9/5</li><li>Verdict: <strong>QUALIFIES</strong> (universal consensus + Chad Brown turf maiden — strong profile)</li></ul>
+<p>Post (CT): 3:03p · Tickets: — (PASS) · BB Farm option: <strong>WIN $10 #1 Honfleur</strong> · Total: — / $10 BB</p>
+<hr>
+<h2 id="race-8">Race 8 — 7f dirt · Starter Allow F&amp;M · 7 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>A-tier #6 Jensco overlay 1.03× near-miss at 9/5 ML. No B-tier VALUE.</p>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>brisPICKS: 6, 1, 2, 7</li><li>KH-PDF: 6, 2, 1</li><li>ProfitLine: 6, 2, 1</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>KH</th><th style='text-align:left'>PL</th><th style='text-align:left'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>6</td><td style='text-align:left'>Jensco</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Our Shenanigan</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Angel Bella</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Madeline's Promise</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>1</td></tr></tbody></table></div>
+<h3>Hard-toss audit</h3>
+<ul><li>#5 Tearin'up My Heart: 79 SPD -8 par dirt. Within-5 FAIL. But scratch list shows her scratched. N/A.</li></ul>
+<h3>BB Farm scan</h3>
+<ul><li>Field size: 7 (qualifies for 2nd-or-3rd refund — 7-9h tier; corrected from earlier "2nd-only" reading; 7+ horses gets 2nd-or-3rd if I read correctly... actually the CD fine print: 8+ horses for 2nd-or-3rd, 5-7 for 2nd-only. <strong>7-horse field = 2nd-only refund tier.</strong>)</li><li>Top chalk: #6 Jensco (3-source universal)</li><li>ML: 9/5</li><li>Verdict: <strong>QUALIFIES</strong> per chalk-holding rule override (subagent declined; CD 4/29 chalk-holding rule applies)</li><li><strong>2nd-only refund</strong> tier with 9/5 chalk = borderline EV; take only if prefer chalk insurance</li><li>Suggested: WIN $10 #6 Jensco</li></ul>
+<p>Post (CT): 3:40p · Tickets: — (PASS) · BB Farm option: <strong>WIN $10 #6 Jensco</strong> · Total: — / $10 BB</p>
+<hr>
+<h2 id="race-9">Race 9 — 1m turf · Opening Verse S. NG $350K · 9 horses</h2>
+<h3>Pace scenario</h3>
+<p>#7 Mi Bago + #4 Quatrocento contest early lead; #8 Lagynos stalks 3rd-4th; takes over in lane.</p>
+<h3>PLAY/PASS: PLAY</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo, turf): #8 Lagynos (103 turf, par 97 = +6, G2 winner 3/21/26)</li><li>Tier: A-tier (improving 92→101→103, no demotion)</li></ul>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>brisPICKS: 8, 4, 1, 9</li><li>KH-PDF: 8, 4, 1</li><li>TS-Expert (3-star best bet): 8 Lagynos</li><li>ProfitLine: 8, 4, 5</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>KH</th><th style='text-align:left'>TS-E</th><th style='text-align:left'>PL</th><th style='text-align:left'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>8</td><td style='text-align:left'>Lagynos</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>4 (universal)</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Quatrocento</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>3</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Layabout</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>2</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Chasing the Crown</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>1</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>West Hollywood</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>1 (figure-driven)</td></tr></tbody></table></div>
+<p>ProfitLine flags: #8 ML Overlay rank 1, #5 ML Overlay rank 3.</p>
+<h3>Gate verification</h3>
+<ul><li>Core A-tier: #8 Lagynos — top SR +6 par, back-to-back G2/G3 wins, Asmussen + JL Ortiz (2 STRONG signals)</li><li>A-tier overlay: 8/5 = 38.5% implied, est ~45% = 1.17× near-miss</li><li>B-tier overlay: <strong>#9 West Hollywood at 8/1 = 11.1% implied, est 18-20% = 1.6-1.8× ✓</strong> (B-tier VALUE — Cox/Prat hot T/J 2-for-2 + 2nd-off-layoff angle + at-class 96 turf within 5 par)</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #8 Lagynos (A1 — top SR, universal), #4 Quatrocento (A2 — par figure, back-to-back stakes wins, 3-source)</li><li>🎯 B-tier: #5 Chasing the Crown (B1 — best at-class 100, HorseForCourse 57% CD turf), #9 West Hollywood (B2 VALUE — 1.6-1.8× overlay)</li><li>Soft-toss (at-par 2nd+3rd): #1 Layabout (95T -2), #3 Balnikhov (99T +2), #6 Giocoso (92T -5), #7 Mi Bago (97T par)</li><li>Soft-toss (3rd only): #2 Minaret Station (88T -9, 306d layoff)</li></ul>
+<h3>At-par soft-toss audit</h3>
+<ul><li>#1 Layabout (95T -2): at-par, 2-source mandatory KEY BOX both directions (RULE 21/23).</li><li>#3 Balnikhov (99T +2): at-par, 2nd+3rd slot.</li><li>#6 Giocoso (92T -5): at-par border, 2nd+3rd slot.</li><li>#7 Mi Bago (97T par): at-par, 2nd+3rd slot.</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Layabout</td><td style='text-align:left'>95T (-2)</td><td style='text-align:left'>at-par</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Minaret Station</td><td style='text-align:left'>88T (-9)</td><td style='text-align:left'>306d layoff</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>Soft-toss (3rd only)</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Balnikhov</td><td style='text-align:left'>99T (+2)</td><td style='text-align:left'>par</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Quatrocento</td><td style='text-align:left'>97T (par)</td><td style='text-align:left'>back-to-back stakes wins</td><td style='text-align:left'>early speed</td><td style='text-align:left'>—</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Chasing the Crown</td><td style='text-align:left'>100T (+3)</td><td style='text-align:left'>best at-class</td><td style='text-align:left'>—</td><td style='text-align:left'>HorseForCourse 57% CD</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Giocoso</td><td style='text-align:left'>92T (-5)</td><td style='text-align:left'>border</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Mi Bago</td><td style='text-align:left'>97T (par)</td><td style='text-align:left'>at-par</td><td style='text-align:left'>E early</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Lagynos</td><td style='text-align:left'>103T (+6)</td><td style='text-align:left'>top SR G2 winner</td><td style='text-align:left'>improving 92-101-103</td><td style='text-align:left'>Asmussen and JL Ortiz</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>West Hollywood</td><td style='text-align:left'>96T (-1)</td><td style='text-align:left'>at-par</td><td style='text-align:left'>2nd-off-layoff</td><td style='text-align:left'>Cox/Prat hot</td><td style='text-align:left'>B-tier</td></tr></tbody></table></div>
+<h3>Bet tickets (BB-consolidation: Lagynos = A1 = BB Farm chalk; consolidate $2 WIN into $10 BB)</h3>
+<ul><li>WIN $10 #8 Lagynos (BB Farm consolidates; framework $2 WIN replaced)</li><li>BOX 4,8 $1 × 2 combos = $2</li><li>KEY BOX 1/4,8 $1 × 4 combos = $4 (RULE 21/23 — #1 Layabout 2-source mandatory exacta both directions)</li><li>STRAIGHT 5/4,8 $1 × 2 combos = $2 (RULE 3 B1 + RULE 23 1-source PL)</li><li>TRI 4,8 / 1,5,9 / 1,2,3,4,5,6,7,8,9 $0.50 × 42 combos = $21<ul><li>1st {4,8} × 2nd {1,5,9}: 6 ordered pairs</li><li>For each pair, 3rd from full field (9 horses) minus 2 used = 7 → 6×7 = 42</li></ul></li></ul>
+<p><strong>Cash: $29 framework + $10 BB consolidates = $39 total</strong></p>
+<h3>BB Farm scan</h3>
+<ul><li>Field size: 9 (qualifies for 2nd-or-3rd refund)</li><li>Top chalk: #8 Lagynos (4-source universal)</li><li>ML: 8/5</li><li>Verdict: <strong>QUALIFIES, consolidates with PLAY WIN bet</strong></li></ul>
+<p>Post (CT): 4:14p · Tickets: $39 PLAY (BB consolidated) · Total: $39</p>
+<hr>
+<h2 id="race-10">Race 10 — 6f dirt · St. Matthews Overnight S. NG $200K · 11 horses</h2>
+<h3>Pace scenario</h3>
+<p>#1 Concrete Glory and #9 Maximum Bourbon duel early; #3 Be You stalks; pace setup favors stalking move late.</p>
+<h3>PLAY/PASS: PLAY</h3>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo, dirt): #1 Concrete Glory and #7 Wendelssohn tied at 102 best dist</li><li>#1 CG = A-tier (RULE 12 default; Jan 70 outlier was trip; not 3-race decline)</li><li>#7 Wendelssohn = B-tier (RULE 12 demoted: declining 96→90→89 at par-class, no carve-out)</li></ul>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>brisPICKS: 3, 2, 9, 6</li><li>KH-PDF: 3, 2, 6</li><li>ProfitLine: 3, 1, 7 (with #7 Wendelssohn ML Overlay rank 5)</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>KH</th><th style='text-align:left'>PL</th><th style='text-align:left'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>3</td><td style='text-align:left'>Be You</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Built</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>2</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Back Em Up</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>2</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Concrete Glory</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>1 (figure-driven A1)</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Maximum Bourbon</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>1 (scratch watch)</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Wendelssohn</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>✓ (overlay)</td><td style='text-align:left'>1</td></tr></tbody></table></div>
+<p>ProfitLine flags: #3 Chalk Buster rank 1, #1 ML Overlay rank 2, #7 ML Overlay rank 5.</p>
+<h3>Gate verification</h3>
+<ul><li>Core A-tier: YES — #1 Concrete Glory (top SR 102, Irad/Joseph 21% E-types, lone speed if #9 scratches)</li><li>A-tier overlay: #1 CG at 8/1 = 11% implied, est ~18-22% = <strong>1.6-2.0× ✓</strong> (figure-overlay PLAY trigger)</li><li>#3 Be You at 4/1 = 20% implied, est 25-30% = ~1.25-1.5× borderline (universal consensus + class drop)</li></ul>
+<h3>Tiers</h3>
+<ul><li>⭐ A-tier: #1 Concrete Glory (A1 — RULE 12 top figure 102 dirt, Irad/Joseph hot, <strong>VALUE 8/1 = 1.6-2.0× overlay</strong>), #3 Be You (A2 — 3-source universal, class drop G2→NG, P-stalker pace fit)</li><li>🎯 B-tier: #2 Built (B1 — best last race 100, 2-source mandatory KEY BOX), #6 Back Em Up (B2 — 2-source, sprint form), #7 Wendelssohn (B3 — declining but PL ML Overlay flag)</li><li>Soft-toss (at-par 2nd+3rd): #8 Bourbon Bash (98 -1), #9 MB (97 -2, scratch watch), #10 Jack's Promise (98 -1), #4 Billal (98 -1), #5 Lofty Adjudicator (95 -4)</li><li>Hard-toss: #11 Air Invasion (87 best dirt -12 par)</li></ul>
+<h3>Hard-toss audit</h3>
+<ul><li>#11 Air Invasion: 87 best dirt vs par 99 = -12. Within-5: FAIL. Surface: PASS dirt. No carve-out fires. <strong>HARD-TOSS valid</strong>.</li></ul>
+<h3>At-par soft-toss audit</h3>
+<ul><li>#4 Billal (98 -1): at-par, 2nd+3rd slot.</li><li>#5 Lofty Adjudicator (95 -4): at-par border, 2nd+3rd slot.</li><li>#8 Bourbon Bash (98 -1): at-par, 2nd+3rd slot.</li><li>#9 Maximum Bourbon (97 -2, scratch watch): at-par if active, 2nd+3rd slot.</li><li>#10 Jack's Promise (98 -1): at-par, 2nd+3rd slot.</li></ul>
+<h3>Factor breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>Speed vs par</th><th style='text-align:left'>Class</th><th style='text-align:left'>Form</th><th style='text-align:left'>Trainer angle</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Concrete Glory</td><td style='text-align:left'>102 (+3)</td><td style='text-align:left'>top SR dirt</td><td style='text-align:left'>lone speed if 9 SCR</td><td style='text-align:left'>Irad/Joseph 21% E</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Built</td><td style='text-align:left'>100 (+1)</td><td style='text-align:left'>best last race</td><td style='text-align:left'>sprint form</td><td style='text-align:left'>—</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Be You</td><td style='text-align:left'>99 (par)</td><td style='text-align:left'>class drop G2 to NG</td><td style='text-align:left'>P-stalker</td><td style='text-align:left'>—</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Billal</td><td style='text-align:left'>98 (-1)</td><td style='text-align:left'>at-par</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Lofty Adjudicator</td><td style='text-align:left'>95 (-4)</td><td style='text-align:left'>border</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Back Em Up</td><td style='text-align:left'>99 (par)</td><td style='text-align:left'>sprint form</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Wendelssohn</td><td style='text-align:left'>102 (+3) declining</td><td style='text-align:left'>declining 96-90-89</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Bourbon Bash</td><td style='text-align:left'>98 (-1)</td><td style='text-align:left'>at-par</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Maximum Bourbon</td><td style='text-align:left'>97 (-2)</td><td style='text-align:left'>scratch watch</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>Jack's Promise</td><td style='text-align:left'>98 (-1)</td><td style='text-align:left'>at-par</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>11</td><td style='text-align:left'>Air Invasion</td><td style='text-align:left'>87 (-12)</td><td style='text-align:left'>overmatched</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>Hard-toss</td></tr></tbody></table></div>
+<h3>Bet tickets</h3>
+<ul><li>WIN $2 #1 Concrete Glory (A1 figure-overlay anchor; different horse from BB Farm chalk #3)</li><li>~~WIN $2 #3 Be You~~ — consolidated into BB Farm $10 (A2 = BB Farm chalk)</li><li>BOX 1,2,3 $1 × 6 combos = $6 (A-tier triple BOX, includes RULE 3 B1 #2 directional)</li><li>KEY BOX 6/1,3 $1 × 4 combos = $4 (RULE 23 #6 mandatory exacta both directions)</li><li>TRI 1,3 / 1,2,3,5,6 / 1,2,3,5,6,8,10 $0.50 × 40 combos = $20</li><li>BB Farm WIN $10 #3 Be You (consolidates A2 WIN)</li></ul>
+<p><strong>Cash: $32 framework + $10 BB consolidated = $42 total</strong> (was $40 with separate $2 WIN on Be You)</p>
+<h3>BB Farm scan</h3>
+<ul><li>Field size: 11 (qualifies for 2nd-or-3rd refund)</li><li>Top chalk: #3 Be You (3-source universal, ML Chalk Buster flag from PL)</li><li>ML: 4/1</li><li>Verdict: <strong>QUALIFIES</strong> (consolidates with framework $2 WIN on #3 — BB-consolidation rule)</li></ul>
+<h3>Contingencies</h3>
+<ul><li><strong>#3 Be You scratch:</strong> Major restructure. #1 CG becomes lone A-tier; consider STRONG PLAY upgrade if drifts to 4/1+. Drop BB Farm.</li><li><strong>#9 MB scratch:</strong> Lighter pace; #1 CG becomes near-lone speed.</li></ul>
+<p>Post (CT): 4:50p · Tickets: $32 PLAY + $10 BB Farm · Total: $42</p>
+<hr>
+<h2 id="race-11">Race 11 — 5.5f turf · Mamzelle G3 (3yo F) · 11 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>#5 Cy Fair (4-source universal, 3-STAR Best Bet, BC Juvenile Turf Sprint G1 winner, +11 par turf) at 5/2 ML correctly priced. ProfitLine flags her as their #1 ML Overlay (PL fair 4/5 vs ML 5/2) but market is already there. No B-tier VALUE.</p>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>All 4 sources: #5 Cy Fair top pick. #8 Slay the Day 2-3 sources. #6 Hen Party 2-3 sources.</li><li>ProfitLine ML Overlay rank 1: #5 Cy Fair</li></ul>
+<h3>BB Farm scan</h3>
+<ul><li>Field size: 11 (qualifies for 2nd-or-3rd refund)</li><li>Top chalk: #5 Cy Fair (4-source universal)</li><li>ML: 5/2</li><li>Verdict: <strong>QUALIFIES</strong> — universal consensus G3 chalk</li></ul>
+<p>Post (CT): 5:22p · Tickets: — (PASS) · BB Farm option: <strong>WIN $10 #5 Cy Fair</strong> · Total: — / $10 BB</p>
+<hr>
+<h2 id="race-12">Race 12 — 6f dirt · MdnClm $50K · 12 horses</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p>#7 Mizzou and #6 Prime Power tied 97 SR + 11 par; both at near-miss overlays (Mizzou 1.1-1.3× at 3/1, Prime Power 1.2-1.4× at 7/2). #9 Barker (4.5/1, 3-source) borderline 1.2-1.4× near-miss. Multi-source consensus but no clear overlay.</p>
+<h3>Dual-expert audit (4 sources)</h3>
+<ul><li>brisPICKS: 7, 6, 9, 8</li><li>KH-PDF: 7, 9, 6</li><li>ProfitLine: 9, 7, 6</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>KH</th><th style='text-align:left'>PL</th><th style='text-align:left'>Total</th></tr></thead><tbody><tr><td style='text-align:left'>7</td><td style='text-align:left'>Mizzou</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Prime Power</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Barker</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>3 (universal)</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Five Wishes</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>1</td></tr></tbody></table></div>
+<h3>BB Farm scan</h3>
+<ul><li>Field size: 12 (qualifies for 2nd-or-3rd refund)</li><li>Top chalk: #7 Mizzou (3-source universal at 3/1 ML — also #6 and #9 are 3-source universal)</li><li>Verdict: <strong>QUALIFIES</strong> per chalk-holding rule override (subagent qualified earlier)</li></ul>
+<p>Post (CT): 5:53p · Tickets: — (PASS) · BB Farm option: <strong>WIN $10 #7 Mizzou</strong> · Total: — / $10 BB</p>
+<hr>
+<h2>Card-wide audit blocks</h2>
+<h3>B-tier overlay scan (T1-E)</h3>
+<ul><li>R2 #4/#5 4-source universal — RULE 23 mandatory KEY BOX coverage applied</li><li>R4 <strong>#14 Key Actress 1.6-1.8× overlay → A1 PLAY trigger</strong> (figure-driven, 0 expert sources but RULE 24 doesn't fire)</li><li>R7 #1 Honfleur 1.05× chalk (no overlay possible at 9/5 in 15h maiden)</li><li>R9 <strong>#9 West Hollywood 1.6-1.8× overlay → B-tier VALUE PLAY trigger</strong> (Cox/Prat hot T/J + 2nd-off-layoff)</li><li>R10 <strong>#1 Concrete Glory 1.6-2.0× overlay → A1 figure-driven PLAY</strong> (top dist BSF 102, Irad/Joseph)</li></ul>
+<h3>Cross-block tier consistency</h3>
+<p>All R2/R4/R9/R10 tier calls consistent across audit blocks, factor breakdowns, and ticket structure. Source consensus tables built FIRST per agent-brief Required Output update.</p>
+<h3>RULE 23 Expert Consensus Floor (4-source enforcement)</h3>
+<p>Tonight's ingest split ProfitLine into its own file (<code>profitline_picks.txt</code>); subagents read all 4 sources from analysis start. RULE 23 violations from CD 4/29 R5 (mid-flow source addition) eliminated.</p>
+<h3>RULE 13 hard-toss audit enforcement</h3>
+<p>All hard-tosses defended against ALL 5 carve-outs:</p>
+<ul><li>R2 #2/#3 (-26/-21 par dirt, no carve-out) — valid</li><li>R4 #5 Modern Escape (-15 par turf, no carve-out, scratch risk) — valid</li><li>R7 #8 Sammy the Shark (-18 par turf, no carve-out) — valid</li><li>R10 #11 Air Invasion (-12 par dirt) — valid</li></ul>
+<h3>Chalk-holding rule application (per CD 4/29 calibration)</h3>
+<p>4-of-4 wins on universal-market-aligned chalks at CD 4/29 (Empire Builder, Ruiva, Roja, Parchment Party). BB Farm gates for "fair-priced chalks at no overlay" overridden across this card — all multi-source universal/3-source chalks in 5+h fields are eligible BB Farm targets even at 8/5 to 5/2 chalk prices.</p>
+<hr>
+<h2>Bankroll planning</h2>
+<p><strong>Total card cash exposure (recommended):</strong> $116 framework + up to $100 BB Farm = $216 maximum <strong>Highest-conviction bets:</strong></p>
+<ul><li>R4 PLAY $33.50 + $10 BB ($43.50) — universal-figure overlay + universal-consensus BB Farm on different horses</li><li>R9 PLAY $39 (consolidated) — A-tier 4-source universal Lagynos + B-tier VALUE on West Hollywood at 1.6-1.8×</li><li>R10 PLAY $32 + $10 BB ($42) — figure-overlay A1 + universal-consensus A2 BB Farm</li></ul>
+<p><strong>Strongest BB Farm-only profile:</strong></p>
+<ul><li>R7 #1 Honfleur (4-source universal, 15h field, Chad Brown turf) — best risk-adjusted BB Farm of the day</li><li>R11 #5 Cy Fair (4-source universal G3 chalk, BC G1 winner)</li><li>R6 #6 RB Badonkadonk (4-source universal Arabian — caveat applies)</li></ul>
+<p><strong>Marginal/borderline BB Farms (defensible to skip):</strong></p>
+<ul><li>R2 #1 Delightful Claire 6/5 in 6h field = 5-7 tier 2nd-only refund</li><li>R8 #6 Jensco 9/5 in 7h field = 5-7 tier 2nd-only refund</li><li>R12 #7 Mizzou 3/1 in 12h field — solid</li></ul>
+<p><strong>Conservative play option (just the 4 PLAYs + 4 strongest BB Farms):</strong></p>
+<ul><li>PLAYs: R2 + R4 + R9 + R10 = ~$116 cash</li><li>BB Farms: R4 + R7 + R10 + R11 = $40</li><li>Total: ~$156</li></ul>
+<footer class="page">Generated by the horses analyzer · read on any device · share freely</footer>
+</main>
+</body>
+</html>
