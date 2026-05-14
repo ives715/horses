@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>LRL · 2026-05-16 (Preakness Day)</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --fg: #1a1a1a;
+  --fg-soft: #555;
+  --accent: #1f6feb;
+  --rule: #e5e5ea;
+  --code-bg: #f0f0f2;
+  --tier-a: #0a7d3e;
+  --tier-b: #b36b00;
+  --tier-c: #888;
+  --warn: #b42020;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --fg: #e6edf3;
+    --fg-soft: #9ca3af;
+    --accent: #79c0ff;
+    --rule: #30363d;
+    --code-bg: #1f2937;
+    --tier-a: #3fb950;
+    --tier-b: #d29922;
+    --tier-c: #8b949e;
+    --warn: #ff7b72;
+    --card: #161b22;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+header.page {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+header.page .eyebrow {
+  font-size: 13px;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+header.page h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+h1, h2, h3, h4, h5 {
+  color: var(--fg);
+  line-height: 1.25;
+  margin: 1.6em 0 0.5em;
+}
+h1 { font-size: 24px; }
+h2 {
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 17px; }
+h4 { font-size: 15px; color: var(--fg-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+p, ul, ol, blockquote { margin: 0 0 1em; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: var(--fg); }
+em { color: var(--fg-soft); }
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--code-bg);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 4px 16px;
+  color: var(--fg-soft);
+  background: var(--bg-soft);
+  border-radius: 0 6px 6px 0;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2em 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1em -4px;
+  border-radius: 6px;
+}
+table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+/* Keep post time and cost columns from wrapping */
+td:nth-child(2), td:nth-child(5) { white-space: nowrap; }
+th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+tbody tr:hover { background: var(--bg-soft); }
+.strong-play {
+  color: var(--tier-a);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+footer.page {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--fg-soft);
+}
+/* Tier coloring — applied when header text contains the marker */
+h3:has(strong) { color: var(--fg); }
+/* mobile */
+@media (max-width: 520px) {
+  .wrap { padding: 16px 14px 48px; }
+  header.page h1 { font-size: 22px; }
+  h1 { font-size: 21px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  table { font-size: 13px; }
+  th, td { padding: 6px 8px; }
+}
+/* print */
+@media print {
+  body { background: #fff; color: #000; }
+  .wrap { max-width: 100%; padding: 0; }
+  h2 { break-after: avoid; }
+  table, pre, blockquote { break-inside: avoid; }
+  footer.page { display: none; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="page">
+
+<h1>LRL · 2026-05-16 (Preakness Day)</h1>
+</header>
+<p>Stem: <code>lrl0516y</code> · 14-race card · <strong>9 stakes races including Preakness G1</strong> Source pool: 2 of 5 confirmed pre-card (brisPICKS pre-day + ProfitLine). KH unavailable. TS-Expert and TM available live tomorrow; day-of brisPICKS expected. <strong>Re-audit every PLAY at 15-20 MTP.</strong> <strong>7 PLAY · 7 PASS · ~$176 cash · +$20 BB exposure if both remaining BBs deployed</strong></p>
+<h2>Quick Picks</h2>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Race</th><th style='text-align:left'>Post (CT)</th><th style='text-align:left'>Status</th><th style='text-align:left'>Tickets</th><th style='text-align:left'>Cost</th></tr></thead><tbody><tr><td style='text-align:left'><a href="#race-1">R1</a></td><td style='text-align:left'>10:30a</td><td style='text-align:left'>PASS</td><td style='text-align:left'>AOC F&amp;M turf — #7 Epic Style 8/5, no overlay; figure pool too tight</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-2">R2</a></td><td style='text-align:left'>11:05a</td><td style='text-align:left'>PASS</td><td style='text-align:left'>AOC dirt — #1/#1A coupled Ness entry 6/5 fairly priced (universal but ML 6/5 = no overlay)</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-3">R3</a></td><td style='text-align:left'>11:41a</td><td style='text-align:left'>PASS</td><td style='text-align:left'>MSW turf 3yo — Master Sommelier top SR but 1 STRONG only (0-for-4); no 1.5× overlay</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-4">R4</a></td><td style='text-align:left'>12:16p</td><td style='text-align:left'><strong>PLAY</strong></td><td style='text-align:left'>Skipat S Listed — WIN #2 · KEY BOX 2/7 · STRAIGHT 3/2,7 · TRI 2,7/1,3,4,7/1,3,4,5,6 (Passage East A1 1.5× overlay 3/1, PL 3-Star Best Bet)</td><td style='text-align:left'><strong>$23.00</strong></td></tr><tr><td style='text-align:left'><a href="#race-5">R5</a></td><td style='text-align:left'>12:51p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>15h F&amp;M turf ALW — pace not cleanly readable (4 E/P types, no closer story)</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-6">R6</a></td><td style='text-align:left'>1:28p</td><td style='text-align:left'><strong>PLAY</strong></td><td style='text-align:left'>Sir Barton Listed — STRAIGHT 3/7,4 · KEY BOX 7/4 · TRI 7,4/3,6,7/1,2,3,5,6 (Reagan's Honor A1 7/5 + Let's Go Lando B1 VALUE 1.57× at 6/1; #3 Lando 0/2 source → STRAIGHT only, no WIN line)</td><td style='text-align:left'><strong>$15.00</strong></td></tr><tr><td style='text-align:left'><a href="#race-7">R7</a></td><td style='text-align:left'>2:07p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>Chick Lang Listed — Obliteration A1 6/5 priced at true odds; no clean 1.5× overlay</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-8">R8</a></td><td style='text-align:left'>2:48p</td><td style='text-align:left'><strong>PLAY</strong> + BB</td><td style='text-align:left'><strong>Maryland Sprint G3</strong> — WIN #4 · KEY BOX 4/2 · STRAIGHT 2/4 · TRI 2,4/2,4,5,8/2,3,4,5,6,8 (Haileysfirstnotion A1 1.6-1.8× VALUE at 7/2; LRL HFC 4/9, Capuano 35% L60d)</td><td style='text-align:left'><strong>$9.00</strong> / +$10 BB</td></tr><tr><td style='text-align:left'><a href="#race-9">R9</a></td><td style='text-align:left'>3:30p</td><td style='text-align:left'><strong>PLAY</strong></td><td style='text-align:left'>Murphy Listed — WIN #4 · KEY BOX 4/5,6 · STRAIGHT 5/4,6 · STRAIGHT 6/4,5 · TRI 4,5,6/1,4,5,6/1,2,3,4,5,6 (Attfield A1 1.6× at 9/2, top turf SR +3 par, class drop G3→Listed; RULE 20 B1/B2 within 2 SPD)</td><td style='text-align:left'><strong>$28.00</strong></td></tr><tr><td style='text-align:left'><a href="#race-10">R10</a></td><td style='text-align:left'>4:11p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>Dinner Party G3 — competitive 7h G3; top 3 universal chalks (#3, #4, #6) all priced at true odds; Harrow 12/1 has overlay but 0/2 source blocks WIN</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-11">R11</a></td><td style='text-align:left'>4:53p</td><td style='text-align:left'><strong>PLAY</strong> + BB</td><td style='text-align:left'><strong>Gallorette G3</strong> — WIN #5 · WIN #7 · KEY BOX 5/7 · STRAIGHT 3/5,7 · TRI 3,5,7/3,5,7/1,4,5,7,8 (Austere A1 1.59× at 7/2 — top turf SR +6 par, ran THIS race last year for 98; Child of the Moon A2 5/2 universal)</td><td style='text-align:left'><strong>$19.00</strong> / +$10 BB</td></tr><tr><td style='text-align:left'><a href="#race-12">R12</a></td><td style='text-align:left'>5:52p</td><td style='text-align:left'><strong>PLAY</strong></td><td style='text-align:left'>Jim McKay Turf Sprint Listed — WIN #2 · WIN #1 · KEY BOX 1/2 · STRAIGHT 10/1,2 · TRI 1,2/1,2,8,10/1,3,8,10,11 (Determined Kingdom A1 1.57× at 6/1 — top BSF 99 +8 par; Run Curtis Run A2 universal PL Chalk Buster; Fore Harp B5 VALUE 1.67× at 15/1 won same race Apr 25 — 0/2 blocks WIN)</td><td style='text-align:left'><strong>$20.00</strong></td></tr><tr><td style='text-align:left'><a href="#race-13">R13</a></td><td style='text-align:left'>7:01p</td><td style='text-align:left'><strong>PLAY</strong> + 2 BBs</td><td style='text-align:left'><strong>PREAKNESS G1</strong> — WIN #1 · WIN #9 · KEY BOX 1/9 · STRAIGHT 2/1,9 · STRAIGHT 12/1,9 · TRI 1,9/1,2,4,6,9,10,12/2,4,5,6,7,10,11,12,14 (Taj Mahal A1 5/1 universal undefeated 3/3 LRL HFC; Iron Honor A2 9/2 universal Brown/Prat; RULE 31 PLAY pre-race, upgrade to STRONG PLAY if either firms ≥30% at 5 MTP)</td><td style='text-align:left'><strong>$59.00</strong> / +$20 BB (both remaining)</td></tr><tr><td style='text-align:left'><a href="#race-14">R14</a></td><td style='text-align:left'>7:43p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>MSW 3yo dirt nightcap — 4 FTS unknowable; A-tier overlay 1.2-1.4× near-miss</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><strong>Total</strong></td><td style='text-align:left'></td><td style='text-align:left'><strong>7 PLAY · 7 PASS</strong></td><td style='text-align:left'></td><td style='text-align:left'><strong>$173 cash · +$30 BB exposure max</strong></td></tr></tbody></table></div>
+<hr>
+<h2>Card-wide notes</h2>
+<ul><li><strong>Big day:</strong> 9 stakes including Preakness G1. Heavy bet structure recommended; user's casual $50-75/card bankroll will be exceeded — see trim recommendations below.</li><li><strong>5 of 5 BBs would be deployable</strong> if all qualify, but user has only <strong>2 BBs remaining post-Friday</strong>. Best targets in EV order: <strong>R13 Taj Mahal (5/1 universal) + R13 Iron Honor (9/2 universal)</strong> as twin Preakness BBs. Alternatives: R8 Haileysfirstnotion (Maryland Sprint G3) and R11 Child of the Moon (Gallorette G3).</li><li><strong>Trim recommendation if budget-tight:</strong> Drop R6 Sir Barton (exotic-only structure with 0-source overlay horse — thin edge) and R9 Murphy (most expensive non-Preakness ticket). Saves $43. Net: ~$130 cash + BBs.</li><li><strong>Trim recommendation if budget-very-tight:</strong> Keep only <strong>R8 (BB), R11 (BB), R13 (2 BBs)</strong> — anchor races. Drop R4/R6/R9/R12 exotic structure to WIN-only or skip. ~$100 saved.</li><li><strong>Chaos-profile rules active on R8, R10, R11, R13</strong> (G3+) and <strong>R10/R13</strong> (also 14h chaos). All STRONG PLAYs downgraded to PLAY pre-race per RULE 31 — upgrade only if TS-E confirms day-of or ≥30% firming at 5 MTP.</li><li><strong>brisnet_topx "Top 3" lines NOT counted as sources</strong> per RULE 23. Source tally is bP + PL only (2-source pool) until TS-E/TM/day-of bP arrive tomorrow.</li><li><strong>Off-turf risk:</strong> R1/R3/R5/R9/R10/R11/R12 all turf with MTO clauses. If rain forces off-turf, every turf race needs re-evaluation.</li></ul>
+<hr>
+<h2 id="race-1">Race 1</h2>
+<p><strong>AOC Optional Claiming · 5½f Turf · $58,000 · 11 horses · Post 10:30a CT</strong> · F&amp;M 3yo+</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #6 Itsamonstamash 96 life — but no turf-distance experience; last 3 turf SPDs at par or below</li><li>Tier: Soft-toss (unknowable turf profile, 0/2 sources)</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>B-tier (no overlay):</strong> #7 Epic Style (2/2 universal, 8/5 ML, 83 SPD at par)</li><li><strong>At-par soft-toss (2nd+3rd):</strong> #1 Sally's Gold (87 turf +4), #2 Boujee Bubblez (81 -2), #3 Cairo Street (85 +2), #8 Gift of Gab (87 +4), #11 River Seine (85 +2)</li><li><strong>Hard-toss:</strong> none after RULE 13 audit (#4, #5, #10 demoted to soft-toss)</li></ul>
+<h3>Dual-expert audit</h3>
+<p>Source pool: 2 of 5 (KH/TS-E/TM unavailable).</p>
+<ul><li>brisPICKS: #7, #2, #3</li><li>ProfitLine: #7, #2, #3</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>7 Epic Style</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>2 Boujee Bubblez</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>3 Cairo Street</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: <strong>FAIL</strong> — no horse with 2+ STRONG CORE signals. #6 unknowable profile; #7 only at-par with no second STRONG.</li><li>Overlay: N/A</li><li>Pace readable: yes</li></ol>
+<p><strong>PASS</strong> — no A-tier anchor; chalk priced at true odds with no overlay path.</p>
+<hr>
+<h2 id="race-2">Race 2</h2>
+<p><strong>AOC Optional Claiming · 6f Dirt · $58,000 · 13 horses · Post 11:05a CT</strong></p>
+<p>Coupled entry: #1 Call Me Andy + #1A Blue Kingdom (both Ness/Hazlewood, 6/5 ML — single betting interest).</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #10 Dean Delivers 103 life — but declining (recent 70 at par-class), RULE 12 demoted; 0/2 sources</li><li>Top recent figure: #1A Blue Kingdom 102 at-dist (best in field with form)</li><li>Tier: A-tier on #1A (top recent fig, +9 par)</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier:</strong> #1A Blue Kingdom (coupled with #1 Call Me Andy at 6/5)</li><li><strong>B-tier:</strong> #3 Wickeddivine (98 life +5 par, 2/2 universal), #1 Call Me Andy (coupled; -3 par but universal source)</li><li><strong>Soft-toss:</strong> #12 Grand Opening (203d layoff, at-par), #10 Dean Delivers (declining)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #1/#1A, #3, #12</li><li>ProfitLine: #1/#1A, #3, #6</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>1/1A entry</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>3 Wickeddivine</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: ✓ #1A Blue Kingdom (coupled entry)</li><li>Overlay: 6/5 = 45% implied vs ~28-32% true (entry uncertainty + declining recent form on #1A) = <strong>0.67× — UNDERLAY, NO OVERLAY</strong>. Per RULE 19 near-miss explicitly fails. No B-tier VALUE clean overlay either.</li><li>Pace readable: ✓</li></ol>
+<p><strong>PASS</strong> — coupled entry overbet at 6/5; no overlay path.</p>
+<hr>
+<h2 id="race-3">Race 3</h2>
+<p><strong>MSW · 1m Turf · $52,000 · 11 horses · Post 11:41a CT</strong> · 3yo+</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR: #4 Master Sommelier (84 vs par 82 = +2; only 1 STRONG signal — figure)</li><li>Tier: A-tier consideration but only 1 STRONG (0-for-4 lifetime, 25% ITM, no second STRONG signal)</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier consideration:</strong> #4 Master Sommelier (top figure, but 0-for-4 lifetime — gate fails on 2-STRONG requirement)</li><li><strong>B-tier:</strong> #1 Limo (81 -1 par, 2/2 universal)</li><li><strong>Soft-toss (unknowable):</strong> #5 Scanner FTS, #9 Ocean Sound FTS, others</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #1, #3, #4</li><li>ProfitLine: #1, #4, #8</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>1 Limo</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>4 Master Sommelier</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: <strong>FAIL</strong> — top SR #4 has only 1 STRONG signal; 0-for-4 lifetime undercuts form-cycle support</li><li>Overlay: Master Sommelier 4/1 = 20% implied vs ~18-22% est = 1.0× — no overlay. Limo 5/2 = 29% implied, no overlay.</li><li>Pace readable: ✓</li></ol>
+<p><strong>PASS</strong> — no A-tier with 2+ STRONG signals; chalk priced at true odds.</p>
+<hr>
+<h2 id="race-4">Race 4</h2>
+<p><strong>Skipat Stakes Listed · 6f Dirt · $125,000 · 7 horses · Post 12:16p CT</strong> · F&amp;M 3yo+</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (Listed+ dirt, 12 mo): #2 Passage East (100 BSF at BFritchie L200k, Feb 2026 LRL, 7f → carries to 6f Listed)</li><li>Tier: A-tier</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier:</strong> #2 Passage East (top SR +7 par, <strong>ProfitLine 3-Star Best Bet</strong>, distance specialist 80%, LRL HFC 50%), #7 Modo (97 +4 par, universal, won last 2 wire-to-wire — A2 but no overlay at 9/5)</li><li><strong>B-tier:</strong> #3 Kappa Kappa (98 G2 figure 7f, 6f dirt best only 84 — universal but distance-stretch question, 160d off)</li><li><strong>At-par soft-toss (2nd+3rd):</strong> #1 Striker Has Dial (93 at-par), #4 Benedetta (92 at-par; 71d off)</li><li><strong>Soft-toss (3rd only):</strong> #5 Sporting Lady, #6 Complexity Jane (Russell rte-to-sprint angle)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #7, #3, #2</li><li>ProfitLine: #2 ⭐ 3-Star Best Bet, #4, #6 / #7, #2</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>2 Passage East</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓ ⭐</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>7 Modo</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>3 Kappa Kappa</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: ✓ Passage East — STRONG (top BSF 100, +7 par), STRONG (pace stalker behind contested duel between #7 E8 and #3 E8), STRONG (3-Star PL + distance specialist + LRL HFC)</li><li>Overlay: #2 at 3/1 = 25% implied vs ~37-40% true (top BSF + 3-Star + HFC) = <strong>1.48-1.60× — clears 1.5×</strong></li><li>Pace readable: ✓ Modo and Kappa Kappa duel early; Passage East stalks and pounces</li></ol>
+<p><strong>PLAY</strong></p>
+<h3>Tickets</h3>
+<ul><li>$2 WIN #2 Passage East (A-tier overlay, 3-Star Best Bet)</li><li>KEY BOX 2/7 ($1 × 2 combos = $2) — A-tier pair</li><li>STRAIGHT 3/2,7 ($1 × 2 = $2) — RULE 3 B1 in WIN slot</li><li>TRI 2,7/1,3,4,7/1,3,4,5,6 — combo math: 2 first × 4 second (avg, exclusions) × 4 third (avg) ≈ 30 combos × $0.50 = <strong>$17</strong></li></ul>
+<p><strong>Total R4: $23.00</strong></p>
+<h3>BB Farm</h3>
+<ul><li>Field 7 (5-7h → 2nd-only refund). Top chalk: #7 Modo 9/5 → fails 5/2 min for universal in 5-7h. <strong>DOES NOT QUALIFY.</strong></li></ul>
+<hr>
+<h2 id="race-5">Race 5</h2>
+<p><strong>Allowance · 1m Turf · $54,000 · 15 horses · Post 12:51p CT</strong> · F&amp;M 3yo+ NW1X</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR: #7 Mambo Queen (82 vs par 83 = -1, at par), 2/2 universal</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier consideration:</strong> #7 Mambo Queen (top SR, hot Russell/Russell, 2/2 universal — but pace structure not clear)</li><li><strong>Soft cover:</strong> #4 Sassari (78 -5, 1/2), #3 I Love Giraffes (83 at par, 1/2), #1 Nick's Notion (1/2 PL), #6 Synergism (1/2 PL)</li><li><strong>Hard-toss territory:</strong> #2 Don't Fool With Me, #8 So Darn Pretty (195d layoff)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #4, #7, #3 (top 3)</li><li>ProfitLine: #7, #1, #6</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>7 Mambo Queen</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: ✓ Mambo Queen</li><li>Overlay: 5/1 = 17% implied vs ~28-35% true (universal + top fig at par) = <strong>1.6-2.0× would clear</strong></li><li>Pace readable: <strong>FAIL</strong> — multiple E/P types (Sassari, Serenity Song, Devastating) plus Mambo Queen (P) and Tideoftime (P) plus closers; no clean pace structure on a 15h turf field with high uncertainty</li></ol>
+<p><strong>PASS</strong> — gate condition 3 fails. Pace structure too chaotic to project a coherent winning move.</p>
+<hr>
+<h2 id="race-6">Race 6</h2>
+<p><strong>Sir Barton Stakes Listed · 1 1/16 Dirt · $100,000 · 7 horses · Post 1:28p CT</strong> · 3yo</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-distance dirt SR (last 12 mo): #7 Reagan's Honor (96 SPD at 1 1/16m, FG Alw55k 2/19/26 = +4 par)</li><li>Top at-stake-distance figure: #3 Let's Go Lando (90 SPD at Federico Tesio B150k = -2 par, within 5)</li><li>Tier: A1 Reagan's Honor (class relief G1→Listed); B1 VALUE Let's Go Lando</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier:</strong> #7 Reagan's Honor (A1 — top at-dist fig +4, class drop from Blue Grass G1, universal), #4 Final Story (A2 — 93 +1 par at 7f sprint, <strong>first route ever</strong>, elite Cox/Irad)</li><li><strong>B-tier VALUE:</strong> #3 Let's Go Lando (90 at-stake-dist, LRL route specialist, 35% Capuano L60, 0/2 source — RULE 24a blocks WIN)</li><li><strong>B-tier:</strong> #2 Big Cuddle (universal 2/2, S-style, first route)</li><li><strong>At-par soft-toss (2nd+3rd):</strong> #6 Pont Aven (91 -1 par, won OC62.5k 1m)</li><li><strong>Situational soft-toss:</strong> #1 Minorinconvenience, #5 Falcon Jet</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #7, #4, #2 (top 3)</li><li>ProfitLine: #4 ⭐ Chalk Buster + ML Overlay, #7, #2</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>7 Reagan's Honor</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>4 Final Story</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓ ⭐</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>2 Big Cuddle</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: ✓ Reagan's Honor — top at-dist fig, class drop</li><li>Overlay: <strong>A-tier overlays fail</strong> — #7 7/5 = 42% implied (need 63% for 1.5×, unsupportable); #4 2/1 = 33% implied (first route, can't justify 50%). <strong>B-tier VALUE clears via #3 Let's Go Lando: 6/1 = 14% implied vs ~22-25% true (proven LRL route, 35% Capuano, 90 at-stake-dist within 5 of par) = 1.57-1.79× ✓</strong>. Note: Lando is 0/2 source — RULE 24a blocks direct WIN, but B-tier VALUE designation passes gate condition 2 via RULE 19. Structure pivots to RULE 3 STRAIGHT (Lando in WIN slot vs A-tier underneath).</li><li>Pace readable: ✓ Final Story and Reagan's Honor contest lead; Lando stalks 3rd; Big Cuddle closes</li></ol>
+<p><strong>PLAY</strong> (exotic-only structure — no direct WIN line; Lando RULE 24a blocked, #7/#4 no overlay)</p>
+<h3>Tickets</h3>
+<ul><li>STRAIGHT 3/7,4 ($1 × 2 = $2) — RULE 3 B1 VALUE on top per RULE 19</li><li>KEY BOX 7/4 ($1 × 2 = $2) — A-tier pair</li><li>TRI 3,7/3,4,6,7/1,2,3,4,5,6 — pairs and 3rd pool give ~22 combos × $0.50 = <strong>$11</strong></li></ul>
+<p><strong>Total R6: $15.00</strong></p>
+<hr>
+<h2 id="race-7">Race 7</h2>
+<p><strong>Chick Lang Stakes Listed · 6f Dirt · $150,000 · 8 horses · Post 2:07p CT</strong> · 3yo</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR: #4 Obliteration (97 BSF at OP Renaissance 150k = +3 par; Sanford G3 winner)</li><li>Tier: A-tier</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier:</strong> #4 Obliteration (top fig, class drop, Asmussen/JL Ortiz)</li><li><strong>B-tier:</strong> #6 Shane's Wonder (97 at maiden/75k level, undefeated 3/3 — class rise concern)</li><li><strong>At-par soft-toss:</strong> #3 Buds Notion (93 -1 par at OC62.5k)</li><li><strong>Hard-toss:</strong> #1 Fulmine (86 -8 par), #8 Magic Wallet (83 -11)</li></ul>
+<p>Note: #5 Igniter scratched from Bay Shore L 4/18 — verify scratch status at race time.</p>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #4, #6, #3 (after #5 scratch adjustment)</li><li>ProfitLine: #4 ⭐ 3-Star, #6</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>4 Obliteration</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓ ⭐</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>6 Shane's Wonder</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: ✓ #4 Obliteration</li><li>Overlay: 6/5 = 45% implied vs ~43-48% true = <strong>1.0× — NO OVERLAY</strong>. Obliteration correctly priced at fair value. #6 Shane's Wonder 3/1 = 25% vs ~22-27% est = 1.0-1.1× near-miss only.</li><li>Pace readable: ✓</li></ol>
+<p><strong>PASS</strong> — chalk priced at true odds.</p>
+<hr>
+<h2 id="race-8">Race 8 (Maryland Sprint G3)</h2>
+<p><strong>Stakes G3 · 6f Dirt · $150,000 · 9 horses · Post 2:48p CT</strong> · 3yo+ · BC Sprint Win-and-You're-In</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (dirt 6f, last 6 mo): <strong>TIED</strong> — #4 Haileysfirstnotion (107 SPD at OC55k 5/1/26) and #6 Celtic Contender (107 SPD at Alw66k 3/28/26)</li><li>Tiebreak by Prime Power: #4 (143.1) &gt; #6 (138.5) → A1 = #4</li><li>#6 = A2 by figure but <strong>RULE 24a blocks WIN</strong> (0/2 sources)</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier:</strong> #4 Haileysfirstnotion (A1 — 107 +7 par, 2/2 universal, LRL HFC 4/9, Capuano 35% L60d hot trainer, 15d fresh — STRONG×3), #6 Celtic Contender (A2 — 107 tied top fig, 0/2 source = WIN BLOCKED, TRI only)</li><li><strong>B-tier:</strong> #2 Faster Gator (B1 — 99 +5 par, 2/2 universal, 173d layoff with sharp 5f H2/17 work, LRL 2-2-0), #5 Floodlites (B2 — 98 -2 at-par, won last KEE OC80k, 1/2), #8 Slam Notion (B3 — 100 at-par 6f, LRL 5-2-0 specialist, hot Bailes trainer, 1/2)</li><li><strong>At-par soft-toss:</strong> #3 Faust (98 -2 at-par)</li><li><strong>Hard-toss:</strong> #1 Bring the Smoke (-6 par), #7 Hymn (-6), #9 S S Sinatra (-8)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #4, #5, #2 (top 3); #6 rank 4 overflow</li><li>ProfitLine: #4, #8, #2</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>4 Haileysfirstnotion</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>2 Faster Gator</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>5 Floodlites</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>1/2 Soft cover</td></tr><tr><td style='text-align:left'>8 Slam Notion</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>1/2 Soft cover</td></tr><tr><td style='text-align:left'>6 Celtic Contender</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>0/2 RULE 24a</td></tr></tbody></table></div>
+<h3>Gate verification (chaos-profile G3)</h3>
+<ol><li>A-tier: ✓ #4 Haileysfirstnotion — STRONG×3 (top 107 fig, 2/2 universal, Capuano 35% hot)</li><li>Overlay: #4 at 7/2 = 22% implied vs ~35-40% est (top fig at home track, 4-of-9 LRL HFC) = <strong>1.6-1.8× ✓</strong></li><li>Pace readable: ✓ #4 and #6 duel early; #2 stalks; whoever conserves wins</li></ol>
+<p><strong>RULE 31 chaos check:</strong> signal (3) at-dist/surf prep within 60d: YES — #4 ran 107 at 6f dirt 15 days ago. → Eligible for STRONG PLAY if signal (2) firming confirms at 5 MTP.</p>
+<p><strong>PLAY</strong> (upgrade to STRONG PLAY if #4 firms ≥30% at 5 MTP per RULE 31 inverse)</p>
+<h3>Tickets</h3>
+<ul><li>$2 WIN #4 Haileysfirstnotion</li><li>KEY BOX 4/2 ($1 × 2 = $2)</li><li>STRAIGHT 2/4 ($1 × 1 = $1)</li><li>TRI 2,4/2,4,5,8/2,3,4,5,6,8 — 8 combos × $0.50 = $4</li></ul>
+<p><strong>Total R8: $9.00</strong></p>
+<h3>BB Farm — QUALIFIES</h3>
+<ul><li>Field 9 (8+h → 2nd-or-3rd refund). #4 at 7/2 ML (2/2 universal in 8+h → min 6/5). Easily clears.</li><li><strong>$10 BB Farm WIN #4 Haileysfirstnotion</strong> — confirm post ≥6/5</li></ul>
+<h3>Day-of triggers</h3>
+<ul><li>If #4 firms ≥30% (to 2/1 or shorter) + at-dist prep already confirms → <strong>upgrade to STRONG PLAY</strong>: WIN $10 cash + $10 BB</li><li>If #4 drifts ≥30% (to 5/1 or longer) → RULE 29 anti-overlay, drop WIN, hold exotics</li><li>RULE 30: monitor #3 Faust (8/1, 0/2), #6 Celtic Contender (9/2, 0/2) for ≥35% steam → already in TRI 3rd</li></ul>
+<hr>
+<h2 id="race-9">Race 9 (James W. Murphy Listed)</h2>
+<p><strong>Stakes Listed · 1m Turf · $100,000 · 8 horses · Post 3:30p CT</strong> · 3yo</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class turf SR (last 6 mo): #4 Attfield (93 SR vs par 90 = +3)</li><li>Tier: A-tier (class drop from G3/Listed level)</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier:</strong> #4 Attfield (top turf SR, class drop, 2/2 universal, blinkers on equipment change, Morley 5% angle weak BUT figure overwhelms)</li><li><strong>B-tier RULE 20 pair (within 2 SPD):</strong> #5 Proton (B1 — 88 -2 par, Motion 24% LRL, 2/2 universal), #6 Turf Star (B2 — 86 -4 par, Motion 24%, top Prime Power 142.3, 2/2 universal) → within 2 SPD → both get WIN-slot STRAIGHTs + TRI 1st-slot</li><li><strong>Soft-toss:</strong> #1 My Favorite Bird (PL ML overlay flag, 85 at-par boundary), #3 Zihnal (turf debut), #2 Thebabeslayer</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #5, #6, #4</li><li>ProfitLine: #6, #5, #4</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>4 Attfield</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>5 Proton</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>6 Turf Star</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: ✓ #4 Attfield (top SR +3, class drop, universal)</li><li>Overlay: #4 at 9/2 = 18% implied vs ~28-32% est = <strong>1.6× ✓</strong></li><li>Pace readable: ✓ E/P types press; closer kicks late</li></ol>
+<p><strong>PLAY</strong></p>
+<h3>Tickets</h3>
+<ul><li>$2 WIN #4 Attfield</li><li>KEY BOX 4/5,6 ($1 × 4 combos = $4)</li><li>STRAIGHT 5/4,6 ($1 × 2 = $2) — RULE 3 B1</li><li>STRAIGHT 6/4,5 ($1 × 2 = $2) — RULE 20 B2</li><li>TRI 4,5,6/1,4,5,6/1,2,3,4,5,6 — 36 combos × $0.50 = <strong>$18</strong></li></ul>
+<p><strong>Total R9: $28.00</strong></p>
+<hr>
+<h2 id="race-10">Race 10 (Dinner Party G3)</h2>
+<p><strong>Stakes G3 · 1 1/8 Turf · $250,000 · 7 horses · Post 4:11p CT</strong> · 3yo+</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class turf SR (last 12 mo, G3+): #7 Harrow (103 BSF at Cape Henlopn L200k Jun 2025) — but 0/2 sources, recent form 89 at OC62.5k</li><li>Tier: A-tier per RULE 12, <strong>RULE 24a blocks WIN</strong> (0/2)</li><li>Fort Washington (#4): 102 BSF at Arl Milon G1 Aug 2025, +7 par; won this race last year; 2/2 universal</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier:</strong> #4 Fort Washington (102 G1 fig, defending G3 winner of this race, 2/2 universal, Payson Turf B1/9 sharp work, 77d off), #7 Harrow (103 figure RULE 12 — WIN blocked)</li><li><strong>B-tier:</strong> #6 Dresden Row (universal 2/2, top PP 155.4, but best <strong>turf</strong> only 93 = -2; 103 was on AW; first G3 <strong>turf</strong> start), #3 Cruise the Nile (universal 2/2, unbeaten 4-of-5 but first G3 ever)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #6, #3, #4</li><li>ProfitLine: #6, #3, #4</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>6 Dresden Row</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>3 Cruise the Nile</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>4 Fort Washington</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: ✓ #4 Fort Washington (top turf-G3 fig at 102, defending winner, sharp turf works)</li><li>Overlay:</li></ol>
+<ul><li>#4 Fort Washington 7/2 = 22% implied vs ~25-29% est (77d off + recent form 89-91 below G1 peak) = <strong>1.13-1.32× near-miss only</strong></li><li>#6 Dresden Row 7/5 = 42% implied — no overlay possible (no horse priced 7/5 has 63% true win%)</li><li>#3 Cruise the Nile 9/5 = 36% implied vs ~18-25% (first G3 ever) = underlay</li><li>#7 Harrow 12/1 = 7.7% implied vs ~8-12% est = 1.0-1.6× borderline BUT 0/2 source RULE 24a blocks WIN</li></ul>
+<ol><li>Pace readable: ✓</li></ol>
+<p><strong>PASS</strong> — three co-favorites all priced at-or-below true odds; the only candidate overlay (#7 Harrow at 12/1) is 0/2 source with WIN blocked.</p>
+<hr>
+<h2 id="race-11">Race 11 (Gallorette G3)</h2>
+<p><strong>Stakes G3 · 1 1/16 Turf · $150,000 · 8 horses · Post 4:53p CT</strong> · F&amp;M 3yo+</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class turf SR (G3+, last 12 mo): #5 Austere (98 SR at Gallorette G3 May 2025 — <strong>THIS exact race last year, 2nd place</strong>)</li><li>Tier: A-tier (no demotion — trip excuse on last race, 2nd-start-off-layoff improving)</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier:</strong> #5 Austere (98 +6 par, class proven at this race, E/P pace setup ideal, 2/2 universal, Walsh/Gaffalione), #7 Child of the Moon (95 +3, top Prime Power 154.1, Brown/Ortiz Jr., 2/2 universal, trip-excuse on declining last race)</li><li><strong>B-tier:</strong> #3 Accent (B1 — Brown/Prat elite combo, allowance-level 87 figs, 2/2 universal; first G3)</li><li><strong>At-par soft-toss (2nd+3rd):</strong> #8 Awesome Czech (92 = par exactly, 0/2 RULE 24a), #4 Warming (88 -4 par G3 turf, 0/2), #1 Mahra's Love (87 -5 par boundary, 0/2)</li><li><strong>Situational soft-toss (3rd only):</strong> #2 Ribaltagaia, #6 Cheetah Lady</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #7, #3, #5</li><li>ProfitLine: #7, #5, #3</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>7 Child of the Moon</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>5 Austere</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>3 Accent</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: ✓ #5 Austere — STRONG×3 (top SR +6, class proven this race, pace setup)</li><li>Overlay: #5 at 7/2 = 22% implied vs ~33-37% est = <strong>1.59× ✓</strong> (figure-aligned, source-aligned)</li><li>Pace readable: ✓ Ribaltagaia leads; Austere stalks; Child of the Moon sweeps late</li></ol>
+<p><strong>RULE 31:</strong> chaos-profile G3. Signal (3) recent at-dist/surf prep within 60d: Austere ran KEE Apr 15 (31d ago) at turf route. YES → STRONG PLAY eligibility preserved if firming confirms.</p>
+<p><strong>PLAY</strong> (upgrade to STRONG PLAY if #5 firms ≥30% at 5 MTP)</p>
+<h3>Tickets</h3>
+<ul><li>$2 WIN #5 Austere</li><li>$2 WIN #7 Child of the Moon (universal discretionary per RULE 23 universal tier)</li><li>KEY BOX 5/7 ($1 × 2 = $2)</li><li>STRAIGHT 3/5,7 ($1 × 2 = $2) — RULE 3 B1</li><li>TRI 3,5,7/3,5,7/1,4,5,7,8 — 22 combos × $0.50 = $11</li></ul>
+<p><strong>Total R11: $19.00</strong></p>
+<h3>BB Farm — QUALIFIES</h3>
+<ul><li>Field 8 (8+h → 2nd-or-3rd refund). Top chalk #7 Child of the Moon 5/2 ML universal in 8+h → min 6/5. Clears easily.</li><li><strong>$10 BB Farm WIN #7</strong> — confirm post ≥6/5; note #7 failed as favorite last race (KEE Apr 15 trip excuse)</li><li>Alternative BB: #5 Austere 7/2 also universal, also clears RULE 27</li></ul>
+<hr>
+<h2 id="race-12">Race 12 (Jim McKay Turf Sprint Listed)</h2>
+<p><strong>Stakes Listed · 5½f Turf · $125,000 · 11 horses · Post 5:52p CT</strong> · 3yo+</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class turf SR (last 12 mo): #2 Determined Kingdom (99 BSF at KEE Alw140k 5.5f turf Oct 2025 = +8 par)</li><li>Tier: A-tier (single-bad-figure carve-out on last 72 — trip excuse documented)</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier:</strong> #2 Determined Kingdom (A1 — 99 +8 par, RULE 12 mandatory, 1/2 source but figure dominance), #1 Run Curtis Run (A2 — 97 best-at-dist, <strong>PL Chalk Buster</strong> + 2/2 universal, improving 2nd off layoff)</li><li><strong>B-tier:</strong> #8 Outlaw Kid (B1 — won this same race last out, 95 BSF, 1/2), #4 Chasing Liberty (B-tier — 2/2 universal but sprint-route concern, ML 3/1 underlay), #11 Had to Have Him (B — 93 BSF, hot Salzman trainer 32%), <strong>#10 Fore Harp (B5 VALUE — won EXACT same race April 2025, 94 BSF at-par, 15/1 overlay 1.67×; 0/2 source RULE 24a blocks WIN)</strong></li><li><strong>At-par soft-toss:</strong> #5 Incinerator, #3 Jean Valjean (94 +3, E/P pace setter)</li><li><strong>Soft-toss:</strong> #6 Tidewater, #7 Isivunguvungu (280d off), #9 Card Trick</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #4, #1, #2</li><li>ProfitLine: #4 ⭐, #8, #3 / <strong>#1 Chalk Buster overlay</strong></li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>4 Chasing Liberty</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓ ⭐</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>1 Run Curtis Run</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓ (Chalk Buster)</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>2 Determined Kingdom</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>1/2 Soft cover</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: ✓ Determined Kingdom — STRONG×2 (top BSF +8, RULE 12 mandatory; single-bad-figure carve-out shields last-out 72)</li><li>Overlay: #2 at 6/1 = 14% implied vs ~22% est = <strong>1.57× ✓</strong>. Also #1 RCR at 4/1 with Chalk Buster = ~1.35× near-miss (not gate-clearing but adds support). #10 Fore Harp at 15/1 = 1.67× B-tier VALUE (won same race Apr 25, within 5 of par on figure).</li><li>Pace readable: ✓ Jean Valjean and Determined Kingdom press from inside, Fore Harp tracks, Run Curtis Run and Chasing Liberty close late</li></ol>
+<p><strong>PLAY</strong></p>
+<h3>Tickets</h3>
+<ul><li>$2 WIN #2 Determined Kingdom (A1 overlay)</li><li>$2 WIN #1 Run Curtis Run (A2 universal + PL Chalk Buster, fair-or-better at 4/1)</li><li>KEY BOX 1/2 ($1 × 2 = $2)</li><li>STRAIGHT 10/1,2 ($1 × 2 = $2) — Fore Harp B-tier VALUE in WIN slot per RULE 3 (0/2 source means STRAIGHT only)</li><li>TRI 1,2/1,2,8,10/1,3,8,10,11 — combo math ~24 combos × $0.50 = $12</li></ul>
+<p><strong>Total R12: $20.00</strong></p>
+<hr>
+<h2 id="race-13">Race 13 (THE PREAKNESS STAKES G1)</h2>
+<p><strong>Stakes G1 · 1 3/16 Dirt · $2,000,000 · 14 horses · Post 7:01p CT</strong> · 3yo</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class dirt SR (last 6 mo): #1 Taj Mahal (101 SPD at Federico Tesio B150k 4/18/26 LRL 1-1/8m — last race 28d ago)</li><li>Top Prime Power: #9 Iron Honor (145.3)</li><li>Tier: A-tier #1 (RULE 12 default — undefeated 3/3, top SPD, LRL HFC 100%)</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>A-tier:</strong> <strong>#1 Taj Mahal</strong> (3/3 undefeated, LRL HFC 100% 3-for-3, top SPD 101, hot Russell/Russell combo, 2/2 universal), <strong>#9 Iron Honor</strong> (top Prime Power 145.3, Brown/Prat elite G1 combo, 99 best at-class, Wood Memorial setback with trip excuse, blinkers off angle, 2/2 universal)</li><li><strong>B-tier:</strong> #2 Ocelli (B1 — Derby 3rd at 70/1 with 97 BSF, best at-dist; 1/2 PL), #6 Chip Honcho (B2 — Risen Star 2nd 97, E-type pace threat, 1/2 bP), #12 Incredibolt (B3 — VA Derby winner 100, 3/3 wins, 0/2 by RULE 23 top-3 strict)</li><li><strong>At-par soft-toss (2nd+3rd):</strong> #4 Robusta (97 at G2 = -5 par), #10 Napoleon Solo (98 G1 win = -4 par, LP avg 74 RED FLAG)</li><li><strong>Situational soft-toss (3rd only):</strong> #5 Talkin, #7 The Hell We Did, #11 Corona de Oro (possible SCR/AE from Derby), #13 Great White (RegVet-Injured probable SCR), #14 Pretty Boy Miah</li><li><strong>Hard-toss:</strong> #3 Crupper (-13 par), #8 Bull by the Horns (-19 par, prob SCR)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #9, #1, #6</li><li>ProfitLine: #1, #2, #9</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>1 Taj Mahal</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>9 Iron Honor</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>6 Chip Honcho</td><td style='text-align:left'>✓</td><td style='text-align:left'>—</td><td style='text-align:left'>1/2 Soft cover</td></tr><tr><td style='text-align:left'>2 Ocelli</td><td style='text-align:left'>—</td><td style='text-align:left'>✓</td><td style='text-align:left'>1/2 Soft cover</td></tr></tbody></table></div>
+<h3>Gate verification (G1 + 14h = full chaos-profile)</h3>
+<ol><li>A-tier: ✓ #1 Taj Mahal (STRONG×3: top fig 101, undefeated, HFC 100%)</li><li>Overlay: #1 at 5/1 = 17% implied vs ~26-28% est (undefeated top-fig home-tracker in 14h G1) = <strong>1.55-1.65× ✓</strong></li><li>Pace readable: ✓ Chip Honcho + Pretty Boy Miah press; Taj Mahal + Iron Honor stalk; Ocelli + Incredibolt sweep late</li></ol>
+<p><strong>RULE 31 chaos-profile check (G1 + 14h):</strong></p>
+<ul><li>(1) Universal-equivalent source agreement: YES (#1 and #9 each 2/2 universal pool)</li><li>(2) ≥30% firm at 5 MTP: NOT yet confirmable pre-race</li><li>(3) At-dist/surf prep within 60d: #1 last ran 1-1/8m 28d ago (not exact 1-3/16m); PARTIAL</li></ul>
+<p>→ <strong>PLAY pre-race</strong>. Upgrade to STRONG PLAY at 5 MTP if signal (2) firming ≥30% confirms on #1 or #9.</p>
+<h3>Tickets</h3>
+<ul><li>$2 WIN #1 Taj Mahal (5/1 universal)</li><li>$2 WIN #9 Iron Honor (9/2 universal)</li><li>KEY BOX 1/9 ($1 × 2 = $2)</li><li>STRAIGHT 2/1,9 ($1 × 2 = $2) — RULE 3 B-tier WIN slot (Ocelli B1)</li><li>STRAIGHT 12/1,9 ($1 × 2 = $2) — Incredibolt B-tier (highest B-tier SPD 100)</li><li>TRI 1,9/1,2,4,6,9,10,12/2,4,5,6,7,10,11,12,14 — 98 combos × $0.50 = $49</li></ul>
+<p><strong>Total R13: $59.00</strong> (drop 1 of 2 STRAIGHTs to save $2 if budget-tight)</p>
+<h3>BB Farm — QUALIFIES on both</h3>
+<ul><li>Field 14 (8+h → 2nd-or-3rd refund). #1 Taj Mahal 5/1 + #9 Iron Honor 9/2, both 2/2 universal in 8+h → min 6/5. Both far above min.</li><li><strong>Deploy 2 remaining BBs: $10 BB Farm WIN #1 Taj Mahal + $10 BB Farm WIN #9 Iron Honor</strong></li><li>RULE 29 drift watch: if either drifts ≥30% from ML at 5 MTP, drop that BB</li></ul>
+<hr>
+<h2 id="race-14">Race 14</h2>
+<p><strong>MSW · 6f Dirt · $52,000 · 10 horses · Post 7:43p CT</strong> · 3yo</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR: #8 Holy Moly Mitole (85 vs par 84 = +1; 1 start)</li><li>Tier: A-tier per RULE 12 default, but only 1 STRONG (single-start record)</li></ul>
+<h3>Tiers</h3>
+<ul><li><strong>B-tier candidates:</strong> #6 Grant the Great (2/2 universal, class drop to lower maiden 52k, Prime Power #1 but RULE 7 LEAN-only; 1 start), #4 Bruno (2/2 universal, 1 start, -3 par), #8 Holy Moly Mitole (1/2, top SR, 1 start)</li><li><strong>Soft-toss:</strong> #3 Love Yourself (at-par 81; blinkers on), #7 Ballinaclash (declining 7-start record, demoted from hard-toss per within-5 carve-out)</li><li><strong>FTS unknowable:</strong> #2, #5, #9, #10 (40% of field FTS)</li></ul>
+<h3>Dual-expert audit</h3>
+<ul><li>brisPICKS: #6, #4, #8</li><li>ProfitLine: #6, #4, #9</li></ul>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>bP</th><th style='text-align:left'>PL</th><th style='text-align:left'>Tally</th></tr></thead><tbody><tr><td style='text-align:left'>6 Grant the Great</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr><tr><td style='text-align:left'>4 Bruno</td><td style='text-align:left'>✓</td><td style='text-align:left'>✓</td><td style='text-align:left'>2/2 Universal</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ol><li>A-tier: <strong>FAIL</strong> — no horse with 2+ STRONG CORE signals. Top SR has 1 start only; #6 Prime Power alone is LEAN per RULE 7.</li><li>Overlay: 1.2-1.4× near-miss across all candidates</li><li>Pace readable: ✓</li></ol>
+<p><strong>PASS</strong> — figure-sparse FTS-heavy MSW; near-miss overlays only.</p>
+<hr>
+<h2>Summary</h2>
+<p><strong>PLAYs:</strong> R4 ($23) · R6 ($15) · R8 ($9 + BB) · R9 ($28) · R11 ($19 + BB) · R12 ($20) · R13 ($59 + 2 BBs) <strong>Cash total: ~$173 · BB exposure: $30 (3 BBs) — user has 2 BBs remaining, so deploy 2 of the 3 BB candidates</strong></p>
+<p><strong>BB priority order (deploy 2):</strong></p>
+<ol><li><strong>R13 Preakness Taj Mahal</strong> (5/1, undefeated, LRL HFC 100%) — marquee BB target</li><li><strong>R13 Preakness Iron Honor</strong> (9/2, Brown/Prat) — twin Preakness BB</li><li>R8 Maryland Sprint G3 Haileysfirstnotion (7/2) or R11 Gallorette G3 Child of the Moon (5/2) — fallback if 1 of the Preakness BBs drifts at 5 MTP</li></ol>
+<p><strong>Trim if over-budget:</strong></p>
+<ul><li><strong>First trim:</strong> Drop R6 Sir Barton (-$15) — exotic-only structure with RULE 24a-blocked WIN, thin edge</li><li><strong>Second trim:</strong> Drop R9 Murphy Listed (-$28) — most expensive non-Preakness; alternative is to reduce TRI 3rd pool</li><li><strong>Conservative card:</strong> Anchor on R8, R11, R13 with BBs = ~$87 cash + 2 BBs</li></ul>
+<p><strong>Day-of triggers to monitor (15-20 MTP per race):</strong></p>
+<ul><li>R8 #4 firming ≥30% → STRONG PLAY upgrade</li><li>R11 #5 firming ≥30% → STRONG PLAY upgrade</li><li>R13 #1 or #9 firming ≥30% → STRONG PLAY (G1 chaos confirmation)</li><li>R13 #2 Ocelli, #12 Incredibolt steam → RULE 30 3rd-slot already included</li><li>Any race: TS-Expert seat data when TwinSpires shows live widget → re-tally sources, may push 1/2 → 2/3 mandatory for some horses on PASS races (R7, R10 borderline candidates)</li></ul>
+<footer class="page">Generated by the horses analyzer · read on any device · share freely</footer>
+</main>
+</body>
+</html>
