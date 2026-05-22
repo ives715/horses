@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>CD · 2026-05-22</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --fg: #1a1a1a;
+  --fg-soft: #555;
+  --accent: #1f6feb;
+  --rule: #e5e5ea;
+  --code-bg: #f0f0f2;
+  --tier-a: #0a7d3e;
+  --tier-b: #b36b00;
+  --tier-c: #888;
+  --warn: #b42020;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --fg: #e6edf3;
+    --fg-soft: #9ca3af;
+    --accent: #79c0ff;
+    --rule: #30363d;
+    --code-bg: #1f2937;
+    --tier-a: #3fb950;
+    --tier-b: #d29922;
+    --tier-c: #8b949e;
+    --warn: #ff7b72;
+    --card: #161b22;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+header.page {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+header.page .eyebrow {
+  font-size: 13px;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+header.page h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+h1, h2, h3, h4, h5 {
+  color: var(--fg);
+  line-height: 1.25;
+  margin: 1.6em 0 0.5em;
+}
+h1 { font-size: 24px; }
+h2 {
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 17px; }
+h4 { font-size: 15px; color: var(--fg-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+p, ul, ol, blockquote { margin: 0 0 1em; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: var(--fg); }
+em { color: var(--fg-soft); }
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--code-bg);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 4px 16px;
+  color: var(--fg-soft);
+  background: var(--bg-soft);
+  border-radius: 0 6px 6px 0;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2em 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1em -4px;
+  border-radius: 6px;
+}
+table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+/* Keep post time and cost columns from wrapping */
+td:nth-child(2), td:nth-child(5) { white-space: nowrap; }
+th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+tbody tr:hover { background: var(--bg-soft); }
+.strong-play {
+  color: var(--tier-a);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+footer.page {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--fg-soft);
+}
+/* Tier coloring — applied when header text contains the marker */
+h3:has(strong) { color: var(--fg); }
+/* mobile */
+@media (max-width: 520px) {
+  .wrap { padding: 16px 14px 48px; }
+  header.page h1 { font-size: 22px; }
+  h1 { font-size: 21px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  table { font-size: 13px; }
+  th, td { padding: 6px 8px; }
+}
+/* print */
+@media print {
+  body { background: #fff; color: #000; }
+  .wrap { max-width: 100%; padding: 0; }
+  h2 { break-after: avoid; }
+  table, pre, blockquote { break-inside: avoid; }
+  footer.page { display: none; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="page">
+
+<h1>CD · 2026-05-22</h1>
+</header>
+<p>Card stem <code>cdx0522y</code> · 9-race weekday card · claiming / maiden / allowance, no graded stakes. Rule stack: RULES 1–31 live. Source pool this card = <strong>2 of 5</strong> (brisPICKS + ProfitLine; no KH Sheet, no TS-Expert seat, no TrackMaster).</p>
+<p><strong>0 PLAY · 9 PASS — $0 cash.</strong> Every favorite on this card is priced at or shorter than its true win probability; no race produces a ≥1.5× overlay on an A-tier or a clean B-tier VALUE. RULE 19 overlay discipline → no bet.</p>
+<h2>Quick Picks</h2>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Race</th><th style='text-align:left'>Post</th><th style='text-align:left'>Status</th><th style='text-align:left'>Tickets</th><th style='text-align:left'>Cost</th></tr></thead><tbody><tr><td style='text-align:left'><a href="#race-1">R1</a></td><td style='text-align:left'>11:45a</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-2">R2</a></td><td style='text-align:left'>12:14p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-3">R3</a></td><td style='text-align:left'>12:43p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-4">R4</a></td><td style='text-align:left'>1:13p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-5">R5</a></td><td style='text-align:left'>1:45p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-6">R6</a></td><td style='text-align:left'>2:18p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-7">R7</a></td><td style='text-align:left'>2:50p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-8">R8</a></td><td style='text-align:left'>3:22p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-9">R9</a></td><td style='text-align:left'>3:55p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><strong>Total</strong></td><td style='text-align:left'></td><td style='text-align:left'><strong>0 PLAY</strong></td><td style='text-align:left'></td><td style='text-align:left'><strong>$0</strong></td></tr></tbody></table></div>
+<h3>Calibration takeaways</h3>
+<ul><li><strong>All-PASS card.</strong> A thin Friday claiming/maiden card with a 2-source pool and every chalk fairly priced. PASS-discipline outcome, not a missed-edge outcome — this is the framework working as designed (cf. CD 4/22 6-of-6 PASS, KEE 4/22).</li><li><strong>R5 and R8 were first-pass PLAY calls on sub-threshold overlays.</strong> R5 #2 Beautiful Twice was called on a 1.47× "overlay" — a near-miss, fails RULE 19 (≥1.5× required). R8 #2 Verifire's first pass used inverted implied-probability math (treated 6/5 as 17% implied; 6/5 is ~45%). Corrected: 6/5 on a ~32% horse is an <em>underlay</em>. Both flipped to PASS on re-audit.</li><li><strong>R7 — 16-horse FTS-heavy maiden.</strong> A-tier on #1 Wedelia rested on a Cox/Ortiz trainer-jockey <em>combo</em> stat counted as a 2nd STRONG signal. Per the LEAN-only list, a jockey-filtered combo % is LEAN, not STRONG → Wedelia is B-tier. A B-tier with <strong>no at-class figure at all</strong> (first-time starter) cannot satisfy RULE 19's B-tier VALUE carve-out, and the only A-tier (#10 In Scope, RULE 12 top SR) has no overlay at 4/1. Race flips to PASS. An FTS overlay with no figure anchor is the narrative leap-of-faith RULE 19 exists to catch.</li></ul>
+<hr>
+<h2 id="race-1">Race 1 — 6f Dirt · Clm $30,000b · 3&amp;up F&amp;M</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p><strong>Gate failure (condition 2):</strong> No ≥1.5× overlay. With #3 Up the Creek scratched, #4 Sweet Bebsi is the top figure at SPD 81 = par; universal 2/2 source agreement but priced 5/2 (≈28% implied) against an estimated true ~24–26% — roughly 0.9×, an underlay. No B-tier VALUE elsewhere.</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #4 Sweet Bebsi (81 SPD vs par 81) — #3 Up the Creek (94) scratched.</li><li>Tier assignment: at-par soft-toss (not A-tier — par-matched figure, soft-form field, 2/2 sources but no STRONG CORE signal).</li><li>No RULE 12 demotion applies; #4 is a habitual placer at the class (exempt per RULE 12 c#2).</li></ul>
+<h3>Dual-expert audit</h3>
+<p>Source pool: <strong>2 of 5</strong> (brisPICKS + ProfitLine; KH, TS-Expert, TrackMaster unavailable).</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>ProfitLine</th><th style='text-align:left'>Count</th></tr></thead><tbody><tr><td style='text-align:left'>#4 Sweet Bebsi</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#1 Vicki Rose</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#6 Carol's Melody</td><td style='text-align:left'>NO</td><td style='text-align:left'>YES</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#2 Spotaway</td><td style='text-align:left'>NO</td><td style='text-align:left'>NO</td><td style='text-align:left'>0/2</td></tr><tr><td style='text-align:left'>#5 Ashkenazi</td><td style='text-align:left'>NO</td><td style='text-align:left'>NO</td><td style='text-align:left'>0/2</td></tr></tbody></table></div>
+<h3>Factor breakdown (5 active — #3 Up the Creek scratched)</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>ML</th><th style='text-align:left'>SPD vs par</th><th style='text-align:left'>Form</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Vicki Rose</td><td style='text-align:left'>7/2</td><td style='text-align:left'>76 (−5)</td><td style='text-align:left'>55d layoff, flat</td><td style='text-align:left'>Situational soft-toss</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Spotaway</td><td style='text-align:left'>5/1</td><td style='text-align:left'>70 LR (soft)</td><td style='text-align:left'>Best 82 at $20k only</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Sweet Bebsi</td><td style='text-align:left'>5/2</td><td style='text-align:left'>81 (par)</td><td style='text-align:left'>Won LR, moved up</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Ashkenazi</td><td style='text-align:left'>15/1</td><td style='text-align:left'>63→58→48 + layoff</td><td style='text-align:left'>Comeback-reset decline</td><td style='text-align:left'>Soft-toss (RULE 13 carve-out)</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Carol's Melody</td><td style='text-align:left'>8/1</td><td style='text-align:left'>79 (−2), volatile</td><td style='text-align:left'>Won KEE 4/9</td><td style='text-align:left'>Situational soft-toss</td></tr></tbody></table></div>
+<h3>Pace setup</h3>
+<p>Early-speed clash (#1, #5, #6 all E/E-P) sets moderate fractions; #4 Sweet Bebsi (S-closer) gets the setup but is priced for it.</p>
+<hr>
+<h2 id="race-2">Race 2 — 5f Turf · Mdn $120,000 · 2yo Fillies</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p><strong>Gate failure (condition 2):</strong> Overlay 1.21× on chalk #11 Shining Moment (2/1 ML ≈ 33% implied; est. true ~40%) — short of the 1.5× minimum. Favorite fairly priced; no secondary overlay in a 7-of-11 first-time-starter field.</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo, turf): #11 Shining Moment (78 SPD vs par 83, −5, within threshold).</li><li>Tier assignment: A-tier (RULE 12 default — 2nd career race, top E1 105, hot Ward/Ortiz Jr.; no form-decline demotion).</li></ul>
+<h3>Dual-expert audit</h3>
+<p>Source pool: <strong>2 of 5</strong> (brisPICKS + ProfitLine; KH, TS-Expert, TrackMaster unavailable).</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>ProfitLine</th><th style='text-align:left'>Count</th></tr></thead><tbody><tr><td style='text-align:left'>#11 Shining Moment</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#8 Express Success</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#2 Silver Magic</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#1 Washton</td><td style='text-align:left'>NO</td><td style='text-align:left'>NO</td><td style='text-align:left'>0/2</td></tr></tbody></table></div>
+<h3>Factor breakdown (11 horses)</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>ML</th><th style='text-align:left'>Figure</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>11</td><td style='text-align:left'>Shining Moment</td><td style='text-align:left'>2/1</td><td style='text-align:left'>E1 105, SPD 78 (−5)</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Silver Magic</td><td style='text-align:left'>4/1</td><td style='text-align:left'>SPD 76, E 103</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Express Success</td><td style='text-align:left'>3/1</td><td style='text-align:left'>SPD 62, late runner</td><td style='text-align:left'>B2</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Storm Diva</td><td style='text-align:left'>8/1</td><td style='text-align:left'>SPD 68</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Bit Tipsy</td><td style='text-align:left'>12/1</td><td style='text-align:left'>SPD 77 (−6)</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Washton</td><td style='text-align:left'>6/1</td><td style='text-align:left'>FTS</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Bee Crazy</td><td style='text-align:left'>6/1</td><td style='text-align:left'>FTS</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>High Class Broad</td><td style='text-align:left'>20/1</td><td style='text-align:left'>FTS</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Gee Tee</td><td style='text-align:left'>8/1</td><td style='text-align:left'>FTS</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Estardotoo</td><td style='text-align:left'>20/1</td><td style='text-align:left'>FTS</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>Let Her Fly</td><td style='text-align:left'>10/1</td><td style='text-align:left'>FTS</td><td style='text-align:left'>Soft-toss</td></tr></tbody></table></div>
+<h3>Pace setup</h3>
+<p>Early-speed-biased 5f turf; Shining Moment (E1 105) or Silver Magic (E 103) on the lead, Express Success the lone closer.</p>
+<hr>
+<h2 id="race-3">Race 3 — 1m Dirt · Clm $20,000 · 4&amp;up</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p><strong>Gate failure (condition 2):</strong> #1 Army Officer is the lone A-tier horse (at-par speed + 2-level class drop) but at 3/1 (≈25% implied) vs estimated ~30–32% true = ~1.2–1.28× — below 1.5×. Figure-clean field, favorite priced fairly.</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #2 Great Escape (career-best 98) vs #1 Army Officer (92); Great Escape demoted to B-tier per RULE 12 — declining on today's surface (last 3: 63/92/67, most recent 22 below par) + 48d layoff.</li><li>Tier assignment: #1 Army Officer A-tier (2 STRONG CORE — at-par speed, class drop).</li></ul>
+<h3>Dual-expert audit</h3>
+<p>Source pool: <strong>2 of 5</strong> (brisPICKS + ProfitLine; KH, TS-Expert, TrackMaster unavailable).</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>ProfitLine</th><th style='text-align:left'>Count</th></tr></thead><tbody><tr><td style='text-align:left'>#2 Great Escape</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#1 Army Officer</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#7 Bourbon's Fault</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#3 C F V Bullet</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr></tbody></table></div>
+<h3>Factor breakdown (7 horses)</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>ML</th><th style='text-align:left'>SPD vs par</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Army Officer</td><td style='text-align:left'>3/1</td><td style='text-align:left'>81 (par), class drop</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Great Escape</td><td style='text-align:left'>2/1</td><td style='text-align:left'>63 LR (−22), 48d</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Bourbon's Fault</td><td style='text-align:left'>7/2</td><td style='text-align:left'>88 trend up, 0-for-4 at 1m</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>C F V Bullet</td><td style='text-align:left'>8/1</td><td style='text-align:left'>78 (−7), blinkers on</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Tres Soles</td><td style='text-align:left'>10/1</td><td style='text-align:left'>80 (par) declining</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Bloodline</td><td style='text-align:left'>12/1</td><td style='text-align:left'>87 best at-class</td><td style='text-align:left'>Soft-toss (RULE 13 within-5)</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Twirling Troillet</td><td style='text-align:left'>20/1</td><td style='text-align:left'>34 LR, 147d layoff</td><td style='text-align:left'>Soft-toss (unknowable-profile)</td></tr></tbody></table></div>
+<h3>Pace setup</h3>
+<p>Army Officer / Bourbon's Fault press early at a moderate route pace; closers can rally — but no overlay to act on.</p>
+<hr>
+<h2 id="race-4">Race 4 — 6f Dirt · Clm $16,000b · 3&amp;up</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p><strong>Gate failure (condition 2):</strong> A-tier #2 You Ain't Poppn (top SR 90 = +4, improving) is fairly priced at 6/5 — no 1.5× overlay. No B-tier VALUE; single-source-favored field gives no independent edge.</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #2 You Ain't Poppn (90 SPD vs par 86, +4).</li><li>Tier assignment: A-tier (RULE 12 default — improving 78→83→86, no demotion criterion fires).</li></ul>
+<h3>Dual-expert audit</h3>
+<p>Source pool: <strong>2 of 5</strong> (brisPICKS + ProfitLine; KH, TS-Expert, TrackMaster unavailable).</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>ProfitLine</th><th style='text-align:left'>Count</th></tr></thead><tbody><tr><td style='text-align:left'>#2 You Ain't Poppn</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#1 Coastal Breeze</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#7 Livehappy</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#6 Mi Dinero</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr></tbody></table></div>
+<h3>Factor breakdown (8 horses)</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>ML</th><th style='text-align:left'>SPD vs par</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>2</td><td style='text-align:left'>You Ain't Poppn</td><td style='text-align:left'>6/5</td><td style='text-align:left'>90 (+4), improving</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Livehappy</td><td style='text-align:left'>9/2</td><td style='text-align:left'>E1 91, 0-for-13 CD dirt</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Coastal Breeze</td><td style='text-align:left'>3/1</td><td style='text-align:left'>83 (−3), E/P</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Waco</td><td style='text-align:left'>15/1</td><td style='text-align:left'>86 best (par)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Mi Dinero</td><td style='text-align:left'>8/1</td><td style='text-align:left'>74 (−4), class drop</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Dr Fenn</td><td style='text-align:left'>20/1</td><td style='text-align:left'>54 LR collapse</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Smols</td><td style='text-align:left'>12/1</td><td style='text-align:left'>58 best at dist (−28)</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Spinning Pride</td><td style='text-align:left'>12/1</td><td style='text-align:left'>65 LR, 98d layoff</td><td style='text-align:left'>Soft-toss (unknowable-profile)</td></tr></tbody></table></div>
+<h3>Pace setup</h3>
+<p>Early duel #2/#1/#7, #6 saves ground inside, wire finish — but the favorite is priced at true odds.</p>
+<hr>
+<h2 id="race-5">Race 5 — 7f Dirt · Alw $30,000s · 3&amp;up F&amp;M</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p><strong>Gate failure (condition 2):</strong> No ≥1.5× overlay on A-tier or B-tier VALUE. #2 Beautiful Twice (top SR 91 = +6, class drop, hot Ortiz Jr.) is a clean A-tier horse, but at 8/5 (≈38% implied) vs estimated ~35–40% true = ~1.0× — the market has priced the edge out. <em>(First-pass call of 1.47× "overlay" was a near-miss — fails RULE 19; corrected to PASS.)</em></p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #2 Beautiful Twice (91 SPD vs par 85, +6).</li><li>Tier assignment: A-tier (RULE 12 default — no declining sequence, won 5/11, 22d, no demotion).</li></ul>
+<h3>Dual-expert audit</h3>
+<p>Source pool: <strong>2 of 5</strong> (brisPICKS + ProfitLine; KH, TS-Expert, TrackMaster unavailable). brisPICKS: 2, 7, 6, 4 · ProfitLine: 2, 7, 4</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>ProfitLine</th><th style='text-align:left'>Count</th></tr></thead><tbody><tr><td style='text-align:left'>#2 Beautiful Twice</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#7 Rando</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#4 Danzig's Dora</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#6 Thatsalrightmama</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#1 Taqdeer</td><td style='text-align:left'>NO</td><td style='text-align:left'>NO</td><td style='text-align:left'>0/2</td></tr><tr><td style='text-align:left'>#3 Ashes and Diamonds</td><td style='text-align:left'>NO</td><td style='text-align:left'>NO</td><td style='text-align:left'>0/2</td></tr><tr><td style='text-align:left'>#5 Spankerboom</td><td style='text-align:left'>NO</td><td style='text-align:left'>NO</td><td style='text-align:left'>0/2</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: YES — #2 Beautiful Twice (top SR +6, class drop OC125k→Alw30k, hot Irad Ortiz Jr.).</li><li>A-tier overlay: 8/5 ML ≈ 38% implied; est. true ~35–40% = ~1.0×. <strong>No overlay — fails condition 2.</strong></li><li>B-tier overlay scan: #7 Rando 7/2 ≈ 22% implied, est ~15–18% (Torres 0% meet) = 0.7–0.8× — no overlay. #4 Danzig's Dora 5/1 ≈ 20% implied, est ~15% (last 3 trend 81→80→78) = 0.75× — no overlay.</li><li>Pace readable: YES — E-types set a contested pace on a speed-biased strip.</li><li><strong>Gate result: PASS</strong> (condition 2 fails).</li></ul>
+<h3>Factor breakdown (7 horses)</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>ML</th><th style='text-align:left'>SPD vs par</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>2</td><td style='text-align:left'>Beautiful Twice</td><td style='text-align:left'>8/5</td><td style='text-align:left'>91 (+6), class drop</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Rando</td><td style='text-align:left'>7/2</td><td style='text-align:left'>88 best, 85 LR</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Danzig's Dora</td><td style='text-align:left'>5/1</td><td style='text-align:left'>81 (−4), class drop</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Thatsalrightmama</td><td style='text-align:left'>4/1</td><td style='text-align:left'>86 (+1), sprint return</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Taqdeer</td><td style='text-align:left'>6/1</td><td style='text-align:left'>85 (par), won last 2</td><td style='text-align:left'>Soft-toss (0 sources — RULE 24a)</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Ashes and Diamonds</td><td style='text-align:left'>10/1</td><td style='text-align:left'>84 (−1), 89d layoff</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Spankerboom</td><td style='text-align:left'>20/1</td><td style='text-align:left'>71 best dirt (−14)</td><td style='text-align:left'>Hard-toss</td></tr></tbody></table></div>
+<h3>Hard-toss audit</h3>
+<ul><li>#5 Spankerboom: best at-class dirt 71 vs par 85 = −14. Within-5: FAIL → hard-toss valid. Surface qualifier: PASS (dirt). Layoff/equipment carve-out: N/A. Single-bad-figure carve-out: N/A (sustained poor figures). Unknowable-profile: N/A (10-start record). <strong>Hard-toss confirmed.</strong></li></ul>
+<h3>Pace setup</h3>
+<p>Early-speed #2 / #7 press on a speed-biased strip; #4 stalks; no closer profile — E-type sprint finish.</p>
+<hr>
+<h2 id="race-6">Race 6 — 1m Turf · Clm $75,000 · 4&amp;up</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p><strong>Gate failure (condition 2):</strong> #5 Exact Estimate is a clean A-tier (top turf SR 95 = +5, hot Cox/Ortiz) but at 3/1 (≈25% implied) vs estimated ~32–35% true = ~1.3–1.4× — a near-miss. RULE 19: near-miss overlays do not satisfy the gate.</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo, turf): #5 Exact Estimate (95 turf vs par 90, +5).</li><li>Tier assignment: A-tier (RULE 12 default — no demotion trigger, recent at-class prep).</li></ul>
+<h3>Dual-expert audit</h3>
+<p>Source pool: <strong>2 of 5</strong> (brisPICKS + ProfitLine; KH, TS-Expert, TrackMaster unavailable).</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>ProfitLine</th><th style='text-align:left'>Count</th></tr></thead><tbody><tr><td style='text-align:left'>#5 Exact Estimate</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#6 Higgins Boat</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#1 Honky Tonk Highway</td><td style='text-align:left'>NO</td><td style='text-align:left'>YES</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#2 Beef Winslow</td><td style='text-align:left'>NO</td><td style='text-align:left'>NO</td><td style='text-align:left'>0/2</td></tr></tbody></table></div>
+<h3>Factor breakdown (12 horses)</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>ML</th><th style='text-align:left'>Turf SPD vs par</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>5</td><td style='text-align:left'>Exact Estimate</td><td style='text-align:left'>3/1</td><td style='text-align:left'>95 (+5)</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Higgins Boat</td><td style='text-align:left'>5/2</td><td style='text-align:left'>95 best, soft recent</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Beef Winslow</td><td style='text-align:left'>6/1</td><td style='text-align:left'>94 best</td><td style='text-align:left'>B2</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Honky Tonk Highway</td><td style='text-align:left'>5/1</td><td style='text-align:left'>91 (−1), P-style</td><td style='text-align:left'>B3</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Morunning</td><td style='text-align:left'>10/1</td><td style='text-align:left'>88 (par-class)</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>In a Jam</td><td style='text-align:left'>15/1</td><td style='text-align:left'>87, class drop</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>Frosty Indulgence</td><td style='text-align:left'>8/1</td><td style='text-align:left'>92, volatile</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Saint in the City</td><td style='text-align:left'>30/1</td><td style='text-align:left'>83 (−7), 58d</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Rigel</td><td style='text-align:left'>15/1</td><td style='text-align:left'>82 (−8), OC32k only</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Otago</td><td style='text-align:left'>15/1</td><td style='text-align:left'>83 (−7) declining</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>12</td><td style='text-align:left'>Sketch</td><td style='text-align:left'>8/1</td><td style='text-align:left'>708d layoff</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>11</td><td style='text-align:left'>Coco Cool</td><td style='text-align:left'>15/1</td><td style='text-align:left'>83 (−7) declining</td><td style='text-align:left'>Hard-toss</td></tr></tbody></table></div>
+<h3>Hard-toss audit</h3>
+<ul><li>#4 Rigel: best at-class 82 (OC32k) vs OC75k par 90 = −8 — no at-OC75k figure; declining trend. Hard-toss valid.</li><li>#7 Otago: declining 83→81 at par-class turf, best recent below par. Hard-toss valid.</li><li>#12 Sketch: 708d layoff, no fitness signal in works. Hard-toss valid (layoff with no fitness signal).</li><li>#11 Coco Cool: best at-class 83 vs par 90 = −7, declining 83→83→78. Hard-toss valid.</li></ul>
+<h3>Pace setup</h3>
+<p>Honky Tonk Highway sets a modest turf pace; E/P types stalk; honest route shape — but the only A-tier is a near-miss on price.</p>
+<hr>
+<h2 id="race-7">Race 7 — 1m Dirt · Mdn $120,000 · 3&amp;up F&amp;M</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p><strong>Gate failure (condition 1 → 2):</strong> #1 Wedelia is a first-time starter; her A-tier rests on a Cox "debut ≥1m" angle (1 STRONG) plus a Cox/Ortiz <em>combo</em> % — a jockey-filtered stat that is LEAN, not a second STRONG CORE signal. Wedelia is therefore <strong>B-tier</strong>, and a B-tier with <strong>no at-class figure at all</strong> cannot satisfy RULE 19's B-tier VALUE carve-out (which requires an at-class figure within 5 of par). The only A-tier horse, #10 In Scope (RULE 12 top SR 91), carries no overlay at 4/1. Gate condition 2 fails — PASS. <em>(pp-race-audit confirmed: HIGH-severity disagreement with the first-pass PLAY; the 1.57× FTS overlay had no figure anchor — the narrative leap RULE 19 exists to catch.)</em></p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 12 mo): #10 In Scope (91 SR vs par 84, +7; Mdn 110k 6f sprint).</li><li>Tier assignment: A-tier (RULE 12 default — 1 career start, no demotion criterion fires).</li></ul>
+<h3>Dual-expert audit</h3>
+<p>Source pool: <strong>2 of 5</strong> (brisPICKS + ProfitLine; KH, TS-Expert, TrackMaster unavailable). brisPICKS top 3: 10, 5, 1 · ProfitLine top 3: 1, 5, 9</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>ProfitLine</th><th style='text-align:left'>Count</th></tr></thead><tbody><tr><td style='text-align:left'>#1 Wedelia</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#5 Al Ghadeer</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#10 In Scope</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#9 Aegis</td><td style='text-align:left'>NO</td><td style='text-align:left'>YES</td><td style='text-align:left'>1/2</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: #10 In Scope qualifies via RULE 12 (top SR 91). #1 Wedelia does NOT — 1 STRONG (Cox debut≥1m 26%) + 1 LEAN (Cox/Ortiz combo %) = B-tier.</li><li>Overlay: #10 In Scope 4/1 ≈ 20% implied, est ~20–22% (sprint-to-route, cold barn) = ~1.0–1.1× — no overlay. #1 Wedelia B-tier with no at-class figure → cannot be a RULE 19 B-tier VALUE. <strong>Condition 2 fails.</strong></li><li>Pace readable: YES — E/P types press, sprint-to-route movers stalk.</li><li><strong>Gate result: PASS.</strong></li></ul>
+<h3>Factor breakdown (16 horses)</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>ML</th><th style='text-align:left'>SPD vs par</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Wedelia</td><td style='text-align:left'>6/1</td><td style='text-align:left'>FTS (no figure)</td><td style='text-align:left'>B-tier (no WIN — FTS, no figure)</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>Miss Complicated</td><td style='text-align:left'>12/1</td><td style='text-align:left'>84 (par)</td><td style='text-align:left'>B-tier (0 sources — RULE 24a)</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Flash of Freedom</td><td style='text-align:left'>10/1</td><td style='text-align:left'>82 (−2)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>She's Our Girl</td><td style='text-align:left'>15/1</td><td style='text-align:left'>80 (−4)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Al Ghadeer</td><td style='text-align:left'>5/1</td><td style='text-align:left'>82 (−2)</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Babysitter</td><td style='text-align:left'>12/1</td><td style='text-align:left'>75 (−9)</td><td style='text-align:left'>Situational soft-toss</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Fast Gun</td><td style='text-align:left'>8/1</td><td style='text-align:left'>84 (par)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Island Flower</td><td style='text-align:left'>12/1</td><td style='text-align:left'>79 (−5)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Aegis</td><td style='text-align:left'>6/1</td><td style='text-align:left'>75 at-class (−9)</td><td style='text-align:left'>Situational soft-toss</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>In Scope</td><td style='text-align:left'>4/1</td><td style='text-align:left'>91 (+7)</td><td style='text-align:left'>A-tier (RULE 12)</td></tr><tr><td style='text-align:left'>11</td><td style='text-align:left'>Bodacious Bay</td><td style='text-align:left'>8/1</td><td style='text-align:left'>80 (−4)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>12</td><td style='text-align:left'>Sonhador</td><td style='text-align:left'>30/1</td><td style='text-align:left'>86 best at-class (+2)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>13</td><td style='text-align:left'>Mancuso</td><td style='text-align:left'>20/1</td><td style='text-align:left'>61 at-class (−23)</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>14</td><td style='text-align:left'>Wonzee Weather</td><td style='text-align:left'>20/1</td><td style='text-align:left'>70 dirt (−14)</td><td style='text-align:left'>Situational soft-toss</td></tr><tr><td style='text-align:left'>15</td><td style='text-align:left'>Charted Destiny</td><td style='text-align:left'>12/1</td><td style='text-align:left'>82 (−2)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>16</td><td style='text-align:left'>Daring Move</td><td style='text-align:left'>20/1</td><td style='text-align:left'>64 (−20)</td><td style='text-align:left'>Situational soft-toss</td></tr></tbody></table></div>
+<h3>Hard-toss audit</h3>
+<ul><li>#13 Mancuso: best at-class 61 (OP Mdn 110k, dirt) vs par 84 = −23. Within-5: FAIL. Surface qualifier: PASS (dirt). Layoff/equipment carve-out: N/A. Single-bad-figure carve-out: only 1 at-class start, "Bump 5/8" noted but not a catastrophic trip — does not fire. Unknowable-profile: 3 career starts (not &lt;3) — N/A. <strong>Hard-toss confirmed.</strong></li></ul>
+<h3>Pace setup</h3>
+<p>E/P types Aegis / Bodacious Bay press a modest maiden pace; sprint-to-route movers stalk; winner emerges late from a stalking position.</p>
+<hr>
+<h2 id="race-8">Race 8 — 6f Dirt · OC $100,000n3x · 3&amp;up</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p><strong>Gate failure (condition 2):</strong> #2 Verifire is the top at-class SR in the field (104 vs par 95) but at 6/5 (≈45% implied) against an estimated ~30–35% true win% he is an <em>underlay</em>, not an overlay. No B-tier VALUE — #3 Floodlites and #4 Tough Catch are both fairly priced at-par universal chalk. <em>(First-pass call mis-stated 6/5 as 17% implied; corrected — 6/5 ≈ 45%.)</em></p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo): #2 Verifire (104 SR vs par 95, +9).</li><li>Tier assignment: A-tier (RULE 12 default — top figure, class drop from graded prep, recent works show fitness; no demotion).</li></ul>
+<h3>Dual-expert audit</h3>
+<p>Source pool: <strong>2 of 5</strong> (brisPICKS + ProfitLine; KH, TS-Expert, TrackMaster unavailable). brisnet_topx "Top 3" header is algorithmic — excluded per RULE 23. brisPICKS: 2, 3, 4, 6 · ProfitLine top 3: 3, 4, 1</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>ProfitLine</th><th style='text-align:left'>Count</th></tr></thead><tbody><tr><td style='text-align:left'>#3 Floodlites</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#4 Tough Catch</td><td style='text-align:left'>YES</td><td style='text-align:left'>YES</td><td style='text-align:left'>2/2 universal</td></tr><tr><td style='text-align:left'>#2 Verifire</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#6 Harrodsburg</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#1 Thoughtthatcounts</td><td style='text-align:left'>NO</td><td style='text-align:left'>YES</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#5 Furio</td><td style='text-align:left'>NO</td><td style='text-align:left'>NO</td><td style='text-align:left'>0/2</td></tr></tbody></table></div>
+<h3>Gate verification</h3>
+<ul><li>Core-factor A-tier: YES — #2 Verifire (top at-class SR +9, class drop from graded prep).</li><li>A-tier overlay: 6/5 ML ≈ 45% implied; est. true ~30–35% = ~0.7–0.8×. <strong>Underlay — fails condition 2.</strong></li><li>B-tier overlay scan: #3 Floodlites 5/2 ≈ 29% implied, est ~28–32% (at-par 98, exact dist/surface) = ~1.0–1.1× — no overlay. #4 Tough Catch 4/1 ≈ 20% implied, est ~18–22% = ~1.0–1.4× near-miss — no clean VALUE.</li><li>Pace readable: YES — Floodlites/Harrodsburg contest early, Verifire stalks on superior E2, move comes in the lane.</li><li><strong>Gate result: PASS</strong> (condition 2 fails).</li></ul>
+<h3>Factor breakdown (6 horses)</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>ML</th><th style='text-align:left'>SPD vs par</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>2</td><td style='text-align:left'>Verifire</td><td style='text-align:left'>6/5</td><td style='text-align:left'>104 (+9), class drop</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Floodlites</td><td style='text-align:left'>5/2</td><td style='text-align:left'>98 (+3), exact dist/surf</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Tough Catch</td><td style='text-align:left'>4/1</td><td style='text-align:left'>96 (+1)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Thoughtthatcounts</td><td style='text-align:left'>8/1</td><td style='text-align:left'>99 (+4), declining form</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Harrodsburg</td><td style='text-align:left'>6/1</td><td style='text-align:left'>100 (+5), 173d layoff</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Furio</td><td style='text-align:left'>12/1</td><td style='text-align:left'>93 (−2)</td><td style='text-align:left'>Soft-toss</td></tr></tbody></table></div>
+<h3>At-par soft-toss audit</h3>
+<ul><li>#4 Tough Catch: best at-class SR 96 vs par 95 = +1 (within 5, today's surface) → <strong>at-par soft-toss — 2nd + 3rd TRI slot</strong> were this a PLAY.</li><li>#1 Thoughtthatcounts: 99 best at-class (+4) but declining E1 + S-style on speed bias + 48d — situational soft-toss (3rd only).</li><li>#6 Harrodsburg: 100 best at-class (+5) but 173d layoff — situational soft-toss (3rd only).</li><li>#5 Furio: 93 (−2) — within 5, but recent 4th at longer trip; situational soft-toss.</li></ul>
+<h3>Pace setup</h3>
+<p>Floodlites and Harrodsburg press from inside; Verifire stalks on superior E2 (104 avg) — but priced as the chalk it is.</p>
+<hr>
+<h2 id="race-9">Race 9 — 1m Turf · Alw $50,000s · 3&amp;up</h2>
+<h3>PLAY/PASS: PASS</h3>
+<p><strong>Gate failure (condition 2):</strong> No ≥1.5× overlay. Probable favorite #11 Gene and Jude (2/1, recent claim-race winner moving up) is fairly priced-to-underlay (est ~25–30% vs 33% implied). Top turf SR #2 The Dover Specter is 0-for-10 lifetime on grass. A 14-horse field with multiple sprint-to-route and layoff returners is chaos, not a structured overlay.</p>
+<h3>Top SR audit</h3>
+<ul><li>Top at-class SR (last 6 mo, turf): tie #2 The Dover Specter (85) and #11 Gene and Jude (85), both vs par 86.</li><li>Tier assignment: A-tier consideration for both (RULE 12) — neither carries an overlay at ML.</li></ul>
+<h3>Dual-expert audit</h3>
+<p>Source pool: <strong>2 of 5</strong> (brisPICKS + ProfitLine; KH, TS-Expert, TrackMaster unavailable). brisPICKS top 3: 11, 2, 10 · ProfitLine top 3: 3, 7, 1</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Horse</th><th style='text-align:left'>brisPICKS</th><th style='text-align:left'>ProfitLine</th><th style='text-align:left'>Count</th></tr></thead><tbody><tr><td style='text-align:left'>#11 Gene and Jude</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#2 The Dover Specter</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#10 Snare</td><td style='text-align:left'>YES</td><td style='text-align:left'>NO</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#3 Utopian</td><td style='text-align:left'>NO</td><td style='text-align:left'>YES</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#7 Mary's Boy Bolt</td><td style='text-align:left'>NO</td><td style='text-align:left'>YES</td><td style='text-align:left'>1/2</td></tr><tr><td style='text-align:left'>#1 Sound Cause</td><td style='text-align:left'>NO</td><td style='text-align:left'>YES</td><td style='text-align:left'>1/2</td></tr></tbody></table></div>
+<p>No horse reaches 2/2 universal — sources split entirely across the two pools.</p>
+<h3>Factor breakdown (14 horses)</h3>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>ML</th><th style='text-align:left'>Turf SPD vs par</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>11</td><td style='text-align:left'>Gene and Jude</td><td style='text-align:left'>2/1</td><td style='text-align:left'>85 (−1), won LR</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>The Dover Specter</td><td style='text-align:left'>7/2</td><td style='text-align:left'>85 (−1), 0-for-10 turf</td><td style='text-align:left'>A-tier</td></tr><tr><td style='text-align:left'>10</td><td style='text-align:left'>Snare</td><td style='text-align:left'>4/1</td><td style='text-align:left'>85 best, sprinter</td><td style='text-align:left'>B-tier</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Utopian</td><td style='text-align:left'>6/1</td><td style='text-align:left'>76 turf (−10)</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>7</td><td style='text-align:left'>Mary's Boy Bolt</td><td style='text-align:left'>9/2</td><td style='text-align:left'>83 (−3), no recent turf</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>Lucky Mischief</td><td style='text-align:left'>10/1</td><td style='text-align:left'>83 (−3)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Garryowen</td><td style='text-align:left'>8/1</td><td style='text-align:left'>81 (−5)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Sound Cause</td><td style='text-align:left'>15/1</td><td style='text-align:left'>81 (−5)</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>9</td><td style='text-align:left'>Makutu</td><td style='text-align:left'>12/1</td><td style='text-align:left'>86 (par), 263d layoff</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>12</td><td style='text-align:left'>Taunting</td><td style='text-align:left'>12/1</td><td style='text-align:left'>83 (−3)</td><td style='text-align:left'>At-par soft-toss</td></tr><tr><td style='text-align:left'>13</td><td style='text-align:left'>Survivin'onaprayer</td><td style='text-align:left'>20/1</td><td style='text-align:left'>83 (−3)</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Tiz Freedom</td><td style='text-align:left'>12/1</td><td style='text-align:left'>80 (−6)</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Razorcat</td><td style='text-align:left'>8/1</td><td style='text-align:left'>78 (−8)</td><td style='text-align:left'>Soft-toss</td></tr><tr><td style='text-align:left'>14</td><td style='text-align:left'>Best Known Secret</td><td style='text-align:left'>30/1</td><td style='text-align:left'>73 (−13)</td><td style='text-align:left'>Soft-toss</td></tr></tbody></table></div>
+<h3>Pace setup</h3>
+<p>Multiple E/P types contest the lead into a short run to the first turn; turf-route bias favors posts 1–3 — but no horse offers a playable overlay.</p>
+<hr>
+<footer class="page">Generated by the horses analyzer · read on any device · share freely</footer>
+</main>
+</body>
+</html>
