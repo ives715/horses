@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>CD · 2026-05-31</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --fg: #1a1a1a;
+  --fg-soft: #555;
+  --accent: #1f6feb;
+  --rule: #e5e5ea;
+  --code-bg: #f0f0f2;
+  --tier-a: #0a7d3e;
+  --tier-b: #b36b00;
+  --tier-c: #888;
+  --warn: #b42020;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --fg: #e6edf3;
+    --fg-soft: #9ca3af;
+    --accent: #79c0ff;
+    --rule: #30363d;
+    --code-bg: #1f2937;
+    --tier-a: #3fb950;
+    --tier-b: #d29922;
+    --tier-c: #8b949e;
+    --warn: #ff7b72;
+    --card: #161b22;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+header.page {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+header.page .eyebrow {
+  font-size: 13px;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+header.page h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+h1, h2, h3, h4, h5 {
+  color: var(--fg);
+  line-height: 1.25;
+  margin: 1.6em 0 0.5em;
+}
+h1 { font-size: 24px; }
+h2 {
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 17px; }
+h4 { font-size: 15px; color: var(--fg-soft); text-transform: uppercase; letter-spacing: 0.05em; }
+p, ul, ol, blockquote { margin: 0 0 1em; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 0.25em 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: var(--fg); }
+em { color: var(--fg-soft); }
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: var(--code-bg);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 4px 16px;
+  color: var(--fg-soft);
+  background: var(--bg-soft);
+  border-radius: 0 6px 6px 0;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2em 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 1em -4px;
+  border-radius: 6px;
+}
+table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+/* Keep post time and cost columns from wrapping */
+td:nth-child(2), td:nth-child(5) { white-space: nowrap; }
+th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  color: var(--fg-soft);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+tbody tr:hover { background: var(--bg-soft); }
+.strong-play {
+  color: var(--tier-a);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+footer.page {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--fg-soft);
+}
+/* Tier coloring — applied when header text contains the marker */
+h3:has(strong) { color: var(--fg); }
+/* mobile */
+@media (max-width: 520px) {
+  .wrap { padding: 16px 14px 48px; }
+  header.page h1 { font-size: 22px; }
+  h1 { font-size: 21px; }
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+  table { font-size: 13px; }
+  th, td { padding: 6px 8px; }
+}
+/* print */
+@media print {
+  body { background: #fff; color: #000; }
+  .wrap { max-width: 100%; padding: 0; }
+  h2 { break-after: avoid; }
+  table, pre, blockquote { break-inside: avoid; }
+  footer.page { display: none; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="page">
+
+<h1>CD · 2026-05-31</h1>
+</header>
+<p>Stem: <code>cdx0531y</code> · MCL/CLM/MSW/AOC card · 10 races Card-wide note: Source pool is thin all day (bP only confirmed; TS-E/KH/PL/TM all unavailable). RULE 23 2-source pool collapses Mandatory tier; RULE 24a + RULE 27 SKIP fire repeatedly. Every PLAY structure is figure-driven with thin expert backing — keep stakes small. Summary: <strong>3 PLAY · 7 PASS · $24 cash · no BB Farms qualify</strong></p>
+<h2>Quick Picks</h2>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>Race</th><th style='text-align:left'>Post</th><th style='text-align:left'>Status</th><th style='text-align:left'>Tickets</th><th style='text-align:left'>Cost</th></tr></thead><tbody><tr><td style='text-align:left'><a href="#race-1">R1</a></td><td style='text-align:left'>12:45p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-2">R2</a></td><td style='text-align:left'>1:15p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-3">R3</a></td><td style='text-align:left'>1:44p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-4">R4</a></td><td style='text-align:left'>2:14p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-5">R5</a></td><td style='text-align:left'>2:46p</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>TRI 2/1,4,3/1,3,4,6 $1 base (12 combos)</td><td style='text-align:left'>$12</td></tr><tr><td style='text-align:left'><a href="#race-6">R6</a></td><td style='text-align:left'>3:19p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-7">R7</a></td><td style='text-align:left'>3:51p</td><td style='text-align:left'>PASS · drift watch</td><td style='text-align:left'>(if #6 Sapphire Beach 3/1+ at post → WIN $2 + KEY BOX 6/1,7 + small TRI)</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-8">R8</a></td><td style='text-align:left'>4:23p</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>KEY BOX 3/10,11 $1 ($4) · TRI 3,11/3,10,11/4,7,8,9 $0.50 ($8) · conditional WIN #11 $2 (if post ≥ 5/1)</td><td style='text-align:left'>$12</td></tr><tr><td style='text-align:left'><a href="#race-9">R9</a></td><td style='text-align:left'>4:56p</td><td style='text-align:left'>PASS</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td></tr><tr><td style='text-align:left'><a href="#race-10">R10</a></td><td style='text-align:left'>5:27p</td><td style='text-align:left'>PLAY</td><td style='text-align:left'>WIN #2 $2 · KEY BOX 2/11 $1 ($2) · STRAIGHT 11/2 $1 · TRI 2,11/2,11/1,3,6,8,12 $0.50 ($5)</td><td style='text-align:left'>$10</td></tr><tr><td style='text-align:left'><strong>Total</strong></td><td style='text-align:left'></td><td style='text-align:left'></td><td style='text-align:left'></td><td style='text-align:left'><strong>$34 cash</strong> (R5 $12 + R8 $12 + R10 $10)</td></tr></tbody></table></div>
+<p><strong>Calibration takeaways</strong></p>
+<ul><li>2-source pool (bP only) is the binding constraint all day — RULE 24a blocks WIN on R5 A-tier (You Ain't Poppn 0/1 source despite top Prime Power + top SR), forcing TRI-only structure.</li><li>RULE 27 SKIPs every BB Farm because no horse reaches the 2-source floor without TS-Expert confirmation. Re-check at 5 MTP — TS-E seat may flip several BB Farms live (R6 #1 Carson and R10 #11 Happy Prince are the candidates).</li><li>R7 Sapphire Beach is the only near-miss-to-PLAY drift candidate (1.38× at 5/2 ML → 1.60×+ at 3/1).</li></ul>
+<hr>
+<h2 id="race-1">Race 1</h2>
+<p><strong>Class/distance:</strong> Clm 20000b · 6f dirt · 6 horses · Post 12:45p CT <strong>PLAY/PASS:</strong> <strong>PASS</strong> — A-tier #4 Shadow Coast (5/2 ML) carries only 1.15× overlay (46% est / 40% implied); B-tier #5 Gallo de Fuego at 9/2 carries 1.17×. No 1.5× edge anywhere. Pace readable, but gate condition 2 fails.</p>
+<p><strong>Top SR audit</strong></p>
+<ul><li>Top at-class SR (last 6 mo): #6 League of Legends (92 SR vs par 87, +5)</li><li>Tier assignment: Soft-toss</li><li>Demotion reason: RULE 12 — chronic placer (2 wins in 33 starts), age 9, recent 74 LR shows form decline; LP 95 mismatched to 6f. Within-5-of-par keeps as soft-toss, not hard-toss.</li></ul>
+<p><strong>Tiers</strong></p>
+<ul><li>A1: #4 Shadow Coast (top Prime Power 120, class drop, hot Saez)</li><li>B1: #5 Gallo de Fuego (at-par 84, weak connections)</li><li>Soft-toss: #6 League of Legends (at-par on best fig, weak form), #3 Homie (78d off, weak figs)</li><li>Hard-toss: #1 Moroder (-10 par on today's surface)</li><li>Hard-toss → soft-toss demote: #2 Aerate (declining sequence but at-par best 83 = within 5)</li></ul>
+<p><strong>Dual-expert audit</strong> — Source pool: 2 of 5 (bP day-of + TM; TS-E needs live confirmation, KH/PL unavailable)</p>
+<ul><li>#4 Shadow Coast: bP 1, TM 1 → 2/3 = mandatory all layers</li><li>#5 Gallo de Fuego: bP 2, TM 2 → 2/3 = mandatory all layers</li><li>#2 Aerate: bP 3 → 1/3 = TRI cover only (hard-toss-demoted)</li><li>#3 Homie: TM 3 → 1/3 = soft cover</li></ul>
+<p><strong>Gate verification</strong></p>
+<ul><li>Cond 1 (A-tier): #4 Shadow Coast — class drop + top PP + top early pace = 2 STRONG ✓</li><li>Cond 2 (overlay): #4 at 5/2 = 40% implied, est ~46% = <strong>1.15× — FAIL</strong></li><li>Cond 3 (pace): readable ✓</li></ul>
+<p><strong>BB Farm scan</strong></p>
+<ul><li>Field 6 (5-7h tier, 2nd-only refund)</li><li>Top chalk #4 Shadow Coast, 2/3 mandatory, ML 5/2</li><li>RULE 27: 3-of-N mandatory in 5-7h needs 3/1+. 5/2 &lt; 3/1.</li><li><strong>DOES NOT QUALIFY</strong> — RULE 27 EV-negative at 5/2 for mandatory tier in 5-7h field.</li></ul>
+<hr>
+<h2 id="race-2">Race 2</h2>
+<p><strong>Class/distance:</strong> Clm 30000n2L · 1m dirt · 7h F&amp;M · Post 1:15p CT <strong>PLAY/PASS:</strong> <strong>PASS</strong> — Compressed A-tier cluster (Quinn's Promise 9/5, Don't Be Salty 3/1, Belle of the Dance 4/1) priced fairly. Quinn's Promise 9/5 = 36% implied vs ~35% estimated = 0.97×. No B-tier VALUE with sufficient backing.</p>
+<p><strong>Top SR audit</strong></p>
+<ul><li>Top at-class SR: #1 Quinn's Promise (83 vs par 79, +4)</li><li>Tier: A-tier (no demotion; recent workouts confirm fitness off 45d)</li></ul>
+<p><strong>Tiers</strong></p>
+<ul><li>A: #1 Quinn's Promise (top SR + E/P pace), #3 Don't Be Salty (2nd-best SR + blinker switch + hot Irad), #6 Belle of the Dance (top PP + class drop)</li><li>B: #4 Fermi (at-par but first route), #5 Galatina (at-par + fresh winner)</li><li>Soft-toss: #7 State Charmer, #2 Fresh Out (both -8 below par)</li></ul>
+<p><strong>Source pool</strong> 2 of 5 (bP pre-day only; TS-E pending). bP: 1/3/6/4.</p>
+<p><strong>Gate verification</strong></p>
+<ul><li>Cond 1: ✓ Quinn's Promise (top SR + E/P pace dominance)</li><li>Cond 2: ✗ 9/5 = 36% implied ≈ 35% est = 0.97×, below 1.5×</li><li>Cond 3: ✓ readable</li></ul>
+<p><strong>BB Farm scan</strong> — Field 7, chalk #1 at 9/5, RULE 27 SKIP (price too short for 1-2 source pool tier). <strong>DOES NOT QUALIFY.</strong></p>
+<hr>
+<h2 id="race-3">Race 3</h2>
+<p><strong>Class/distance:</strong> Clm 16000n2L · 1m dirt · 7h · Post 1:44p CT <strong>PLAY/PASS:</strong> <strong>PASS</strong> — A-tier #6 Il Cavallino (9/5 ML, 36% implied) vs estimated ~30% true win% = 0.83×. No overlay on A-tier or B-tier.</p>
+<p><strong>Top SR audit</strong></p>
+<ul><li>Top at-class SR: #4 Whiskey Shot (84 vs par 82, +2)</li><li>Tier: B-tier low — best fig at par but last 3 [52/38/84] volatile, last race -30 par</li></ul>
+<p><strong>Tiers</strong></p>
+<ul><li>A: #6 Il Cavallino (top PP, class drop Clm30→16, E-pace at par)</li><li>B: #4 Whiskey Shot (figure peak but volatile)</li><li>Soft-toss: #1 Hardtoblame, #2 Fast Joker, #5 Romantic Lead, #7 Bagg O Time, #3 Stefan's Title</li></ul>
+<p><strong>Source pool</strong> 2 of 5 (bP only). bP: 6/2/3/4.</p>
+<p><strong>Gate verification</strong></p>
+<ul><li>Cond 1: ✓ Il Cavallino (class drop + PP + E-pace)</li><li>Cond 2: ✗ 9/5 = 36% implied vs ~30% est = 0.83×</li><li>Cond 3: ✓</li></ul>
+<p><strong>BB Farm scan</strong> — Field 7, chalk #6 at 9/5, 1/1 source only, RULE 27 SKIP. <strong>DOES NOT QUALIFY.</strong></p>
+<hr>
+<h2 id="race-4">Race 4</h2>
+<p><strong>Class/distance:</strong> Clm 16000 · 6f dirt · 8h (effective 7h after #2 Lord Majesty SCR-illness) · Post 2:14p CT <strong>PLAY/PASS:</strong> <strong>PASS</strong> — #8 Top Gun Tommy A-tier marginal overlay 1.4-1.6× (near-miss) with only 1.5/2 source backing (bP 3rd of 4 picks). Per RULE 19, near-miss does not satisfy gate condition 2.</p>
+<p><strong>Top SR audit</strong></p>
+<ul><li>Top at-class SR: #8 Top Gun Tommy (97 vs par 86, +11)</li><li>Tier: A-tier (uptrend 78/87/95; top Prime Power 124.9; dominant E1 96.3)</li></ul>
+<p><strong>Tiers</strong></p>
+<ul><li>A: #8 Top Gun Tommy</li><li>B1: #2 Lord Majesty (declining figs but won LR) <strong>— SCRATCHED, illness</strong></li><li>B2: #7 Bebedouro (94 life, 51d off)</li><li>Soft-toss: #4 Upturned Brim, #3 Forty Love, #1 Illini (0-for-19)</li><li>Hard-toss: #5 Sawyer Fox (-6 par + declining), #6 Raising Kane (-10 par at sprint)</li></ul>
+<p><strong>Source pool</strong> 2 of 5 (bP pre-day). bP: 2/7/8/4. With #2 SCR, active bP picks: #7, #8, #4.</p>
+<p><strong>Gate verification</strong></p>
+<ul><li>Cond 1: ✓ Top Gun Tommy (2 STRONG: top SR + Prime Power #1)</li><li>Cond 2: ✗ Tommy at 4/1 = 20% implied, est ~28-32% = 1.4-1.6× (near-miss floor per RULE 19)</li><li>Cond 3: ✓</li></ul>
+<p><strong>Note (post-#2 SCR):</strong> With B1 scratched, race compresses further toward Tommy. No tier promotion since gate already failed on overlay near-miss. Recheck at 5 MTP — if Tommy drifts to 5/1+, overlay clears to 1.8×+ and PLAY converts.</p>
+<p><strong>BB Farm scan</strong> — Field 7 post-SCR, chalk reverts to #7 Bebedouro (bP #1 of active picks), ML 3/1. With 1/2 sources, RULE 27 SKIP. <strong>DOES NOT QUALIFY.</strong></p>
+<hr>
+<h2 id="race-5">Race 5</h2>
+<p><strong>Class/distance:</strong> Str Alw 30k · 1m dirt · 6h · Post 2:46p CT <strong>PLAY/PASS:</strong> <strong>PLAY</strong> — #2 You Ain't Poppn A-tier overlay (6/1 = 14% implied, est ~30% true = 2.1×). <strong>RULE 24a blocks WIN</strong> (0/1 expert source — bP has him outside top-3). TRI/exacta only.</p>
+<p><strong>Top SR audit</strong></p>
+<ul><li>Top at-class SR: #1 Baytown Bruiser (90) and #2 You Ain't Poppn (90) tied vs par 88</li><li>Tier: #2 A-tier (top Prime Power 121.6, claim 5/22 + 3rd place 5/27 = sharp claim prep); #1 B1 (tied SR, softer recent)</li><li>No demotion: both recent claims w/ next-start board hits</li></ul>
+<p><strong>Tiers</strong></p>
+<ul><li>A: #2 You Ain't Poppn (RULE 24a WIN block)</li><li>B1: #1 Baytown Bruiser, #4 Guardian (both 1/1 source = universal in 1-source pool)</li><li>B2: #3 Admiral Hall (1/1 universal)</li><li>Soft-toss: #5 Truly Legit, #6 Versed</li></ul>
+<p><strong>Source pool</strong> 1 of 5 (bP only confirmed; TS-E/KH/PL/TM all unavailable). bP: 1/4/3/5. <strong>#2 absent from bP top 4.</strong></p>
+<p><strong>Dual-expert audit</strong></p>
+<ul><li>#2 You Ain't Poppn: 0/1 = no WIN per RULE 24a; stays A-tier in TRI/KEY BOX</li><li>#1, #4, #3: 1/1 universal within available pool</li><li>#5, #6: 0/1, soft cover</li></ul>
+<p><strong>Hard-toss audit</strong></p>
+<ul><li>#5 Truly Legit: 82 = -6 par, declining 77/78/65 at par-class = RULE 13 criterion #2 fires. Hard-toss.</li><li>#6 Versed: 82 = -6 par but no clean 3-at-par declining sequence (mixed classes). RULE 8 single-factor → soft-toss.</li></ul>
+<p><strong>At-par soft-toss audit</strong> — none below A-tier within-5; #5 (hard-toss) and #6 (soft-toss) both -6, outside window.</p>
+<p><strong>Factor breakdown</strong> (6 horses)</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>ML</th><th style='text-align:left'>Style</th><th style='text-align:left'>PP</th><th style='text-align:left'>Best SR</th><th style='text-align:left'>vs par</th><th style='text-align:left'>E1 avg</th><th style='text-align:left'>LP avg</th><th style='text-align:left'>Last 3</th><th style='text-align:left'>Source</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>1</td><td style='text-align:left'>Baytown Bruiser</td><td style='text-align:left'>9/5</td><td style='text-align:left'>E/P</td><td style='text-align:left'>117.3</td><td style='text-align:left'>90</td><td style='text-align:left'>+2</td><td style='text-align:left'>83.7</td><td style='text-align:left'>76.0</td><td style='text-align:left'>79/58/90</td><td style='text-align:left'>1/1 univ</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>2</td><td style='text-align:left'>You Ain't Poppn</td><td style='text-align:left'>6/1</td><td style='text-align:left'>E/P</td><td style='text-align:left'><strong>121.6</strong></td><td style='text-align:left'>90</td><td style='text-align:left'>+2</td><td style='text-align:left'>83.3</td><td style='text-align:left'>83.3</td><td style='text-align:left'>79/78/83</td><td style='text-align:left'>0/1</td><td style='text-align:left'><strong>A1 (no WIN)</strong></td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Admiral Hall</td><td style='text-align:left'>7/2</td><td style='text-align:left'>P</td><td style='text-align:left'>117.3</td><td style='text-align:left'>86</td><td style='text-align:left'>-2</td><td style='text-align:left'>71.7</td><td style='text-align:left'>94.7</td><td style='text-align:left'>86/83/68</td><td style='text-align:left'>1/1 univ</td><td style='text-align:left'>B2</td></tr><tr><td style='text-align:left'>4</td><td style='text-align:left'>Guardian</td><td style='text-align:left'>5/2</td><td style='text-align:left'>E/P</td><td style='text-align:left'>120.3</td><td style='text-align:left'>88</td><td style='text-align:left'>0</td><td style='text-align:left'>89.3</td><td style='text-align:left'>82.7</td><td style='text-align:left'>88/81/79</td><td style='text-align:left'>1/1 univ</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>5</td><td style='text-align:left'>Truly Legit</td><td style='text-align:left'>4/1</td><td style='text-align:left'>E</td><td style='text-align:left'>116.4</td><td style='text-align:left'>82</td><td style='text-align:left'>-6</td><td style='text-align:left'>82.0</td><td style='text-align:left'>73.3</td><td style='text-align:left'>77/78/65</td><td style='text-align:left'>0/1</td><td style='text-align:left'>Hard-toss</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Versed</td><td style='text-align:left'>12/1</td><td style='text-align:left'>P</td><td style='text-align:left'>112.4</td><td style='text-align:left'>82</td><td style='text-align:left'>-6</td><td style='text-align:left'>85.3</td><td style='text-align:left'>75.3</td><td style='text-align:left'>70/71/82</td><td style='text-align:left'>0/1</td><td style='text-align:left'>Soft-toss</td></tr></tbody></table></div>
+<p><strong>Gate verification</strong></p>
+<ul><li>Cond 1: ✓ #2 (top PP, top SR, claim-prep signal)</li><li>Cond 2: ✓ #2 at 6/1 = 14% implied vs ~30% est = 2.1× overlay (qualifies; RULE 24a downstream blocks WIN line only)</li><li>Cond 3: ✓ Guardian early, You Ain't Poppn stalks, Admiral Hall late kick</li></ul>
+<p><strong>Pace scenario</strong> — Guardian (E/P) controls early; You Ain't Poppn stalks 2-wide and attacks at the turn; Admiral Hall (LP 94.7) closes late; Baytown Bruiser sits mid-pack.</p>
+<p><strong>Tickets</strong></p>
+<ul><li><strong>TRI 2/1,4,3/1,3,4,6</strong> $1 base = 12 combos × $1 = <strong>$12</strong></li><li>No WIN (RULE 24a)</li></ul>
+<p>Combo math: pairs (2,1)/(2,4)/(2,3), 3rd pool {1,3,4,6} minus 1st/2nd = 4 each. 3×4 = 12.</p>
+<p><strong>BB Farm scan</strong> — Field 6 (5-7h tier OK). Chalk #1 Baytown Bruiser 1/1 universal, ML 9/5. RULE 27: universal 5-7h needs 5/2+. 9/5 &lt; 5/2. <strong>DOES NOT QUALIFY.</strong></p>
+<p><strong>Contingencies</strong> — If TS-E live at race time confirms #2: 2/2 universal lifts RULE 24a → add WIN $2 #2. If #2 drifts to 8/1+: STRONG PLAY consideration but still subject to RULE 24a unless TS-E confirms. If #1 or #4 firms to under 6/5: RULE 10 reduce-WIN-50% doesn't apply (no WIN planned). If field drops to 5 horses, TRI still valid; below 5, drop to exacta KEY BOX only.</p>
+<hr>
+<h2 id="race-6">Race 6</h2>
+<p><strong>Class/distance:</strong> MC 12500 · 1m dirt · 12h · Post 3:19p CT <strong>PLAY/PASS:</strong> <strong>PASS</strong> — Near-miss overlay on both A-tier candidates. #1 Carson (7/2 ML, top PP + 75 at-class fig within 2 of par 77 + bP #1) = 1.27-1.45× (near-miss). #9 Vino Dominus (9/2 ML, top dirt SR 80 + class drop Clm20→Mdn12500) = 1.22-1.44× (near-miss). RULE 19: near-miss = PASS.</p>
+<p><strong>Top SR audit</strong></p>
+<ul><li>Top at-class SR on dirt (12 mo): #9 Vino Dominus (80 dirt at MC50k June 2025) and #1 Carson (75 at this exact class)</li><li>Tier: #9 stays A-tier per RULE 12 (no valid demotion — habitual ITM 43%; layoff carve-out on declining sequence); #1 also A-tier (top PP + at-class form + bP #1)</li></ul>
+<p><strong>Tiers</strong></p>
+<ul><li>A: #1 Carson, #9 Vino Dominus</li><li>B: #11 Whatever (bP #3, 33% trainer, class drop), #10 Tims (drop from MC30k)</li><li>Soft-toss: rest of field (FTS or below-par-on-dirt)</li></ul>
+<p><strong>Source pool</strong> 2 of 5 (bP only). bP: 1/9/11/10.</p>
+<p><strong>Gate verification</strong></p>
+<ul><li>Cond 1: ✓ (#1 Carson — class form + top PP + top early pace; #9 Vino Dominus — top dirt SR + class drop)</li><li>Cond 2: ✗ Both A-tier at near-miss (1.3-1.45×), below 1.5× per RULE 19</li><li>Cond 3: ✓ Contested early between #1, #10, #12</li></ul>
+<p><strong>Pace scenario</strong> — Carson and Tims contest the early lead through the first quarter on the 1-mile oval; Chasing Gray adds a third pace element from the outside, setting up stalkers (Whatever, Mountain Grandeur) for late runs.</p>
+<p><strong>BB Farm scan</strong> — Field 12 (8+h tier, 2nd-or-3rd refund). Top chalk #1 Carson, bP #1 + ML 7/2. With 1/2 confirmed sources only, RULE 27 SKIP. <strong>Conditional re-check at 5 MTP</strong> — if TS-E confirms #1 (→ 2/2 universal, 8+h field), min price 6/5; 7/2 easily clears. WOULD FIRE if TS-E live picks #1.</p>
+<hr>
+<h2 id="race-7">Race 7</h2>
+<p><strong>Class/distance:</strong> Alw NW2X · 5.5f turf · 8h pre-SCR → <strong>6h effective</strong> (#3 Should've + #8 Secret Hideaway both OFF-TURF SCR) · Post 3:51p CT <strong>PLAY/PASS:</strong> <strong>PASS · DRIFT WATCH</strong> — #6 Sapphire Beach A-tier, top turf SR 96 (6 pts clear of field), class drop G3 → ALW. At 5/2 ML = 29% implied vs ~40% est = <strong>1.38× near-miss</strong>. Converts to PLAY if she drifts to 3/1+ at post (clears to 1.60×+).</p>
+<p><strong>Top SR audit</strong></p>
+<ul><li>Top at-class turf SR (12 mo): #6 Sapphire Beach (96 turf vs estimated field par ~88-90 = +6 minimum)</li><li>Tier: A-tier (class drop G3→ALW; active works 5/13 + 5/22 KEE; Jose Ortiz)</li></ul>
+<p><strong>Tiers</strong></p>
+<ul><li>A: #6 Sapphire Beach (drift to 3/1+ converts to PLAY)</li><li>B: #1 Beach Heist (90 best turf, bP #1, 205d off but active works), #7 Mony Mony (Irad Jr, class drop, but first meaningful turf)</li><li>Soft-toss (at-par): #5 Snow Face Princess (declining 85/83/81 turf), #4 Snappy Comeback (trainer 0%, declining)</li><li>Soft-toss (situational): #2 Omaha Bay (first turf, trainer 4% on grass)</li></ul>
+<p><strong>Source pool</strong> 1 of 5 (bP only; only 1 confirmed source — no TS-E/KH/PL/TM). bP active: 1/6/7.</p>
+<p><strong>Gate verification</strong></p>
+<ul><li>Cond 1: ✓ #6 Sapphire Beach (top turf SR + class drop + Ortiz)</li><li>Cond 2: ✗ 5/2 = 29% implied vs ~40% est = <strong>1.38× near-miss</strong></li><li>Cond 3: ✓ Contested early between #1/#7 with #6 stalking</li></ul>
+<p><strong>Pace scenario</strong> — Beach Heist (E6) and Mony Mony (E/P7) contest the early lead with Sapphire Beach (E/P7) stalking in third; pace will be contested, setting up where the best late kicker takes it down the lane — Snow Face Princess stalks from mid-pack and Sapphire Beach can strike at the quarter pole.</p>
+<p><strong>Contingencies (key — this is the live race today)</strong></p>
+<ul><li><strong>#6 Sapphire Beach 3/1+ at 5 MTP → FIRE:</strong> WIN $2 · KEY BOX 6/1,7 $1 (4 combos = $4) · TRI 6/1,7/1,4,5,7 $0.50 base (verify combo math at fire time)</li><li><strong>#6 at 7/2+ → STRONG PLAY territory:</strong> upgrade WIN to $10</li><li><strong>#6 firms inside 5/2 → stay PASS</strong></li><li><strong>Off-turf:</strong> Race moves to main dirt 5.5f; #7 Mony Mony (95 AW figure) becomes A-tier; #6 (0 dirt) drops to soft-toss; re-evaluate from scratch</li></ul>
+<p><strong>BB Farm scan</strong> — Field 6 (5-7h tier). Only 1 source available; RULE 27 SKIP regardless. <strong>DOES NOT QUALIFY.</strong></p>
+<hr>
+<h2 id="race-8">Race 8</h2>
+<p><strong>Class/distance:</strong> MSW · 6.5f dirt · 12h → <strong>11h</strong> (#2 McCann SCR-unsound) · Post 4:23p CT <strong>PLAY/PASS:</strong> <strong>PLAY</strong> — Figure-sparse maiden with 7 FTS + #3 Impractical (top dirt BSF 81, improving 61→80→81). RULE 24a blocks WIN on #3 (0/2 sources); #11 Campobasso (Baffert/Prat FTS, bP #1, 4/1 ML) carries borderline 1.4-1.5× overlay — fire conditional WIN only if post ≥ 5/1.</p>
+<p><strong>Top SR audit</strong></p>
+<ul><li>Top at-class SR on dirt: #3 Impractical (81 vs par 90, improving)</li><li>Tier: A-tier (lone E-type, pace control, improving trajectory; &lt;5 starts so RULE 12 c#2 doesn't fire)</li></ul>
+<p><strong>Tiers</strong></p>
+<ul><li>A: #3 Impractical (RULE 24a WIN block)</li><li>B1: #11 Campobasso (FTS, Baffert/Prat, $400k, 33% trainer debut, bP #1)</li><li>B2: #10 Study (FTS, McCarthy 25%, dam 3-for-3, bP #2)</li><li>Soft-toss (situational): #4 Hawkeye State, #7 Civic Charm, #5 Native Brew, #1 Max Is Him, #6 Bigtimetimmyjim, #8 Delancey Street, #9 Gadget Play, #12 Interrogator (debut-quit demoted from hard-toss)</li></ul>
+<p><strong>Source pool</strong> 2 of 5 (bP only confirmed; TS-E unavailable). bP: 11/10/2/4. With #2 SCR, active: #11, #10, #4.</p>
+<p><strong>Gate verification</strong></p>
+<ul><li>Cond 1: ✓ #3 (top dirt BSF + lone E-pace control)</li><li>Cond 2: ✓ borderline — #11 at 4/1 = 20% implied, est ~28-32% = 1.4-1.5× (clears at 5/1+)</li><li>Cond 3: ✓ Impractical alone on the front</li></ul>
+<p><strong>RULE 30:</strong> 11h field triggers — TRI 3rd slot must include 0-1 source horses with ≥35% steam at race time (re-check at post).</p>
+<p><strong>Tickets</strong></p>
+<ul><li><strong>Conditional WIN:</strong> $2 #11 Campobasso (only if post ≥ 5/1)</li><li><strong>KEY BOX 3/10,11</strong> $1 (4 combos) = <strong>$4</strong></li><li><strong>TRI 3,11/3,10,11/4,7,8,9</strong> $0.50 base (16 combos) = <strong>$8</strong></li><li><strong>Total cash:</strong> <strong>$12</strong> (+$2 conditional WIN if #11 post ≥ 5/1)</li></ul>
+<p>Pace scenario — Impractical (lone E-type) controls the pace alone from an inside post; pressers sit within 2-3 lengths; closers and FTS unknowns track from off the pace; winner likely emerges from whoever is positioned 2nd-4th at the turn.</p>
+<p><strong>BB Farm scan</strong> — Field 11 (8+h, 2nd-or-3rd refund). Top chalk #11 Campobasso, 1/2 sources, ML 4/1. RULE 27 SKIP at 1/2. <strong>Re-check if TS-E confirms #11:</strong> 2/2 universal in 8+h needs 6/5; 4/1 clears easily → WOULD FIRE.</p>
+<hr>
+<h2 id="race-9">Race 9</h2>
+<p><strong>Class/distance:</strong> AOC 125k n1x · 1m dirt · 13h → <strong>12h</strong> (#12 J J Grey SCR-trainer) · Post 4:56p CT <strong>PLAY/PASS:</strong> <strong>PASS</strong> — Too many first-routers with figure-leader (Prize Pick 99) and second-best figure (Gun Range 94) both untested at the distance. #4 Rebel Instinct (bP #1, Cox/Irad, 94 at 1m dirt, 210d off + first-time Lasix) at 3/1 = 25% implied vs ~30-33% est = 1.2-1.3× near-miss. No clean ≥1.5×.</p>
+<p><strong>Top SR audit</strong></p>
+<ul><li>Top at-class on dirt: #11 Prize Pick (99 LR sprint maiden); #4 Rebel Instinct (94 at 1m dirt from Mdn 85k); #2 Gun Range (94 sprint maiden)</li><li>Tier: #4 A-tier candidate (best at-distance figure + Cox/Irad); #11 and #2 are figure-strong but first-route uncertainty</li></ul>
+<p><strong>Tiers</strong></p>
+<ul><li>A: #4 Rebel Instinct (top at-distance, Cox/Irad, Lasix angle)</li><li>B: #11 Prize Pick (top life SR but first dirt route), #6 Memory (Baffert, at-par 91 at class)</li><li>Soft-toss: #2 Gun Range (Ward, first route), #8 Noble Affair (declining 93→85 sequence), most others</li></ul>
+<p><strong>Source pool</strong> 2 of 5 (bP pre-day only). bP: 4/6/2/11.</p>
+<p><strong>Gate verification</strong></p>
+<ul><li>Cond 1: ✓ #4 Rebel Instinct (Cox/Irad combo + best at-1m fig)</li><li>Cond 2: ✗ 3/1 = 25% implied vs ~30-33% est = 1.2-1.3× (210d off + class rise from maiden caps upside)</li><li>Cond 3: ✓ Pace contested between Noble Affair and Prize Pick</li></ul>
+<p><strong>Pace scenario</strong> — #8 Noble Affair (E8) and #11 Prize Pick (E7) contest the early lead; pressers #4/#6/#13 track 2-4 back; closers #1 Lighter and #7 Blue Forty Two rally from far back; contested-pace setup favoring stalkers.</p>
+<p><strong>BB Farm scan</strong> — Field 12 (8+h, 2nd-or-3rd refund). Top chalk #4 Rebel Instinct, 1/2 sources, ML 3/1. RULE 27 SKIP at 1/2 (and 3/1 is too short for 2-of-N 8+h which needs 7/2). <strong>DOES NOT QUALIFY.</strong></p>
+<hr>
+<h2 id="race-10">Race 10</h2>
+<p><strong>Class/distance:</strong> MC 50000 · 1m turf · 12h → <strong>7h</strong> (5 SCRs: #4 AE, #5 illness, #7 re-entered/injured, #9 trainer, #10 trainer) · Post 5:27p CT <strong>PLAY/PASS:</strong> <strong>PLAY</strong> — #2 Both Sides of Bad A-tier on turf at MC50k (82 turf SR vs par 83 = within 1 pt, top active turf-class figure). At 4/1 = 20% implied vs ~32% est = <strong>1.6× overlay clean</strong>. Lone S-closer in field with E-type #11 Happy Prince getting a soft uncontested lead from post 11 (no other E-types remaining).</p>
+<p><strong>Top SR audit</strong></p>
+<ul><li>Top at-class turf SR (active field, post-SCR): #2 Both Sides of Bad (82 turf at MC50k)</li><li>Tier: A-tier (0-for-4 on turf but 25% ITM = habitual placer, NOT RULE 12 demotable; trainer change Mullins→Pitts, fresh angle)</li></ul>
+<p><strong>Tiers</strong></p>
+<ul><li>A1: #2 Both Sides of Bad</li><li>B1: #11 Happy Prince (top Prime Power 121.2, lone E-type, bP #1, class drop MSW→MC50k)</li><li>Soft-toss (all situational): #12 McKinsense (first turf, 83 dirt only), #1 Timestream (Asmussen, 177d off, figures -19 par), #3 Thespian (first turf w/ blinkers), #6 Barracks (first turf + first route), #8 West of East Texas (235d off + first turf, demoted from hard-toss via unknowable-profile override)</li></ul>
+<p><strong>Source pool</strong> 2 of 5 (bP only; TS-E pending). bP active post-SCR: 11/2/1.</p>
+<p><strong>Hard-toss audit</strong></p>
+<ul><li>#8 West of East Texas: only turf fig 54 (trip-excused — bumped at start, wide) + &lt;3 career starts + 235d off → unknowable-profile override fires. Demoted to soft-toss.</li></ul>
+<p><strong>At-par soft-toss audit</strong> — None besides A1 cleared within-5 of par 83. All soft-tosses are situational (3rd slot only).</p>
+<p><strong>Factor breakdown</strong> (7 active horses)</p>
+<div class='table-wrap'><table><thead><tr><th style='text-align:left'>#</th><th style='text-align:left'>Horse</th><th style='text-align:left'>ML</th><th style='text-align:left'>Style</th><th style='text-align:left'>PP</th><th style='text-align:left'>Best turf SR</th><th style='text-align:left'>vs par 83</th><th style='text-align:left'>Last 3 turf</th><th style='text-align:left'>Source</th><th style='text-align:left'>Tier</th></tr></thead><tbody><tr><td style='text-align:left'>2</td><td style='text-align:left'>Both Sides of Bad</td><td style='text-align:left'>4/1</td><td style='text-align:left'>S</td><td style='text-align:left'>—</td><td style='text-align:left'><strong>82</strong></td><td style='text-align:left'>-1</td><td style='text-align:left'>82/79/77</td><td style='text-align:left'>1/2</td><td style='text-align:left'><strong>A1</strong></td></tr><tr><td style='text-align:left'>11</td><td style='text-align:left'>Happy Prince</td><td style='text-align:left'>5/2</td><td style='text-align:left'>E (8 pts)</td><td style='text-align:left'><strong>121.2</strong></td><td style='text-align:left'>78</td><td style='text-align:left'>-5</td><td style='text-align:left'>78/74/72</td><td style='text-align:left'>1/2</td><td style='text-align:left'>B1</td></tr><tr><td style='text-align:left'>12</td><td style='text-align:left'>McKinsense</td><td style='text-align:left'>10/1</td><td style='text-align:left'>P (6)</td><td style='text-align:left'>—</td><td style='text-align:left'>0 (first turf)</td><td style='text-align:left'>n/a</td><td style='text-align:left'>dirt 83</td><td style='text-align:left'>0/2</td><td style='text-align:left'>Soft (situational)</td></tr><tr><td style='text-align:left'>1</td><td style='text-align:left'>Timestream</td><td style='text-align:left'>8/1</td><td style='text-align:left'>E/P</td><td style='text-align:left'>—</td><td style='text-align:left'>64</td><td style='text-align:left'>-19</td><td style='text-align:left'>dirt 64</td><td style='text-align:left'>1/2</td><td style='text-align:left'>Soft (situational)</td></tr><tr><td style='text-align:left'>3</td><td style='text-align:left'>Thespian</td><td style='text-align:left'>15/1</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>62</td><td style='text-align:left'>-21</td><td style='text-align:left'>62/55</td><td style='text-align:left'>0/2</td><td style='text-align:left'>Soft (situational)</td></tr><tr><td style='text-align:left'>6</td><td style='text-align:left'>Barracks</td><td style='text-align:left'>10/1</td><td style='text-align:left'>P</td><td style='text-align:left'>—</td><td style='text-align:left'>0 (first turf)</td><td style='text-align:left'>n/a</td><td style='text-align:left'>dirt 77</td><td style='text-align:left'>0/2</td><td style='text-align:left'>Soft (situational)</td></tr><tr><td style='text-align:left'>8</td><td style='text-align:left'>West of East Texas</td><td style='text-align:left'>20/1</td><td style='text-align:left'>—</td><td style='text-align:left'>—</td><td style='text-align:left'>54 (trip-excused)</td><td style='text-align:left'>-29</td><td style='text-align:left'>only start</td><td style='text-align:left'>0/2</td><td style='text-align:left'>Soft (UPO)</td></tr></tbody></table></div>
+<p><strong>Gate verification</strong></p>
+<ul><li>Cond 1: ✓ #2 (top active turf-class SR + pace setup: lone S-closer with uncontested-lead E-type setting soft fractions = late kick decides)</li><li>Cond 2: ✓ 4/1 = 20% implied vs ~32% est = <strong>1.6×</strong> clean overlay</li><li>Cond 3: ✓ Happy Prince clears solo to lead; Both Sides of Bad rallies in lane</li></ul>
+<p><strong>Pace scenario</strong> — Happy Prince (#11, E-8) springs to a clear uncontested lead from post 11 in a field now devoid of other early speed; Both Sides of Bad (#2, S-type) and McKinsense (#12, P-6) will trail the pace and attempt to run him down in the stretch.</p>
+<p><strong>Tickets</strong></p>
+<ul><li><strong>WIN $2 #2</strong> Both Sides of Bad</li><li><strong>KEY BOX 2/11</strong> $1 (2 combos) = <strong>$2</strong></li><li><strong>STRAIGHT 11/2</strong> $1 (RULE 3 — B1 in WIN slot)</li><li><strong>TRI 2,11/2,11/1,3,6,8,12</strong> $0.50 base (10 combos) = <strong>$5</strong></li><li><strong>Total: $10</strong></li></ul>
+<p>Combo math: (2,11) 3rd pool {1,3,6,8,12} = 5; (11,2) 3rd pool {1,3,6,8,12} = 5. Total 10 × $0.50 = $5.</p>
+<p><strong>BB Farm scan</strong> — Field 7 (5-7h tier, 2nd-only refund). Top chalk #11 Happy Prince, 1/2 sources, ML 5/2. RULE 27 SKIP (1-of-N in 2-source = 50% &lt; mandatory; 0-1 source band = always SKIP). <strong>Re-check if TS-E confirms #11:</strong> 2/2 universal in 5-7h needs 5/2 (universal cell). 5/2 ML borderline — if post 5/2 or longer with TS-E confirmation, BB Farm WIN $10 #11 fires.</p>
+<p><strong>Contingencies</strong> — If off-turf (race moves to main dirt 1m): #12 McKinsense (83 dirt) jumps to B-tier; #2 (turf specialist) drops to soft-toss; rebuild around #12 + #11. If #2 firms inside 5/2 → RULE 10 reduce WIN 50% (to $1); keep exotics. If #2 drifts to 8/1+ → overlay strengthens to 2.5×; hold all tickets at current size.</p>
+<footer class="page">Generated by the horses analyzer · read on any device · share freely</footer>
+</main>
+</body>
+</html>
