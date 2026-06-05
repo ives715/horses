@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-06-05",
+    "track": "SAR",
+    "track_name": "Saratoga",
+    "filename": "cards/2026-06-05-SAR.html",
+    "plays": 7,
+    "total_cost": 140
+  },
+  {
     "date": "2026-06-04",
     "track": "SAR",
     "track_name": "Saratoga",
