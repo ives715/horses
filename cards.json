@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-06-14",
+    "track": "CD",
+    "track_name": "Churchill Downs",
+    "filename": "cards/2026-06-14-CD.html",
+    "plays": 3,
+    "total_cost": 72
+  },
+  {
     "date": "2026-06-07",
     "track": "SAR",
     "track_name": "Saratoga",
